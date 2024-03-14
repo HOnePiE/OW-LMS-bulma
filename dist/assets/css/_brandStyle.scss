@@ -1,0 +1,45 @@
+.button.is-primary {
+    background-color: #0090FF !important; 
+}
+.section{
+    height: 100vh;
+}
+.card{
+    background-color: transparent !important;
+}
+.title, .subtitle{
+    color: black !important;
+}
+.dropdown-trigger{
+    cursor: pointer;
+}
+.navbar-link:hover{
+    background-color: transparent!important;
+}
+.navbar{
+    background-color: transparent!important;
+}
+.navbar-item.has-dropdown:hover .navbar-link{
+    background-color: transparent!important;
+}
+.section{
+    height: auto;
+}
+@media screen and (min-width: 1024px) {
+    .section {
+        padding: 1.5rem 1.5rem!important;
+    }
+}
+.tabs li{
+    padding:0 20px;
+}
+.card-content {
+    padding: 1rem!important;
+}
+.tns-inner{
+    // padding:20px!important;
+}  
+.card{
+    box-shadow: none!important;
+}
+// $color: #0090FF;

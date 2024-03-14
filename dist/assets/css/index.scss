@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import "./blur";
+@import "./table";
+@import "./brandStyle";
+@import "../libs/bulma/bulma.sass";
+// @import "./brandStyle";
+
+$primary-color: #0096FF;
+
+.blur-background {
+  @include blur-background;
+}
+
+.background-color {
+  background-color: #0096FF;
+}
+
+.primary-background {
+  /* background-color: #2bef90; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/background/Login\ bg.jpeg");
+}
+
+.hover-zoom:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease-in-out;
+  ;
+}
+
+.Category-Text-Recommended {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0096FF;
+  margin-bottom: 1rem;
+}
+
+.Category-Text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0096FF;
+  margin-bottom: 1rem;
+}
+
+.primary-color {
+  color: #0096FF;
+}
+
+.bg-dark-no-change {
+  background-color: #000000;
+}
+
+.always-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.btn_showPass {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#eyeClose {
+  display: none;
+}
+
+
+.password_input {
+  position: relative;
+
+}
+
+.form-group {
+  display: flex;
+  // margin-bottom: 16px;
+  flex-direction: column;
+
+  #password {
+    // padding-right: 30px;
+    float: left;
+  }
+
+  .btn_showPass {
+    position: absolute;
+    top: 60%;
+    right: 17%;
+    // border: 1px solid #0096FF;
+    // border-radius: 4px;
+    font-size: 1rem;
+    color: #0096FF;
+    text-align: right;
+    cursor: pointer;
+    transition: all .3s;
+
+  }
+
+  .invalid {
+    .form-control_p {
+      border-color: #f33a58;
+    }
+
+    .form-message_p {
+      color: #f33a58;
+
+    }
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.text-shadow {
+  text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}

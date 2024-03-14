@@ -1,0 +1,11 @@
+@mixin blur-background {
+    backdrop-filter: blur(33px);
+    background-blend-mode: overlay;
+}
+@mixin card-background {
+    background-image: url(/dist/assets/images/background/pexels-mo-eid-10377281.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

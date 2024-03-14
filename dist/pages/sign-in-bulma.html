@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Codescandy" />
+
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/brand/logo/brand-Logo2.svg" />
+    <link rel="stylesheet" href="../assets/icons/fontawesome-free-6.5.1-web/css/all.min.css">
+
+    <!-- darkmode js -->
+    <script src="../assets/js/vendors/darkMode.js"></script>
+
+    <!-- Libs CSS -->
+    <link href="../assets/fonts/feather/feather.css" rel="stylesheet" />
+    <link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
+    <!-- <link rel="stylesheet" href="../assets/libs/bulma/bulma.css"> -->
+
+    <!-- Theme CSS -->
+    <!-- <link rel="stylesheet" href="../assets/css/theme.min.css"> -->
+
+    <title>Sign in - OW</title>
+</head>
+
+<body>
+    <!-- Page content -->
+    <!-- <progress class="progress is-danger" value="90" max="100">90%</progress> -->
+    <main>
+        <section class="columns" style="margin-top: 0;">
+            <div class="column"
+                style="background-image: url(../assets/images/background/Login\ bg.jpeg); background-size:cover;height: 100vh;">
+            </div>
+            <!-- Right column for the sign-in form -->
+            <div class="column is-flex is-align-items-center" style="height:100vh;">
+                <!-- Your sign-in form goes here -->
+                <section class="container">
+                    <div class="columns is-vcentered is-centered">
+                        <div class="column is-three-quarters">
+                            <!-- Card -->
+                            <div class="">
+                                <!-- Card body -->
+                                <div class="card-content">
+                                    <div class="has-text-centered">
+                                        <a href="../index.html"><img style="width: 20%;"
+                                                src="../assets/images/brand/logo/brand-logo2-backgroundRemoved.png"
+                                                class="mb-4" alt="logo-icon"></a>
+                                        <h1 class="title">Sign in</h1>
+                                        <!-- <span>
+                                            Don’t have an account?
+                                            <a href="sign-up.html" class="ms-1">Sign up</a>
+                                        </span> -->
+                                    </div>
+                                    <!-- Form -->
+                                    <form id="form-1">
+                                        <!-- Username -->
+                                        <div class="form-group field">
+                                            <label for="email" class="label">Email</label>
+                                            <input type="email" id="email" class="input" name="email"
+                                                placeholder="Email address here" autocomplete="email">
+                                            <span class="form-message has-text-danger"></span>
+                                        </div>
+                                        <!-- Password -->
+                                        <div class="form-group field">
+                                            <label for="password" class="label">Password</label>
+                                            <!-- <div class="passInput is-flex is-flex-direction-row"> -->
+                                                <input type="password" id="password" class="input is-flex-grow-1 is-pulled-left"
+                                                    name="password" placeholder="**************"
+                                                    autocomplete="new-password">
+                                                <!-- <button class="btn_showPass is-flex-grow-2 ml-3"
+                                                    onclick="showPass('password')">
+                                                    <i id="eyeShow" class="fa-solid fa-eye "></i>
+                                                    <i id="eyeClose" class="fa-solid fa-eye-slash "></i>
+                                                </button> -->
+                                            <!-- </div> -->
+                                            <span class="form-message has-text-danger"></span>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div
+                                            class="form-group field is-grouped is-grouped-multiline is-flex is-flex-direction-row is-justify-content-space-between">
+                                            <div class="control">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" id="rememberme">
+                                                    Remember me
+                                                </label>
+                                            </div>
+                                            <div class="control">
+                                                <a href="forget-password.html">Forgot your password?</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <!-- Button -->
+                                            <div class="control is-flex is-justify-content-center">
+                                                <button id="submit_btn" type="submit" class="button is-primary"
+                                                    style="width: 100%;">Sign in</button>
+                                            </div>
+                                        </div>
+                                        <hr class="my-4">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+        <!-- <div class="has-text-centered">
+            <div class="dropdown is-right">
+                <div class="dropdown-trigger">
+                    <button class="button is-light" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span class="icon">
+                            <i class="bi theme-icon-active"></i>
+                        </span>
+                        <span class="is-sr-only">Toggle theme</span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item">
+                            <span class="icon">
+                                <i class="bi theme-icon bi-sun-fill"></i>
+                            </span>
+                            <span>Light</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <span class="icon">
+                                <i class="bi theme-icon bi-moon-stars-fill"></i>
+                            </span>
+                            <span>Dark</span>
+                        </a>
+                        <a href="#" class="dropdown-item is-active">
+                            <span class="icon">
+                                <i class="bi theme-icon bi-circle-half"></i>
+                            </span>
+                            <span>Auto</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </main>
+    <!-- Scripts -->
+    <!-- Libs JS -->
+    <script src="../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../assets/js/theme.min.js"></script>
+    <script src="../assets/js/vendors/validation.js"></script>
+</body>
+
+</html>
