@@ -13,7 +13,7 @@ document.querySelector(".sliderFirst") &&
     lazyload: !0,
     gutter: 20,
     controlsContainer: "#sliderFirstControls",
-    responsive: { 768: { items: 2 }, 990: { items: 3 } },
+    responsive: { 768: { items: 2 }, 990: { items: 4 } },
   }),
   document.querySelector(".sliderSecond") &&
     tns({
@@ -30,7 +30,7 @@ document.querySelector(".sliderFirst") &&
       lazyload: !0,
       gutter: 20,
       controlsContainer: "#sliderSecondControls",
-      responsive: { 768: { items: 2 }, 990: { items: 5 } },
+      responsive: { 768: { items: 2 }, 990: { items: 4 } },
     }),
   document.querySelector(".sliderThird") &&
     tns({
@@ -64,7 +64,7 @@ document.querySelector(".sliderFirst") &&
       lazyload: !0,
       gutter: 20,
       controlsContainer: "#sliderFourthControls",
-      responsive: { 768: { items: 2 }, 990: { items: 4 } },
+      responsive: { 768: { items: 2 }, 990: { items: 3 } },
     }),
     document.querySelector(".sliderFifth") &&
     tns({
@@ -81,7 +81,7 @@ document.querySelector(".sliderFirst") &&
       lazyload: !0,
       gutter: 20,
       controlsContainer: "#sliderFifthControls",
-      responsive: { 768: { items: 2 }, 990: { items: 4 } },
+      responsive: { 768: { items: 2 }, 990: { items: 5 } },
     }),
     document.querySelector(".sliderSixth") &&
     tns({

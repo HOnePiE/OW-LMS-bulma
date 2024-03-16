@@ -79,16 +79,56 @@ table tfoot tr {
     padding: 1.5rem 1.5rem !important;
   }
 }
-.tabs li {
-  padding: 0 20px;
-}
-
 .card-content {
   padding: 1rem !important;
 }
 
 .card {
   box-shadow: none !important;
+}
+
+.dropdown-content {
+  background-color: black !important;
+}
+
+.card {
+  cursor: pointer;
+}
+.card:hover .card-content {
+  box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -2px rgba(255, 255, 255, 0.05) !important;
+}
+
+.controls {
+  position: relative;
+  top: -31px;
+}
+
+.controls .prev,
+.controls .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 0 5px 0 5px;
+  cursor: pointer;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.2s ease-in;
+  width: 40px;
+  height: 40px;
+}
+
+.controls .prev {
+  left: 0;
+}
+
+.controls .next {
+  right: 0;
+}
+
+.footer {
+  padding: 0rem 1.5rem 0rem !important;
 }
 
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
