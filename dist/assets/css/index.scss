@@ -2,17 +2,40 @@
 @import "./blur";
 @import "./table";
 @import "./brandStyle";
-@import "../libs/bulma/bulma.sass";
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
+@import "./slider";
 // @import "./brandStyle";
 
 $primary-color: #0096FF;
+$darkmode-light-color: #1e293b;
+$darkmode-dark-color: #0b1324;
+
+#db-wrapper {
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+}
 
 .blur-background {
   @include blur-background;
 }
 
 .background-color {
-  background-color: #0096FF;
+  background-color: $primary-color !important;
+}
+
+.background-darkmode-light {
+  background-color: $darkmode-light-color !important;
+}
+
+.background-darkmode-dark {
+  background-color: $darkmode-dark-color !important;
+}
+
+.primary-color {
+  color: #0096FF !important;
 }
 
 .primary-background {
@@ -20,6 +43,12 @@ $primary-color: #0096FF;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../images/background/Login\ bg.jpeg");
+}
+
+.brand {
+  background-image: url('../images/background/banner-background.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .hover-zoom:hover {
@@ -42,10 +71,6 @@ $primary-color: #0096FF;
   margin-bottom: 1rem;
 }
 
-.primary-color {
-  color: #0096FF;
-}
-
 .bg-dark-no-change {
   background-color: #000000;
 }
@@ -65,7 +90,6 @@ $primary-color: #0096FF;
 #eyeClose {
   display: none;
 }
-
 
 .password_input {
   position: relative;
@@ -108,9 +132,94 @@ $primary-color: #0096FF;
   }
 }
 
-.box-shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15)!important;
+.border-primary {
+  border-top: 1px solid $primary-color !important;
+  border-left: 1px solid $primary-color !important;
+  border-right: 1px solid $primary-color !important;
+  border-bottom: none !important;
 }
+
+.box-shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
 .text-shadow {
-  text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  text-shadow: 0 .5rem 1rem rgb(0, 0, 0) !important;
+}
+
+.rounded-span {
+  width: 26px;
+  border: 1px solid;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.navbar-vertical p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div,
+li,
+ul,
+ol,
+button,
+input,
+textarea {
+  // color: #0096FF !important;
+}
+
+.tabs a {
+  color: #fff;
+}
+
+.tabs li.is-active a {
+  color: $primary-color
+}
+
+::placeholder {
+  color: $primary-color !important;
+  opacity: 1 !important;
+}
+
+.flex-content, .text-smaller {
+  font-size: smaller;
+}
+
+.menu-link:hover,
+.menu-link:active {
+  background-color: $darkmode-dark-color !important;
+  color: #fff !important;
+}
+
+.menu-link:hover .icon,
+.menu-link:active .icon {
+  color: $primary-color !important;
+}
+
+.menu-link {
+  &.is-active {
+    background-color: $darkmode-dark-color !important;
+    color: #fff !important;
+    .icon{
+      color: $primary-color !important;
+    }
+  }
+}
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.toggle-collapse.is-active + .collapse-content {
+  max-height: 1000px; /* Adjust this value based on your needs */
+}
+
+.chevron-arrow {
+  transition: transform 0.3s ease;
 }

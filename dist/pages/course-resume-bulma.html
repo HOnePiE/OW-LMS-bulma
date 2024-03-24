@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Codescandy" />
+
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/brand/logo/brand-logo2.svg" />
+    <link rel="stylesheet" type="text/css" href="./assets/icons/fontawesome-free-6.5.1-web/css/all.min.css">
+    <!-- darkmode js -->
+    <script src="../assets/js/vendors/darkMode.js"></script>
+
+    <!-- Libs CSS -->
+    <link href="../assets/fonts/feather/feather.css" rel="stylesheet" />
+    <link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/index.css">
+
+    <!-- Theme CSS -->
+    <!-- <link rel="stylesheet" href="../assets/css/theme.min.css"> -->
+
+    <title>Course Resume</title>
+</head>
+
+<body>
+    <div class="background-darkmode-dark">
+        <div class="primary-background" style="width: 100%;height: 50px; position: absolute;">
+            <div class="ms-3">
+                <!-- <h5 class="mb-0">Geeks-Based</h5> -->
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar blur-background" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../index-bulma.html">
+                    <img src="../assets/images/brand/logo/brandLogo2.svg" style="
+                    max-height: max-content;
+                    height: auto;
+                    width: 50px;
+                ">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start is-flex is-justify-content-space-between" style="width: 100%;">
+                    <div class="navbar-item">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link has-text-light">
+                                Browse
+                            </a>
+                            <div class="navbar-dropdown background-darkmode-dark">
+                                <a class="navbar-item has-text-light"
+                                    href="./pages/course-filter-list.html">Bootstrap</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">React</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">GraphQl</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Gatsby</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Grunt</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Svelte</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Meteor</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">HTML5</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Angular</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-light">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-text-light has-dropdown is-hoverable">
+                            <a class="navbar-link has-text-light">
+                                Page
+                            </a>
+                            <div class="navbar-dropdown background-darkmode-dark has-text-light">
+                                <a class="navbar-item has-text-light"
+                                    href="./pages/course-filter-list.html">Bootstrap</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">React</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">GraphQl</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Gatsby</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Grunt</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Svelte</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Meteor</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">HTML5</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Angular</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-light">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                        <!-- header navbar no search -->
+                        <div class="navbar-item has-text-light field">
+                            <p class="control has-icons-right is-expanded">
+                                <input class="input is-rounded" type="search" id="search" placeholder="Search Courses">
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item">
+                        <!-- notification -->
+                        <div class="navbar-item">
+                            <div class="dropdown is-right">
+                                <div class="dropdown-trigger">
+                                    <div class="" aria-haspopup="true" aria-controls="dropdown-menu2">
+                                        <span class="icon is-small">
+                                            <!-- <i class="fas fa-angle-down" aria-hidden="true"></i> -->
+                                            <i class="fa-regular fa-bell has-text-light" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu2" role="menu" style="width: 400px;">
+                                    <div class="dropdown-content background-darkmode-dark">
+                                        <div class="dropdown-item columns">
+                                            <div class="column">
+                                                <a class="has-text-light" href="#">
+                                                    <div class="columns is-vcentered ml-2">
+                                                        <div class="image">
+                                                            <img class="is-rounded"
+                                                                src="./assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="column ml-3">
+                                                            <h5
+                                                                class="title is-5 has-text-weight-bold mb-1 has-text-light">
+                                                                Brooklyn Simmons</h5>
+                                                            <p class="mb-3">Just launched a new Courses React for
+                                                                Beginner.</p>
+                                                            <span class="is-size-6">
+                                                                <span>
+                                                                    <span class="icon has-text-success mr-1"><i
+                                                                            class="fas fa-thumbs-up"></i></span>
+                                                                    Oct 9,
+                                                                </span>
+                                                                <span class="ml-1">1:20 PM</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="column is-narrow has-text-centered">
+                                                <a href="#" class="tag is-rounded is-medium"
+                                                    style="background-color: #6c757d;" title="Mark as unread"></a>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <div class="dropdown-item columns">
+                                            <div class="column">
+                                                <a class="has-text-light" href="#">
+                                                    <div class="columns is-vcentered ml-2">
+                                                        <div class="image">
+                                                            <img class="is-rounded"
+                                                                src="./assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="column ml-3">
+                                                            <h5
+                                                                class="title is-5 has-text-weight-bold mb-1 has-text-light">
+                                                                Brooklyn Simmons</h5>
+                                                            <p class="mb-3">Just launched a new Courses React for
+                                                                Beginner.</p>
+                                                            <span class="is-size-6">
+                                                                <span>
+                                                                    <span class="icon has-text-success mr-1"><i
+                                                                            class="fas fa-thumbs-up"></i></span>
+                                                                    Oct 9,
+                                                                </span>
+                                                                <span class="ml-1">1:20 PM</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="column is-narrow has-text-centered">
+                                                <a href="#" class="tag is-rounded is-medium"
+                                                    style="background-color: #6c757d;" title="Mark as unread"></a>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <div class="dropdown-item columns">
+                                            <a href="#" class="has-text-light">
+                                                Link for any things
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- account -->
+                        <div class="navbar-item">
+                            <div class="dropdown is-right">
+                                <div class="dropdown-trigger">
+                                    <div class="image">
+                                        <img class="logo-size is-rounded" src="./assets/images/avatar/gigachad.jpg">
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu" style="width: 300px;">
+                                    <div class="dropdown-content background-darkmode-dark has-text-light">
+                                        <div class="dropdown-item">
+                                            <div class="media">
+                                                <figure class="media-left">
+                                                    <div class="image ">
+                                                        <img class="logo-size is-rounded"
+                                                            src="./assets/images/avatar/gigachad.jpg">
+                                                    </div>
+                                                </figure>
+                                                <div class="media-content">
+                                                    <p>
+                                                        <strong class="has-text-light">Phạm Anh Tuấn</strong>
+                                                        <br>
+                                                        phamanhtuan95vn@gmail.com
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-circle"></i>
+                                                </span>
+                                                <span>Status</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                                <span>Account</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                                <span>Account - Instructor</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-tachometer-alt"></i>
+                                                </span>
+                                                <span>Dashboard</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-cogs"></i>
+                                                </span>
+                                                <span>Admin management</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user-tie"></i>
+                                                </span>
+                                                <span>instructor admin management</span>
+                                            </span>
+                                        </a>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-power-off"></i>
+                                                </span>
+                                                <span>Sign Out</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <main style="max-width: 100%;
+        height: 100%;
+        width: 100%;
+        margin: 0px auto;">
+            <section class="card course-sidebar background-darkmode-light" id="courseAccordion">
+                <!-- List group -->
+                <!-- List group -->
+                <aside class="menu" style="height: 850px" data-simplebar>
+                    <p class="menu-label title p-4 m-0 has-text-primary-light border-primary has-text-centered">
+                        Table of Content
+                    </p>
+                    <ul class="menu-list">
+                        <!-- List Group item -->
+                        <li class="menu-list-item border-primary">
+                            <a
+                                class="has-dropdown toggle-collapse is-active primary-color is-flex is-justify-content-space-between">
+                                <span class="tag background-color has-text-black">1</span>
+                                <span class="has-text-weight-bold">Introduction to JavaScript</span>
+                                <span class="chevron-arrow ms-4">
+                                    <i class="fe fe-chevron-down fs-4"></i>
+                                </span>
+                            </a>
+                            <ul class="collapse-content is-hidden">
+                                <li>
+                                    <a class="menu-link is-flex is-justify-content-space-between">
+                                        <div class="flex-content">
+                                            <span class="icon"><i class="fe fe-play fs-6"></i></span>
+                                            <span>Introduction</span>
+                                        </div>
+                                        <div class="flex-content">
+                                            <span><small>1m 7s</small></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-link is-flex is-justify-content-space-between">
+                                        <div class="flex-content">
+                                            <span class="icon"><i class="fe fe-play fs-6"></i></span>
+                                            <span>Installing Development Software</span>
+                                        </div>
+                                        <div class="flex-content">
+                                            <span><small>3m 11s</small></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-link is-flex is-justify-content-space-between">
+                                        <div class="flex-content">
+                                            <span class="icon"><i class="fe fe-play fs-6"></i></span>
+                                            <span>Hello World Project from GitHub</span>
+                                        </div>
+                                        <div class="flex-content">
+                                            <span><small>2m 33s</small></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- add more items here -->
+                            </ul>
+                        </li>
+                        <!-- List Group item -->
+                        <li class="menu-list-item border-primary">
+                            <a
+                                class="has-dropdown toggle-collapse is-active primary-color is-flex is-justify-content-space-between">
+                                <span class="tag background-color has-text-black">2</span>
+                                <span class="has-text-weight-bold">Introduction to JavaScript</span>
+                                <span class="chevron-arrow ms-4">
+                                    <i class="fe fe-chevron-down fs-4"></i>
+                                </span>
+                            </a>
+                            <ul class="collapse-content is-hidden">
+                                <li>
+                                    <a class="menu-link is-flex is-justify-content-space-between">
+                                        <div class="flex-content">
+                                            <span class="icon"><i class="fe fe-play fs-6"></i></span>
+                                            <span>Introduction</span>
+                                        </div>
+                                        <div class="flex-content">
+                                            <span><small>1m 7s</small></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-link is-flex is-justify-content-space-between">
+                                        <div class="flex-content">
+                                            <span class="icon"><i class="fe fe-play fs-6"></i></span>
+                                            <span>Installing Development Software</span>
+                                        </div>
+                                        <div class="flex-content">
+                                            <span><small>3m 11s</small></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-link is-flex is-justify-content-space-between">
+                                        <div class="flex-content">
+                                            <span class="icon"><i class="fe fe-play fs-6"></i></span>
+                                            <span>Hello World Project from GitHub</span>
+                                        </div>
+                                        <div class="flex-content">
+                                            <span><small>2m 33s</small></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-link is-flex is-justify-content-space-between">
+                                        <div class="flex-content">
+                                            <span class="icon"><i class="fe fe-play fs-6"></i></span>
+                                            <span>Our Sample Website</span>
+                                        </div>
+                                        <div class="flex-content">
+                                            <span><small>2m 15s</small></span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- List Group item -->
+                        <li class="menu-list-item border-primary">
+                            <a
+                                class="has-dropdown toggle-collapse is-active primary-color is-flex is-justify-content-space-between">
+                                <span class="tag background-color has-text-black">3</span>
+                                <span class="has-text-weight-bold">JavaScript Beginning</span>
+                                <span class="chevron-arrow ms-4">
+                                    <i class="fe fe-chevron-down fs-4"></i>
+                                </span>
+                            </a>
+                            <ul class="collapse-content is-hidden">
+                                <li>
+                                    <a class="menu-link is-flex is-justify-content-space-between">
+                                        <div class="flex-content">
+                                            <span class="icon"><i class="fe fe-lock fs-6"></i></span>
+                                            <span>Introduction</span>
+                                        </div>
+                                        <div class="flex-content">
+                                            <span><small>1m 41s</small></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-link is-flex is-justify-content-space-between">
+                                        <div class="flex-content">
+                                            <span class="icon"><i class="fe fe-lock fs-6"></i></span>
+                                            <span>Adding JavaScript Code to a Web Page</span>
+                                        </div>
+                                        <div class="flex-content">
+                                            <span><small>3m 39s</small></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-link is-flex is-justify-content-space-between">
+                                        <div class="flex-content">
+                                            <span class="icon"><i class="fe fe-lock fs-6"></i></span>
+                                            <span>Working with JavaScript Files</span>
+                                        </div>
+                                        <div class="flex-content">
+                                            <span><small>6m 18s</small></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-link is-flex is-justify-content-space-between">
+                                        <div class="flex-content">
+                                            <span class="icon"><i class="fe fe-lock fs-6"></i></span>
+                                            <span>Formatting Code</span>
+                                        </div>
+                                        <div class="flex-content">
+                                            <span><small>2m 18s</small></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- Add more list items as needed -->
+                            </ul>
+                        </li>
+                        <!-- List Group item -->
+                        <li class="menu-list-item border-primary">
+                            <a
+                                class="has-dropdown toggle-collapse is-active primary-color is-flex is-justify-content-space-between">
+                                <span class="tag background-color has-text-black">4</span>
+                                <span class="has-text-weight-bold">Summary</span>
+                                <span class="chevron-arrow ms-4">
+                                    <i class="fe fe-chevron-down fs-4"></i>
+                                </span>
+                            </a>
+                            <div class="collapse-content is-hidden">
+                                <p class="text-smaller m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse velit eos
+                                    sunt ab inventore est tenetur blanditiis? Voluptas eius molestiae ad itaque tempora
+                                    nobis minima eveniet aperiam molestias.</p>
+                                <p class="text-smaller m-3">Maiores natus expedita dolores ea non possimus magnam corrupt i quas rem unde quo
+                                    enim porro culpa! Quaerat veritatis veniam corrupti iusto.</p>
+                            </div>
+                        </li>    
+                    </ul>
+                </aside>
+               
+            </section>
+            <section class="mt-3 course-container is-hidden">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            <!-- Tab content -->
+                            <div class="tab-content content" id="course-tabContent">
+                                <div class="tab-pane fade show active" id="course-intro" role="tabpanel"
+                                    aria-labelledby="course-intro-tab">
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <div>
+                                            <h3 class="mb-0 text-truncate-line-2">Introduction</h3>
+                                        </div>
+                                        <div>
+                                            <!-- Dropdown -->
+                                            <span class="dropdown">
+                                                <a href="#" class="ms-2" id="dropdownInfo" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fe fe-help-circle"></i>
+                                                </a>
+                                                <span class="dropdown-menu dropdown-menu-lg p-3 dropdown-menu-end"
+                                                    aria-labelledby="dropdownInfo">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. cupiditate
+                                                    consequatur rerum eius ad ut officiis
+                                                </span>
+                                            </span>
+                                            <!-- Dropdown -->
+                                            <span class="dropdown">
+                                                <a class=" " href="#" role="button" id="shareDropdown2"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="fe fe-more-vertical"></i>
+                                                </a>
+                                                <span class="dropdown-menu dropdown-menu-end"
+                                                    aria-labelledby="shareDropdown2">
+                                                    <span class="dropdown-header">Share</span>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor"
+                                                                class="bi bi-facebook text-secondary"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                                            </svg>
+                                                        </span>
+                                                        <span>Facebook</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor"
+                                                                class="bi bi-twitter text-secondary"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                                                            </svg>
+                                                        </span>
+                                                        <span>Twitter</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor"
+                                                                class="bi bi-linkedin text-secondary"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                                            </svg>
+                                                        </span>
+                                                        <span>Linked</span>
+                                                        In
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor" class="bi bi-copy"
+                                                                viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span>Copy</span>
+                                                        Link
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- Video -->
+
+                                    <div class="embed-responsive position-relative w-100 d-block overflow-hidden p-0"
+                                        style="height: 600px">
+                                        <!-- <iframe class="position-absolute top-0 end-0 start-0 end-0 bottom-0 h-100 w-100"
+                                        width="560" height="315"
+                                        src="https://www.youtube.com/embed/Nfzi7034Kbg?si=C2_CU7iIZJA5VWcS"
+                                        title="Geeks - Academy and LMS Template" frameborder="0"></iframe> -->
+                                        <iframe class="position-absolute top-0 end-0 start-0 end-0 bottom-0 h-100 w-100"
+                                            width="560" height="315" src="https://www.youtube.com/embed/lfmg-EJ8gm4"
+                                            title="JavaScript Full Course for free 🌐 (2024)" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <!-- Tab pane -->
+                                <div class="tab-pane fade" id="course-development" role="tabpanel"
+                                    aria-labelledby="course-development-tab">
+                                    <div class="d-lg-flex align-items-center justify-content-between mb-4">
+                                        <div>
+                                            <h2 class="h3 mb-0">Installing Development Software</h2>
+                                        </div>
+                                        <div>
+                                            <!-- Dropdown -->
+                                            <span class="dropdown">
+                                                <a href="#" class="ms-2" id="dropdownInfo2" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe fe-help-circle"></i>
+                                                </a>
+                                                <span class="dropdown-menu dropdown-menu-lg p-3"
+                                                    aria-labelledby="dropdownInfo2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. cupiditate
+                                                    consequatur rerum eius ad ut officiis
+                                                </span>
+                                            </span>
+                                            <!-- Dropdown -->
+                                            <span class="dropdown">
+                                                <a class=" " href="#" role="button" id="shareDropdown2"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="fe fe-more-vertical"></i>
+                                                </a>
+                                                <span class="dropdown-menu dropdown-menu-end"
+                                                    aria-labelledby="shareDropdown2">
+                                                    <span class="dropdown-header">Share</span>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor"
+                                                                class="bi bi-facebook text-secondary"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                                            </svg>
+                                                        </span>
+                                                        <span>Facebook</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor"
+                                                                class="bi bi-twitter text-secondary"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                                                            </svg>
+                                                        </span>
+                                                        <span>Twitter</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor"
+                                                                class="bi bi-linkedin text-secondary"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                                            </svg>
+                                                        </span>
+                                                        <span>Linked</span>
+                                                        In
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor" class="bi bi-copy"
+                                                                viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span>Copy</span>
+                                                        Link
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- Video -->
+                                    <div class="embed-responsive position-relative w-100 d-block overflow-hidden p-0"
+                                        style="height: 600px">
+                                        <iframe class="position-absolute top-0 end-0 start-0 end-0 bottom-0 h-100 w-100"
+                                            width="560" height="315"
+                                            src="https://www.youtube.com/embed/Nfzi7034Kbg?si=C2_CU7iIZJA5VWcS"
+                                            title="Geeks - Academy and LMS Template" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                                <!-- Tab pane -->
+                                <div class="tab-pane fade" id="course-project" role="tabpanel"
+                                    aria-labelledby="course-project-tab">
+                                    <div class="d-lg-flex align-items-center justify-content-between mb-4">
+                                        <div>
+                                            <h2 class="h3 mb-0">Hello World Project from GitHub</h2>
+                                        </div>
+                                        <div>
+                                            <!-- Dropdown -->
+                                            <span class="dropdown">
+                                                <a href="#" class="ms-2" id="dropdownInfo3" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe fe-help-circle"></i>
+                                                </a>
+                                                <span class="dropdown-menu dropdown-menu-lg p-3"
+                                                    aria-labelledby="dropdownInfo3">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. cupiditate
+                                                    consequatur rerum eius ad ut officiis
+                                                </span>
+                                            </span>
+                                            <!-- Dropdown -->
+                                            <span class="dropdown">
+                                                <a class=" " href="#" role="button" id="shareDropdown3"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="fe fe-more-vertical"></i>
+                                                </a>
+                                                <span class="dropdown-menu dropdown-menu-end"
+                                                    aria-labelledby="shareDropdown3">
+                                                    <span class="dropdown-header">Share</span>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor"
+                                                                class="bi bi-facebook text-secondary"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                                            </svg>
+                                                        </span>
+                                                        <span>Facebook</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor"
+                                                                class="bi bi-twitter text-secondary"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                                                            </svg>
+                                                        </span>
+                                                        <span>Twitter</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor"
+                                                                class="bi bi-linkedin text-secondary"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                                            </svg>
+                                                        </span>
+                                                        <span>Linked</span>
+                                                        In
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor" class="bi bi-copy"
+                                                                viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span>Copy</span>
+                                                        Link
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- Video -->
+                                    <div class="embed-responsive position-relative w-100 d-block overflow-hidden p-0"
+                                        style="height: 600px">
+                                        <iframe class="position-absolute top-0 end-0 start-0 end-0 bottom-0 h-100 w-100"
+                                            width="560" height="315"
+                                            src="https://www.youtube.com/embed/Nfzi7034Kbg?si=C2_CU7iIZJA5VWcS"
+                                            title="Geeks - Academy and LMS Template" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                                <!-- Tab pane -->
+                                <div class="tab-pane fade" id="course-website" role="tabpanel"
+                                    aria-labelledby="course-website-tab">
+                                    <div class="d-lg-flex align-items-center justify-content-between mb-4">
+                                        <div>
+                                            <h2 class="h3 mb-0">Our Sample Website</h2>
+                                        </div>
+                                        <div>
+                                            <!-- Dropdown -->
+                                            <span class="dropdown">
+                                                <a href="#" class="ms-2" id="dropdownInfo4" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe fe-help-circle"></i>
+                                                </a>
+                                                <span class="dropdown-menu dropdown-menu-lg p-3"
+                                                    aria-labelledby="dropdownInfo4">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. cupiditate
+                                                    consequatur rerum eius ad ut officiis
+                                                </span>
+                                            </span>
+                                            <!-- Dropdown -->
+                                            <span class="dropdown">
+                                                <a class=" " href="#" role="button" id="shareDropdown4"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="fe fe-more-vertical"></i>
+                                                </a>
+                                                <span class="dropdown-menu dropdown-menu-end"
+                                                    aria-labelledby="shareDropdown4">
+                                                    <span class="dropdown-header">Share</span>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor"
+                                                                class="bi bi-facebook text-secondary"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                                            </svg>
+                                                        </span>
+                                                        <span>Facebook</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor"
+                                                                class="bi bi-twitter text-secondary"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                                                            </svg>
+                                                        </span>
+                                                        <span>Twitter</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor"
+                                                                class="bi bi-linkedin text-secondary"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                                            </svg>
+                                                        </span>
+                                                        <span>Linked</span>
+                                                        In
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="me-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                                height="12" fill="currentColor" class="bi bi-copy"
+                                                                viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span>Copy</span>
+                                                        Link
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- Video -->
+                                    <div class="embed-responsive position-relative w-100 d-block overflow-hidden p-0"
+                                        style="height: 600px">
+                                        <iframe class="position-absolute top-0 end-0 start-0 end-0 bottom-0 h-100 w-100"
+                                            width="560" height="315"
+                                            src="https://www.youtube.com/embed/Nfzi7034Kbg?si=C2_CU7iIZJA5VWcS"
+                                            title="Geeks - Academy and LMS Template" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Card -->
+
+        </main>
+    </div>
+    <!-- Scripts -->
+    <!-- Libs JS -->
+    <script src="../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../assets/js/theme.min.js"></script>
+
+    <script src="../assets/js/vendors/bulma.js"></script>
+
+</body>
+
+</html>

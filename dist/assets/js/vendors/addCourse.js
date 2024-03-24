@@ -1,5 +1,5 @@
 // import initializeQuill from "./editor.js";
-
+document.addEventListener('DOMContentLoaded', () => {
 const addSectionModal = document.getElementById("addSectionModal");
 const addSectionButton = document.getElementById("addSectionButton");
 const lectureContainer1 = document.getElementById("lectureContainer");
@@ -7,7 +7,6 @@ const sectionContainer = document.getElementById("sectionContainer")
 const inputSectionName = document.getElementById("inputSectionName");
 
 let term = 0;
-
 addSectionButton.addEventListener("click", function (event) {
   event.preventDefault();
   term++
@@ -20,41 +19,78 @@ addSectionButton.addEventListener("click", function (event) {
   const sectionName = inputSectionName.value;
   if (sectionName.trim() !== "") {
     const sectionItem = document.createElement("div");
-    sectionItem.innerHTML = `
-        <div id="${secTionId}" class="bg-light rounded p-2 mb-4">
-        <div class="d-flex justify-content-between align-items-center">
-        <h4>${sectionName}</h4>
-        <a id="sectionDeleteBtn" href="#" class="me-1 text-inherit" data-bs-toggle="tooltip" data-placement="top"
-                            title="Delete">
-                            <i class="fe fe-trash-2 fs-6"></i>
-                        </a>
-        </div>
-        
-        <!-- List group -->
-        <div class="list-group list-group-flush border-top-0" id="${courseListId}">
-            <div id="${courseId}">
-                
-            </div>
-        </div>
-        <a href="#"  class="btn btn-outline-primary btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#${modalId}">Add Lecture +</a>
-    </div>
+    // sectionItem.innerHTML = `
+    //     <div id="${secTionId}" class="bg-light rounded p-2 mb-4">
+    //     <div class="d-flex justify-content-between align-items-center">
+    //     <h4>${sectionName}</h4>
+    //     <a id="sectionDeleteBtn" href="#" class="me-1 text-inherit" data-bs-toggle="tooltip" data-placement="top"
+    //                         title="Delete">
+    //                         <i class="fe fe-trash-2 fs-6"></i>
+    //                     </a>
+    //     </div>
 
-    <form class="modal fade" id="${modalId}" tabindex="-1" role="dialog" aria-labelledby="addLectureModalLabel" aria-hidden="true" name="lec1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="addLectureModalLabel">Add New Lecture</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <input id="${inputLectureNameId}" class="input_model form-control mb-3" type="text" placeholder="Add new lecture " />
-                        <button id="addNewLecture_btn" class="addNewLecture_btn btn btn-primary" type="submit">Add New Lecture</button>
-                        <button class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close" type="Button">Close</button>
-                    </div>
-                </div>
-            </div>
-        </form>
-              `;
+    //     <!-- List group -->
+    //     <div class="list-group list-group-flush border-top-0" id="${courseListId}">
+    //         <div id="${courseId}">
+
+    //         </div>
+    //     </div>
+    //     <a href="#"  class="btn btn-outline-primary btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#${modalId}">Add Lecture +</a>
+    // </div>
+
+    // <form class="modal fade" id="${modalId}" tabindex="-1" role="dialog" aria-labelledby="addLectureModalLabel" aria-hidden="true" name="lec1">
+    //         <div class="modal-dialog modal-dialog-centered">
+    //             <div class="modal-content">
+    //                 <div class="modal-header">
+    //                     <h4 class="modal-title" id="addLectureModalLabel">Add New Lecture</h4>
+    //                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    //                 </div>
+    //                 <div class="modal-body">
+    //                     <input id="${inputLectureNameId}" class="input_model form-control mb-3" type="text" placeholder="Add new lecture " />
+    //                     <button id="addNewLecture_btn" class="addNewLecture_btn btn btn-primary" type="submit">Add New Lecture</button>
+    //                     <button class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close" type="Button">Close</button>
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     </form>
+    //           `;
+    sectionItem.innerHTML = `
+      <div id="${secTionId}" class="box mb-4 background-darkmode-light">
+                                                        <div class="level">
+                                                            <div class="level-left">
+                                                                <h4 class="title is-4">${sectionName}</h4>
+                                                            </div>
+                                                            <div class="level-right">
+                                                                <a id="sectionDeleteBtn" href="#" class="delete"></a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- List group -->
+                                                        <div id="${courseListId}" class="">
+                                                            <div id="${courseId}">
+                                                                <!-- lectures -->
+                                                            </div>
+                                                        </div>
+                                                        <button href="#" class="button is-small is-primary mt-3 js-modal-trigger"
+                                                            data-target="${modalId}">Add Lecture +</button>
+                                                    </div>
+
+                                                    <div id="${modalId}" class="modal" >
+                                                    <div class="modal-background"></div>
+                                                    <div class="modal-card ">
+                                                        <header class="modal-card-head background-darkmode-light">
+                                                            <p class="modal-card-title title has-text-centered">Add New Lecture</p>
+                                                            <button class="delete modal-close" aria-label="close"></button>
+                                                        </header>
+                                                        <section class="modal-card-body background-darkmode-dark">
+                                                            <input id="${inputLectureNameId}" class="input mb-3" type="text" placeholder="Add new lecture " />
+                                                        </section>
+                                                        <footer class="modal-card-foot background-darkmode-dark">
+                                                            <button id="addNewLecture_btn" class="button is-primary mr-2" type="submit">Add New Lecture</button>
+                                                            <button class="button" aria-label="Close">Close</button>
+                                                        </footer>
+                                                    </div>
+                                                </div>                                             
+      `
     sectionContainer.appendChild(sectionItem)
     inputSectionName.value = "";
 
@@ -164,3 +200,4 @@ addSectionButton.addEventListener("click", function (event) {
     });
   }
 });
+});0

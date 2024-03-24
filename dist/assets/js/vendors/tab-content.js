@@ -5,3 +5,4 @@ function switchTab(tabId) {
   $("#" + tabId + "-tab").addClass("is-active");
   $("#" + tabId + "-tab-content").removeClass("is-hidden");
 }
+console.log;

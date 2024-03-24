@@ -1,0 +1,1120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Codescandy" />
+
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/brand/logo/brand-logo2.svg" />
+    <link rel="stylesheet" type="text/css" href="../../assets/icons/fontawesome-free-6.5.1-web/css/all.min.css">
+
+    <!-- darkmode js -->
+    <!-- <script src="../../assets/js/vendors/darkMode.js"></script> -->
+
+    <!-- Libs CSS -->
+    <link href="../../assets/fonts/feather/feather.css" rel="stylesheet" />
+    <link href="../../assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="../../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/dist/assets/css/index.css">
+    <!-- Theme CSS -->
+    <!-- <link rel="stylesheet" href="../../assets/css/theme.min.css"> -->
+
+
+    <title>Course - All Course</title>
+</head>
+
+<body>
+    <div id="db-wrapper" class="is-flex">
+        <!-- navbar vertical -->
+        <!-- Sidebar -->
+        <div class="navbar navbar-vertical background-darkmode-dark is-flex-grow-1">
+            <!-- Brand logo -->
+            <a class="navbar-item is-justify-content-center" href="../../index.html">
+                <img class="logo-size" src="../../assets/images/brand/logo/brand-logo2-backgroundRemoved.png"
+                    alt="Geeks" />
+                <h3 class="ms-2 primary-color is-size-4 has-text-weight-bold">OW</h3>
+            </a>
+            <!-- Navbar nav -->
+            <aside class="menu primary-color">
+                <ul class="menu-list" id="sideNavbar">
+                    <li>
+                        <a class="has-icons-left toggle-collapse is-flex is-justify-content-space-between">
+                            <span>
+                                <span class="icon is-small"><i class="fa-solid fa-house"></i></i></span>
+                                <span class="has-text-weight-bold">Dashboard</span>
+                            </span>
+                            <span class="icon is-small"><i class="fa-solid fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="is-hidden">
+                            <li><a href="../../pages/dashboard/admin-dashboard.html">Overview</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-icons-left toggle-collapse is-flex is-justify-content-space-between">
+                            <span>
+                                <span class="icon is-small"><i class="fas fa-book"></i></span>
+                                <span class="has-text-weight-bold">Courses</span>
+                            </span>
+                            <span class="icon is-small"><i class="fa-solid fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="is-hidden">
+                            <li><a href="../../pages/dashboard/admin-course-overview.html">All Courses</a></li>
+                            <li><a href="../../pages/dashboard/admin-course-category.html">Courses Category</a></li>
+                            <li><a href="../../pages/dashboard/admin-course-category-single.html">Category Single</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-icons-left toggle-collapse is-flex is-justify-content-space-between">
+                            <span>
+                                <span class="icon is-small"><i class="fas fa-user"></i></span>
+                                <span class="has-text-weight-bold">User</span>
+                            </span>
+                            <span class="icon is-small"><i class="fa-solid fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="is-hidden">
+                            <li><a href="../../pages/dashboard/admin-instructor.html">Instructor</a></li>
+                            <li><a href="../../pages/dashboard/admin-students.html">Students</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="navbar-divider">
+                    </li>
+                    <li>
+                        <p class="menu-label has-text-weight-bold">Apps</p>
+                    </li>
+                    <li>
+                        <a href="../../pages/dashboard/task-kanban.html">
+                            <span class="icon is-small"><i class="fa-solid fa-list-check"></i></span>
+                            <span class="has-text-weight-bold">Task</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../pages/dashboard/calendar.html">
+                            <span class="icon is-small"><i class="fas fa-calendar"></i></span>
+                            <span class="has-text-weight-bold">Calendar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <hr class="navbar-divider">
+                    </li>
+                    <li>
+                        <a href="../../pages/dashboard/chat-app.html">
+                            <span class="icon is-small"><i class="fa-solid fa-right-from-bracket"></i></span>
+                            <span class="has-text-weight-bold">Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+<!-- page content -->
+        <main id="page-content" class="is-flex-grow-5 background-darkmode-light" style="overflow-y: scroll;">
+            <!-- header -->
+            <div class="navbar header is-flex-grow-1 background-darkmode-dark">
+                <div class="navbar-brand header is-justify-content-space-between">
+                    <a class="navbar-item" href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="navbar-item">
+                        <div class="field has-addons">
+                            <p class="control has-icons-left">
+                                <input class="input background-darkmode-dark has-text-light" type="text" placeholder="Search Entire Dashboard">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item">
+                        <!-- notification -->
+                        <div class="navbar-item">
+                            <div class="dropdown is-right">
+                                <div class="dropdown-trigger">
+                                    <div class="" aria-haspopup="true" aria-controls="dropdown-menu2">
+                                        <span class="icon is-small">
+                                            <!-- <i class="fas fa-angle-down" aria-hidden="true"></i> -->
+                                            <i class="fa-regular fa-bell has-text-light" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu2" role="menu" style="width: 400px;">
+                                    <div class="dropdown-content background-darkmode-dark">
+                                        <div class="dropdown-item columns">
+                                            <div class="column">
+                                                <a class="has-text-light" href="#">
+                                                    <div class="columns is-vcentered ml-2">
+                                                        <div class="image">
+                                                            <img class="is-rounded"
+                                                                src="../../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="column ml-3">
+                                                            <h5 class="title is-5 has-text-weight-bold mb-1 has-text-light">
+                                                                Brooklyn Simmons</h5>
+                                                            <p class="mb-3">Just launched a new Courses React for
+                                                                Beginner.</p>
+                                                            <span class="is-size-6">
+                                                                <span>
+                                                                    <span class="icon has-text-success mr-1"><i
+                                                                            class="fas fa-thumbs-up"></i></span>
+                                                                    Oct 9,
+                                                                </span>
+                                                                <span class="ml-1">1:20 PM</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="column is-narrow has-text-centered">
+                                                <a href="#" class="tag is-rounded is-medium"
+                                                    style="background-color: #6c757d;" title="Mark as unread"></a>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <div class="dropdown-item columns">
+                                            <div class="column">
+                                                <a class="has-text-light" href="#">
+                                                    <div class="columns is-vcentered ml-2">
+                                                        <div class="image">
+                                                            <img class="is-rounded"
+                                                                src="../../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="column ml-3">
+                                                            <h5 class="title is-5 has-text-weight-bold mb-1 has-text-light">
+                                                                Brooklyn Simmons</h5>
+                                                            <p class="mb-3">Just launched a new Courses React for
+                                                                Beginner.</p>
+                                                            <span class="is-size-6">
+                                                                <span>
+                                                                    <span class="icon has-text-success mr-1"><i
+                                                                            class="fas fa-thumbs-up"></i></span>
+                                                                    Oct 9,
+                                                                </span>
+                                                                <span class="ml-1">1:20 PM</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="column is-narrow has-text-centered">
+                                                <a href="#" class="tag is-rounded is-medium"
+                                                    style="background-color: #6c757d;" title="Mark as unread"></a>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <div class="dropdown-item columns">
+                                            <a href="#" class="has-text-light">
+                                                Link for any things
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- account -->
+                        <div class="navbar-item">
+                            <div class="dropdown is-right">
+                                <div class="dropdown-trigger">
+                                    <div class="image">
+                                        <img class="logo-size is-rounded" src="../../assets/images/avatar/gigachad.jpg">
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu" style="width: 300px;">
+                                    <div class="dropdown-content background-darkmode-dark has-text-light">
+                                        <div class="dropdown-item">
+                                            <div class="media">
+                                                <figure class="media-left">
+                                                    <div class="image ">
+                                                        <img class="logo-size is-rounded"
+                                                            src="../../assets/images/avatar/gigachad.jpg">
+                                                    </div>
+                                                </figure>
+                                                <div class="media-content">
+                                                    <p>
+                                                        <strong class="has-text-light">Phạm Anh Tuấn</strong>
+                                                        <br>
+                                                        phamanhtuan95vn@gmail.com
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-circle"></i>
+                                                </span>
+                                                <span>Status</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                                <span>Account</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                                <span>Account - Instructor</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-tachometer-alt"></i>
+                                                </span>
+                                                <span>Dashboard</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-cogs"></i>
+                                                </span>
+                                                <span>Admin management</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user-tie"></i>
+                                                </span>
+                                                <span>instructor admin management</span>
+                                            </span>
+                                        </a>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-power-off"></i>
+                                                </span>
+                                                <span>Sign Out</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <section class="section">
+                <div class="columns">
+                    <div class="column">
+                        <!-- Page Header -->
+                        <div class="box background-darkmode-dark" style="padding: 0.75rem;">
+                            <div class="level">
+                                <div class="">
+                                    <h1 class="is-size-4 has-text-weight-bold has-text-light">Courses</h1>
+                                    <!-- Breadcrumb -->
+                                    <nav class="breadcrumb is-small " aria-label="breadcrumbs">
+                                        <ul>
+                                            <li><a href="#">Courses</a></li>
+                                            <li class="is-active"><a href="#" aria-current="page">All</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="level-right">
+                                    <a href="../add-course-bulma.html" class="button is-primary is-small">Add New Courses</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <header class="card-header">
+                                <div>
+                                    <div class="tabs is-toggle">
+                                        <ul>
+                                            <li id="all-tab" class="is-active" >
+                                                <a onclick="switchTab('all')" href="#courses">
+                                                    <span>All</span>
+                                                </a>
+                                            </li>
+                                            <li id="approved-tab" onclick="switchTab('approved')">
+                                                <a onclick="switchTab('approved')" href="#approved">
+                                                    <span>Approved</span>
+                                                </a>
+                                            </li>
+                                            <li id="pending-tab" onclick="switchTab('pending')">
+                                                <a onclick="switchTab('pending')" href="#pending">
+                                                    <span>Pending</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="columns is-paddingless mt-1">
+                                <form class="column is-flex is-align-items-center">
+                                    <div class="control has-icons-left" style="width: 100%;">
+                                        <input class="input" type="search" placeholder="Search Course">
+                                        <span class="icon is-left">
+                                            <i class="fe fe-search"></i>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div>
+                                <div class="tab-content" id="tabContent">
+                                    <!--Tab pane -->
+                                    <div class="" id="all-tab-content" role="tabpanel" aria-labelledby="courses-tab" >
+                                        <div class="table-container">
+                                            <table class="table is-hoverable is-fullwidth background-darkmode-dark">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Courses</th>
+                                                        <th>Instructor</th>
+                                                        <th>STATUS</th>
+                                                        <th>ACTION</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- items -->
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#">
+                                                                <div class="media">
+                                                                    <figure class="media-left">
+                                                                        <p class="image thumbnail-size">
+                                                                            <img src="../../assets/images/course/course-gatsby.jpg" alt="">
+                                                                        </p>
+                                                                    </figure>
+                                                                    <div class="media-content">
+                                                                        <p class="title is-6">Revolutionize how you build the web...</p>
+                                                                        <p class="subtitle is-7">Added on 7 July, 2023</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <figure class="media-left">
+                                                                    <p class="image is-32x32">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic female1.jpg" alt="" class="is-rounded">
+                                                                    </p>
+                                                                </figure>
+                                                                <div class="media-content">
+                                                                    <p class="title is-6">Reva Yokk</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="tag is-warning">Pending</span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="button is-small is-outlined">Reject</a>
+                                                            <a href="#" class="button is-small is-success">Approved</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown is-right">
+                                                                <div class="dropdown-trigger">
+                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div class="dropdown-content">
+                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                            Edit Course
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#">
+                                                                <div class="media">
+                                                                    <figure class="media-left">
+                                                                        <p class="image thumbnail-size">
+                                                                            <img src="../../assets/images/course/course-angular.jpg" alt="">
+                                                                        </p>
+                                                                    </figure>
+                                                                    <div class="media-content">
+                                                                        <p class="title is-6">Get Start with Angular...</p>
+                                                                        <p class="subtitle is-7">Added on 3 July, 2023</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <figure class="media-left">
+                                                                    <p class="image is-32x32">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic male1.jpg" alt="" class="is-rounded">
+                                                                    </p>
+                                                                </figure>
+                                                                <div class="media-content">
+                                                                    <p class="title is-6">Jacob Jones</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="tag is-warning">Pending</span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="button is-small is-outlined">Reject</a>
+                                                            <a href="#" class="button is-small is-success">Approved</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown is-right">
+                                                                <div class="dropdown-trigger">
+                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div class="dropdown-content">
+                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item is-hovered">                                                                            
+                                                                            Edit Course
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#">
+                                                                <div class="media">
+                                                                    <figure class="media-left">
+                                                                        <p class="image thumbnail-size">
+                                                                            <img src="../../assets/images/course/course-react.jpg" alt="">
+                                                                        </p>
+                                                                    </figure>
+                                                                    <div class="media-content">
+                                                                        <p class="title is-6">Get Start with React...</p>
+                                                                        <p class="subtitle is-7">Added on 4 July, 2023</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <figure class="media-left">
+                                                                    <p class="image is-32x32">
+                                                                        <img src="../../assets/images/avatar/avatar-2.jpg" alt="" class="is-rounded">
+                                                                    </p>
+                                                                </figure>
+                                                                <div class="media-content">
+                                                                    <p class="title is-6">April Noms</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="tag is-success">Live</span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown is-right">
+                                                                <div class="dropdown-trigger">
+                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div class="dropdown-content">
+                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                            Edit Course
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#">
+                                                                <div class="media">
+                                                                    <figure class="media-left">
+                                                                        <p class="image thumbnail-size">
+                                                                            <img src="../../assets/images/course/course-laravel.jpg" alt="">
+                                                                        </p>
+                                                                    </figure>
+                                                                    <div class="media-content">
+                                                                        <p class="title is-6">Get Start with Laravel...</p>
+                                                                        <p class="subtitle is-7">Added on 5 July, 2023</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <figure class="media-left">
+                                                                    <p class="image is-32x32">
+                                                                        <img src="../../assets/images/avatar/avatar-9.jpg" alt="" class="is-rounded">
+                                                                    </p>
+                                                                </figure>
+                                                                <div class="media-content">
+                                                                    <p class="title is-6">Sobo Rikhan</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="tag is-success">Live</span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown is-right">
+                                                                <div class="dropdown-trigger">
+                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div class="dropdown-content">
+                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                            Edit Course
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#">
+                                                                <div class="media">
+                                                                    <figure class="media-left">
+                                                                        <p class="image thumbnail-size">
+                                                                            <img src="../../assets/images/course/course-node.jpg" alt="">
+                                                                        </p>
+                                                                    </figure>
+                                                                    <div class="media-content">
+                                                                        <p class="title is-6">Get Start with Node Heading Title ...</p>
+                                                                        <p class="subtitle is-7">Added on 5 July, 2023</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <figure class="media-left">
+                                                                    <p class="image is-32x32">
+                                                                        <img src="../../assets/images/avatar/avatar-3.jpg" alt="" class="is-rounded">
+                                                                    </p>
+                                                                </figure>
+                                                                <div class="media-content">
+                                                                    <p class="title is-6">Sina Ray</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="tag is-success">Live</span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown is-right">
+                                                                <div class="dropdown-trigger">
+                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div class="dropdown-content">
+                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                            Edit Course
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#">
+                                                                <div class="media">
+                                                                    <figure class="media-left">
+                                                                        <p class="image thumbnail-size">
+                                                                            <img src="../../assets/images/course/course-javascript.jpg" alt="">
+                                                                        </p>
+                                                                    </figure>
+                                                                    <div class="media-content">
+                                                                        <p class="title is-6">Courses JavaScript Heading Title ...</p>
+                                                                        <p class="subtitle is-7">Added on 5 July, 2023</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <figure class="media-left">
+                                                                    <p class="image is-32x32">
+                                                                        <img src="../../assets/images/avatar/avatar-10.jpg" alt="" class="is-rounded">
+                                                                    </p>
+                                                                </figure>
+                                                                <div class="media-content">
+                                                                    <p class="title is-6">Guy Hawkins</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="tag is-success">Live</span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown is-right">
+                                                                <div class="dropdown-trigger">
+                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div class="dropdown-content">
+                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                            Edit Course
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!--Tab pane -->
+                                    <div id="approved-tab-content" class="is-hidden" role="tabpanel" aria-labelledby="approved-tab">
+                                        <div class="table-container">
+                                            <table class="table is-hoverable is-fullwidth background-darkmode-dark ">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Courses</th>
+                                                        <th>Instructor</th>
+                                                        <th>STATUS</th>
+                                                        <th>ACTION</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- items -->
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#">
+                                                                <div class="media">
+                                                                    <figure class="media-left">
+                                                                        <p class="image thumbnail-size">
+                                                                            <img src="../../assets/images/course/course-react.jpg" alt="">
+                                                                        </p>
+                                                                    </figure>
+                                                                    <div class="media-content">
+                                                                        <p class="title is-6">Get Start with React...</p>
+                                                                        <p class="subtitle is-7">Added on 4 July, 2023</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <figure class="media-left">
+                                                                    <p class="image is-32x32">
+                                                                        <img src="../../assets/images/avatar/avatar-2.jpg" alt="" class="is-rounded">
+                                                                    </p>
+                                                                </figure>
+                                                                <div class="media-content">
+                                                                    <p class="title is-6">April Noms</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="tag is-success">Live</span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown is-right">
+                                                                <div class="dropdown-trigger">
+                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div class="dropdown-content">
+                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                            Edit Course
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#">
+                                                                <div class="media">
+                                                                    <figure class="media-left">
+                                                                        <p class="image thumbnail-size">
+                                                                            <img src="../../assets/images/course/course-laravel.jpg" alt="">
+                                                                        </p>
+                                                                    </figure>
+                                                                    <div class="media-content">
+                                                                        <p class="title is-6">Get Start with Laravel...</p>
+                                                                        <p class="subtitle is-7">Added on 5 July, 2023</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <figure class="media-left">
+                                                                    <p class="image is-32x32">
+                                                                        <img src="../../assets/images/avatar/avatar-9.jpg" alt="" class="is-rounded">
+                                                                    </p>
+                                                                </figure>
+                                                                <div class="media-content">
+                                                                    <p class="title is-6">Sobo Rikhan</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="tag is-success">Live</span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown is-right">
+                                                                <div class="dropdown-trigger">
+                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div class="dropdown-content">
+                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                            Edit Course
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#">
+                                                                <div class="media">
+                                                                    <figure class="media-left">
+                                                                        <p class="image thumbnail-size">
+                                                                            <img src="../../assets/images/course/course-node.jpg" alt="">
+                                                                        </p>
+                                                                    </figure>
+                                                                    <div class="media-content">
+                                                                        <p class="title is-6">Get Start with Node Heading Title ...</p>
+                                                                        <p class="subtitle is-7">Added on 5 July, 2023</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <figure class="media-left">
+                                                                    <p class="image is-32x32">
+                                                                        <img src="../../assets/images/avatar/avatar-3.jpg" alt="" class="is-rounded">
+                                                                    </p>
+                                                                </figure>
+                                                                <div class="media-content">
+                                                                    <p class="title is-6">Sina Ray</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="tag is-success">Live</span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown is-right">
+                                                                <div class="dropdown-trigger">
+                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div class="dropdown-content">
+                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                            Edit Course
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#">
+                                                                <div class="media">
+                                                                    <figure class="media-left">
+                                                                        <p class="image thumbnail-size">
+                                                                            <img src="../../assets/images/course/course-javascript.jpg" alt="">
+                                                                        </p>
+                                                                    </figure>
+                                                                    <div class="media-content">
+                                                                        <p class="title is-6">Courses JavaScript Heading Title ...</p>
+                                                                        <p class="subtitle is-7">Added on 5 July, 2023</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <figure class="media-left">
+                                                                    <p class="image is-32x32">
+                                                                        <img src="../../assets/images/avatar/avatar-10.jpg" alt="" class="is-rounded">
+                                                                    </p>
+                                                                </figure>
+                                                                <div class="media-content">
+                                                                    <p class="title is-6">Guy Hawkins</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="tag is-success">Live</span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown is-right">
+                                                                <div class="dropdown-trigger">
+                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div class="dropdown-content">
+                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                            Edit Course
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!--Tab pane -->
+                                    <div id="pending-tab-content" class="is-hidden">
+                                        <div class="table-container">
+                                            <table class="table is-hoverable is-fullwidth background-darkmode-dark">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Courses</th>
+                                                        <th>Instructor</th>
+                                                        <th>STATUS</th>
+                                                        <th>ACTION</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- items -->
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#">
+                                                                <div class="media">
+                                                                    <figure class="media-left">
+                                                                        <p class="image thumbnail-size">
+                                                                            <img src="../../assets/images/course/course-gatsby.jpg" alt="">
+                                                                        </p>
+                                                                    </figure>
+                                                                    <div class="media-content">
+                                                                        <p class="title is-6">Revolutionize how you build the web...</p>
+                                                                        <p class="subtitle is-7">Added on 7 July, 2023</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <figure class="media-left">
+                                                                    <p class="image is-32x32">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic female1.jpg" alt="" class="is-rounded">
+                                                                    </p>
+                                                                </figure>
+                                                                <div class="media-content">
+                                                                    <p class="title is-6">Reva Yokk</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="tag is-warning">Pending</span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="button is-small is-outlined">Reject</a>
+                                                            <a href="#" class="button is-small is-success">Approved</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown is-right">
+                                                                <div class="dropdown-trigger">
+                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div class="dropdown-content">
+                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                            Edit Course
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#">
+                                                                <div class="media">
+                                                                    <figure class="media-left">
+                                                                        <p class="image thumbnail-size">
+                                                                            <img src="../../assets/images/course/course-angular.jpg" alt="">
+                                                                        </p>
+                                                                    </figure>
+                                                                    <div class="media-content">
+                                                                        <p class="title is-6">Get Start with Angular...</p>
+                                                                        <p class="subtitle is-7">Added on 3 July, 2023</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <figure class="media-left">
+                                                                    <p class="image is-32x32">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic male1.jpg" alt="" class="is-rounded">
+                                                                    </p>
+                                                                </figure>
+                                                                <div class="media-content">
+                                                                    <p class="title is-6">Jacob Jones</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="tag is-warning">Pending</span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="button is-small is-outlined">Reject</a>
+                                                            <a href="#" class="button is-small is-success">Approved</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown is-right">
+                                                                <div class="dropdown-trigger">
+                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div class="dropdown-content">
+                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                            Edit Course
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card Footer -->
+                            <div class="is-flex has-text-centered is-justify-content-center mt-3">
+                                <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+                                    <a class="pagination-previous" disabled>
+                                        <span class="icon is-small">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="pagination-list">
+                                        <li>
+                                            <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+                                        </li>
+                                        <li>
+                                            <a class="pagination-link" aria-label="Page 2">2</a>
+                                        </li>
+                                        <li>
+                                            <a class="pagination-link" aria-label="Page 3">3</a>
+                                        </li>
+                                    </ul>
+                                    <a class="pagination-next">
+                                        <span class="icon is-small has-text-light">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </span>
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Libs JS -->
+    <script src="../../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../assets/js/vendors/bulma.js"></script>
+    <!-- Theme JS -->
+    <script src="../../assets/js/theme.min.js"></script>
+    <script src="../../assets/js/vendors/tab-content.js"></script>
+
+</body>
+
+</html>

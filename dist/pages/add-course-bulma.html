@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <link rel="stylesheet" href="../assets/libs/quill/dist/quill.snow.css " />
+    <link rel="stylesheet" href="../assets/libs/glightbox/dist/css/glightbox.min.css " />
+    <link rel="stylesheet" href="../assets/libs/bs-stepper/dist/css/bs-stepper.min.css " />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Codescandy" />
+
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/brand/logo/brand-logo2.svg" />
+    <link rel="stylesheet" type="text/css" href="../assets/icons/fontawesome-free-6.5.1-web/css/all.min.css">
+    <!-- darkmode js -->
+    <!-- <script src="../assets/js/vendors/darkMode.js"></script> -->
+
+    <!-- Libs CSS -->
+    <link href="../assets/fonts/feather/feather.css" rel="stylesheet" />
+    <!-- <link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" /> -->
+    <link href="../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/index.css">
+
+    <!-- Theme CSS -->
+    <!-- <link rel="stylesheet" href="../assets/css/theme.min.css" /> -->
+
+    <link href="../assets/libs/@yaireo/tagify/dist/tagify.css" rel="stylesheet " />
+    <link href="../assets/libs/dragula/dist/dragula.min.css" rel="stylesheet " />
+    <title>Add Course</title>
+</head>
+
+<body>
+    <div class="background-darkmode-light">
+        <!-- header navbar with search -->
+        <div class="primary-background" style="width: 100%;height: 50px; position: absolute;">
+            <div class="ms-3">
+                <!-- <h5 class="mb-0">Geeks-Based</h5> -->
+            </div>
+        </div>
+        <nav class="navbar blur-background" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="./index-bulma.html">
+                    <img src="../assets/images/brand/logo/brandLogo2.svg" style="
+                max-height: max-content;
+                height: auto;
+                width: 50px;
+            ">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start is-flex is-justify-content-space-between" style="width: 100%;">
+                    <div class="navbar-item">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link has-text-light">
+                                Browse
+                            </a>
+                            <div class="navbar-dropdown background-darkmode-dark">
+                                <a class="navbar-item has-text-light"
+                                    href="./pages/course-filter-list.html">Bootstrap</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">React</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">GraphQl</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Gatsby</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Grunt</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Svelte</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Meteor</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">HTML5</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Angular</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-light">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-text-light has-dropdown is-hoverable">
+                            <a class="navbar-link has-text-light">
+                                Page
+                            </a>
+                            <div class="navbar-dropdown background-darkmode-dark has-text-light">
+                                <a class="navbar-item has-text-light"
+                                    href="./pages/course-filter-list.html">Bootstrap</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">React</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">GraphQl</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Gatsby</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Grunt</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Svelte</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Meteor</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">HTML5</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Angular</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-light">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                        <!-- header navbar no search -->
+                        <div class="navbar-item has-text-light field">
+                            <p class="control has-icons-right is-expanded">
+                                <input class="input is-rounded" type="search" id="search" placeholder="Search Courses">
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item">
+                        <!-- notification -->
+                        <div class="navbar-item">
+                            <div class="dropdown is-right">
+                                <div class="dropdown-trigger">
+                                    <div class="" aria-haspopup="true" aria-controls="dropdown-menu2">
+                                        <span class="icon is-small">
+                                            <!-- <i class="fas fa-angle-down" aria-hidden="true"></i> -->
+                                            <i class="fa-regular fa-bell has-text-light" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu2" role="menu" style="width: 400px;">
+                                    <div class="dropdown-content background-darkmode-dark">
+                                        <div class="dropdown-item columns">
+                                            <div class="column">
+                                                <a class="has-text-light" href="#">
+                                                    <div class="columns is-vcentered ml-2">
+                                                        <div class="image">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="column ml-3">
+                                                            <h5
+                                                                class="title is-5 has-text-weight-bold mb-1 has-text-light">
+                                                                Brooklyn Simmons</h5>
+                                                            <p class="mb-3">Just launched a new Courses React for
+                                                                Beginner.</p>
+                                                            <span class="is-size-6">
+                                                                <span>
+                                                                    <span class="icon has-text-success mr-1"><i
+                                                                            class="fas fa-thumbs-up"></i></span>
+                                                                    Oct 9,
+                                                                </span>
+                                                                <span class="ml-1">1:20 PM</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="column is-narrow has-text-centered">
+                                                <a href="#" class="tag is-rounded is-medium"
+                                                    style="background-color: #6c757d;" title="Mark as unread"></a>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <div class="dropdown-item columns">
+                                            <div class="column">
+                                                <a class="has-text-light" href="#">
+                                                    <div class="columns is-vcentered ml-2">
+                                                        <div class="image">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="column ml-3">
+                                                            <h5
+                                                                class="title is-5 has-text-weight-bold mb-1 has-text-light">
+                                                                Brooklyn Simmons</h5>
+                                                            <p class="mb-3">Just launched a new Courses React for
+                                                                Beginner.</p>
+                                                            <span class="is-size-6">
+                                                                <span>
+                                                                    <span class="icon has-text-success mr-1"><i
+                                                                            class="fas fa-thumbs-up"></i></span>
+                                                                    Oct 9,
+                                                                </span>
+                                                                <span class="ml-1">1:20 PM</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="column is-narrow has-text-centered">
+                                                <a href="#" class="tag is-rounded is-medium"
+                                                    style="background-color: #6c757d;" title="Mark as unread"></a>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <div class="dropdown-item columns">
+                                            <a href="#" class="has-text-light">
+                                                Link for any things
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- account -->
+                        <div class="navbar-item">
+                            <div class="dropdown is-right">
+                                <div class="dropdown-trigger">
+                                    <div class="image">
+                                        <img class="logo-size is-rounded" src="../assets/images/avatar/gigachad.jpg">
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu" style="width: 300px;">
+                                    <div class="dropdown-content background-darkmode-dark has-text-light">
+                                        <div class="dropdown-item">
+                                            <div class="media">
+                                                <figure class="media-left">
+                                                    <div class="image ">
+                                                        <img class="logo-size is-rounded"
+                                                            src="../assets/images/avatar/gigachad.jpg">
+                                                    </div>
+                                                </figure>
+                                                <div class="media-content">
+                                                    <p>
+                                                        <strong class="has-text-light">Phạm Anh Tuấn</strong>
+                                                        <br>
+                                                        phamanhtuan95vn@gmail.com
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-circle"></i>
+                                                </span>
+                                                <span>Status</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                                <span>Account</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                                <span>Account - Instructor</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-tachometer-alt"></i>
+                                                </span>
+                                                <span>Dashboard</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-cogs"></i>
+                                                </span>
+                                                <span>Admin management</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user-tie"></i>
+                                                </span>
+                                                <span>instructor admin management</span>
+                                            </span>
+                                        </a>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-power-off"></i>
+                                                </span>
+                                                <span>Sign Out</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- Page header-->
+        <main class="has-text-dark " data-theme="dark">
+            <section class="section background-darkmode-dark">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-offset-1 is-10">
+                            <div class="columns is-vcentered is-justify-content-space-between">
+                                <!-- Content -->
+                                <div class="mb-lg-0 pb-4 pt-4">
+                                    <h1 class="title is-light">Add New Course</h1>
+                                </div>
+                                <div class="buttons">
+                                    <a href="instructor-courses.html" class="button">Back to Course</a>
+                                    <a href="instructor-courses.html" class="button is-dark">Save</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Page Content -->
+            <section class="section">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-10">
+                            <!-- Stepper Button -->
+                            <div class="tabs is-centered is-boxed">
+                                <ul>
+                                    <li id="basicInfor-tab" class="is-active">
+                                        <a onclick="switchTab('basicInfor')">
+                                            <span class="mr-1 rounded-span">1</span>
+                                            <span>Basic Information</span>
+                                        </a>
+                                    </li>
+                                    <li id="media-tab" data-target="#test-l-2">
+                                        <a onclick="switchTab('media')">
+                                            <span class="mr-1 rounded-span">2</span>
+                                            <span>Courses Media</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Stepper content -->
+                            <div class="mt-5">
+                                <div class="tab-content">
+                                    <!-- Content one -->
+                                    <div id="basicInfor-tab-content" class="content ">
+                                        <!-- Card -->
+                                        <div class="card mb-3">
+                                            <header class="card-header px-4 py-3 background-darkmode-dark">
+                                                <p class="card-header-title mb-0">Basic Information</p>
+                                            </header>
+                                            <!-- Card body -->
+                                            <div class="card-content background-darkmode-dark has-text-light">
+                                                <div class="field">
+                                                    <label for="courseTitle" class="label">Course Title</label>
+                                                    <div class="control">
+                                                        <input id="courseTitle" class="input" type="text"
+                                                            placeholder="Course Title " />
+                                                    </div>
+                                                    <p class="help">Write a 60 character course title.</p>
+                                                </div>
+                                                <div class="field">
+                                                    <label class="label">Courses category</label>
+                                                    <div class="control">
+                                                        <div class="select">
+                                                            <select>
+                                                                <option value="">Select category</option>
+                                                                <option value="React">React</option>
+                                                                <option value="Javascript">Javascript</option>
+                                                                <option value="HTML">HTML</option>
+                                                                <option value="Vue">Vue js</option>
+                                                                <option value="Gulp">Gulp js</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <p class="help">Help people find your courses by choosing categories
+                                                        that represent your course.</p>
+                                                </div>
+                                                <div class="field">
+                                                    <label class="label">Courses level</label>
+                                                    <div class="control">
+                                                        <div class="select">
+                                                            <select>
+                                                                <option value="">Select level</option>
+                                                                <option value="intermediate">Intermediate</option>
+                                                                <option value="Beignners">Beignners</option>
+                                                                <option value="Advance">Advance</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field">
+                                                    <label class="label">Course Description</label>
+                                                    <div id="editor">
+                                                        <p id="Course_Description"></p>
+                                                    </div>
+                                                    <p class="help">A brief summary of your courses.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Button -->
+                                        <button class="button is-primary mt-2">Next</button>
+                                    </div>
+                                    <!-- Content two -->
+                                    <div id="media-tab-content" role="tabpanel" class="content is-hidden"
+                                        aria-labelledby="courseFormtrigger2">
+                                        <!-- Card -->
+                                        <div class="card mb-3">
+                                            <header class="card-header px-4 py-3 background-darkmode-dark">
+                                                <p class="card-header-title mb-0">Courses Media</p>
+                                            </header>
+                                            <!-- Card body -->
+                                            <div class="card-content background-darkmode-dark has-text-light">
+                                                <div class="container">
+                                                    <div class="file has-name is-boxed" style="margin-left: 30vw;">
+                                                        <label class="file-label">
+                                                            <input class="file-input js-form-upload-control" type="file"
+                                                                name="upload" id="upload" multiple>
+                                                            <span class="file-cta">
+                                                                <span class="file-icon">
+                                                                    <i class="fas fa-upload"></i>
+                                                                </span>
+                                                                <span class="file-label">
+                                                                    Upload
+                                                                </span>
+                                                            </span>
+                                                            <button class="file-name has-text-centered">Clear</button>
+                                                            <span class="file-name" id="file-name">
+                                                                No file uploaded
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <img id="preview" class="m-2" src="" alt="Image preview"
+                                                        style="display: none;">
+
+                                                </div>
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input type="url" class="input" placeholder="Video URL " />
+                                                    </div>
+                                                </div>
+                                                <p class="help">Enter a valid video URL. Students who watch a well-made
+                                                    promo video are 5X more likely to enroll in your course.</p>
+                                                <div class="mt-3 has-text-centered"
+                                                    style="background-image: url(../assets/images/course/course-javascript.jpg); height: 250px">
+                                                    <a href="https://youtu.be/CgkZ7MvWUAA"
+                                                        class="button is-rounded is-primary">
+                                                        <span class="icon is-large">
+                                                            <i class="fas fa-play"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Button -->
+                                        <div class="buttons is-justify-content-space-between">
+                                            <button class="button is-light"
+                                                onclick="courseForm.previous()">Previous</button>
+                                            <button class="button is-primary" onclick="courseForm.next()">Next</button>
+                                        </div>
+                                    </div>
+                                    <!-- COntent three -->
+                                    <div  role="tabpanel" class="is-hidden" aria-labelledby="courseFormtrigger3">
+                                        <!-- Card -->
+                                        <div class="card">
+                                            <header class="card-header background-darkmode-dark">
+                                                <p class="card-header-title">
+                                                    Curriculum
+                                                </p>
+                                            </header>
+                                            <!-- Card body -->
+                                            <div class="card-content background-darkmode-dark has-text-light">
+
+                                                <div id="sectionContainer">
+                                                    <!-- sections -->
+
+                                                </div>
+                                                <button href="#" id="addSectionBtn"
+                                                    class="button is-primary is-small js-modal-trigger"
+                                                    data-target="addSectionModal">Add Section</button>
+                                            </div>
+                                        </div>
+                                        <!-- Button -->
+                                        <div class="buttons is-justify-content-space-between">
+                                            <button class="button is-light"
+                                                onclick="courseForm.previous()">Previous</button>
+                                            <button class="button is-primary" onclick="courseForm.next()">Next</button>
+                                        </div>
+                                        <!-- add lecture modal -->
+                                        <!-- <div class="modal is-active" id="${modalId}">
+                                            <div class="modal-background"></div>
+                                            <div class="modal-card ">
+                                                <header class="modal-card-head background-darkmode-light">
+                                                    <p class="modal-card-title title has-text-centered">Add New Lecture</p>
+                                                    <button class="delete modal-close" aria-label="close"></button>
+                                                </header>
+                                                <section class="modal-card-body background-darkmode-dark">
+                                                    <input id="${inputLectureNameId}" class="input mb-3" type="text" placeholder="Add new lecture " />
+                                                </section>
+                                                <footer class="modal-card-foot background-darkmode-dark">
+                                                    <button id="addNewLecture_btn" class="button is-primary mr-2" type="submit">Add New Lecture</button>
+                                                    <button class="button" aria-label="Close">Close</button>
+                                                </footer>
+                                            </div>
+                                        </div> -->
+                                        <!-- Modal addSectionModel-->
+                                        <div class="modal is-active" id="addSectionModal">
+                                            <div class="modal-background"></div>
+                                            <div class="modal-card">
+                                                <header class="modal-card-head background-darkmode-light">
+                                                    <p class="modal-card-title">Add New Section</p>
+                                                    <button class="delete" aria-label="close"></button>
+                                                </header>
+                                                <section class="modal-card-body background-darkmode-dark">
+                                                    <input id="inputSectionName" class="input mb-3" type="text"
+                                                        placeholder="Add new section " />
+                                                </section>
+                                                <footer class="modal-card-foot background-darkmode-dark">
+                                                    <button id="addSectionButton" class="button is-primary mr-2">Add New
+                                                        Section</button>
+                                                    <button id="closeForm" class="button"
+                                                        aria-label="Close">Close</button>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <!-- Desc -->
+                    <div class="column is-four-fifths has-text-centered-touch has-text-left has-text-primary-light">
+                        <span>
+                            ©
+                            <span id="copyright">
+                                <script>
+                                    document.getElementById("copyright").appendChild(document.createTextNode(new Date().getFullYear()));
+                                </script>
+                            </span>
+                            Geeks-Based. 2024 OW. All Rights Reserved.
+                        </span>
+                    </div>
+                    <!-- Links -->
+                    <div class="column is-one-fifths">
+                        <div class="level is-mobile">
+                            <div class="level-right">
+                                <a class="level-item" href="#!">Privacy</a>
+                                <a class="level-item" href="#!">Terms</a>
+                                <a class="level-item" href="#!">Feedback</a>
+                                <a class="level-item" href="#!">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Scripts -->
+
+    <script src="../assets/libs/file-upload-with-preview/dist/file-upload-with-preview.iife.js"></script>
+    <script src="../assets/libs/@yaireo/tagify/dist/tagify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Scripts -->
+    <!-- Libs JS -->
+    <script src="../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="../assets/js/vendors/bulma.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../assets/js/theme.min.js"></script>
+
+    <script src="../assets/libs/quill/dist/quill.min.js"></script>
+    <script src="../assets/libs/dragula/dist/dragula.min.js"></script>
+
+    <script src="../assets/libs/bs-stepper/dist/js/bs-stepper.min.js"></script>
+    <script src="../assets/js/vendors/beStepper.js"></script>
+    <script src="../assets/js/vendors/customDragula.js"></script>
+    <script src="../assets/js/vendors/editor.js"></script>
+    <script src="../assets/js/vendors/tab-content.js"></script>
+
+    <script src="../assets/js/vendors/file-upload.js"></script>
+    <script src="../assets/libs/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="../assets/js/vendors/glight.js"></script>
+    <script type="module" src="../assets/js/vendors/addCourse.js"></script>
+</body>
+
+</html>
