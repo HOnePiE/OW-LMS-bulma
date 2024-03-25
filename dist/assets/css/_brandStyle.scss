@@ -53,6 +53,7 @@ $darkmode-dark-color:#0b1324;
 
 .card-content {
     padding: 1rem !important;
+    min-height: 236px;
 }
 
 .tns-inner {
@@ -222,7 +223,7 @@ label, input, select {
     border-radius: 0;
     min-height: 100vh;
     position: fixed;
-    top: 4.3rem;
+    // top: 4.3rem;
     width: 23.75rem;
     z-index: 1000;
 }

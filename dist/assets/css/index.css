@@ -46,6 +46,7 @@ td {
 }
 .card-content {
   padding: 1rem !important;
+  min-height: 236px;
 }
 
 .card {
@@ -199,17 +200,18 @@ label, input, select {
   border-radius: 0;
   min-height: 100vh;
   position: fixed;
-  top: 4.3rem;
   width: 23.75rem;
   z-index: 1000;
 }
 
 .tns-item {
   width: 4.7619%;
-  padding-right: 20px;
+  padding: 10px 10px 20px;
   display: inline-block;
   vertical-align: top;
   white-space: normal;
+  position: relative;
+  left: -10px;
 }
 
 @media (max-width: 1920px) {
@@ -430,4 +432,26 @@ label, input, select {
 
 .chevron-arrow {
   transition: transform 0.3s ease;
+}
+
+.card {
+  position: relative;
+  overflow: hidden; /* Hide the parts of the image that overflow the card */
+}
+
+.box3d {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%; /* Adjust this value to control how much of the image overflows the box */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  transform: perspective(1000px) rotateX(25deg); /* Create 3D effect */
+  transform-origin: bottom;
+}
+
+.image.is-128x128 {
+  position: absolute;
+  bottom: 55%; /* Adjust this value to control the position of the image */
+  left: 50%;
+  transform: translate(-50%, 50%); /* Center the image */
 }/*# sourceMappingURL=index.css.map */
