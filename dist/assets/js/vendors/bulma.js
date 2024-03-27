@@ -42,6 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
       chevron.style.transform = chevron.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
     });
   });
+  // collapse toggle fall down
+  $('.chev-arrow').click(function (e) {
+    e.preventDefault();
+    $('.collapse-item').toggleClass('show');
+    this.style.transform = this.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+  });
   //image preview
   $('#upload').change(function (e) {
     var file = e.target.files[0];

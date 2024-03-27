@@ -204,6 +204,10 @@ label, input, select {
   z-index: 1000;
 }
 
+.course-container {
+  width: 100%;
+}
+
 .tns-item {
   width: 4.7619%;
   padding: 10px 10px 20px;
