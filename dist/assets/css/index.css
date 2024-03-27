@@ -140,7 +140,7 @@ td {
   color: #fff !important;
 }
 
-#tabContent table {
+table {
   border-radius: 6px;
 }
 
@@ -176,7 +176,8 @@ input:focus {
   background-color: transparent !important;
 }
 
-a.dropdown-item, button.dropdown-item {
+a.dropdown-item,
+button.dropdown-item {
   background-color: transparent !important;
 }
 
@@ -188,12 +189,15 @@ a.dropdown-item, button.dropdown-item {
   border-radius: 0.75rem !important;
 }
 
-label, input, select {
+label,
+input,
+select {
   background-color: #0b1324 !important;
 }
 
 .dropdown-content {
   background-color: #1e293b !important;
+  border: 1px solid #0096FF !important;
 }
 
 .course-sidebar {
@@ -206,6 +210,32 @@ label, input, select {
 
 .course-container {
   width: 100%;
+}
+
+.menu {
+  overflow: scroll;
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+td, th {
+  text-align: center !important;
+}
+
+.media-content {
+  flex-grow: 0;
+}
+
+.no-overflow {
+  overflow: h;
+}
+
+.card {
+  padding-bottom: 60px;
 }
 
 .tns-item {

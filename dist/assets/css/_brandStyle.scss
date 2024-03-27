@@ -1,13 +1,15 @@
 $primary-color: #0096FF;
-$darkmode-light-color:#1e293b;
-$darkmode-dark-color:#0b1324;
+$darkmode-light-color: #1e293b;
+$darkmode-dark-color: #0b1324;
 
 .button.is-primary {
     background-color: $primary-color !important;
 }
-.button.is-outlined{
+
+.button.is-outlined {
     color: #fff;
 }
+
 .section {
     height: 100vh;
 }
@@ -171,7 +173,7 @@ a.dropdown-item:hover {
     color: #fff !important;
 }
 
-#tabContent table {
+table {
     border-radius: 6px;
 }
 
@@ -184,42 +186,59 @@ a.dropdown-item:hover {
 input:focus {
     border-color: $primary-color !important;
 }
+
 .card-header-title {
     color: $primary-color !important;
 }
-.label{
+
+.label {
     color: #fff !important;
 }
-.ql-snow .ql-picker{
+
+.ql-snow .ql-picker {
     // color: #fff !important;
-} 
-.modal-close{
+}
+
+.modal-close {
     position: absolute;
     top: 10px;
     right: 10px;
 }
+
 .navbar {
     --bulma-navbar-background-color: transparent !important;
 }
-.navbar-dropdown .navbar-item:not(.is-active,.is-selected){
+
+.navbar-dropdown .navbar-item:not(.is-active, .is-selected) {
     background-color: transparent !important;
 }
-a.dropdown-item, button.dropdown-item{
+
+a.dropdown-item,
+button.dropdown-item {
     background-color: transparent !important;
 }
-.menu-list a{
+
+.menu-list a {
     background-color: transparent !important;
 }
-.navbar-dropdown{
+
+.navbar-dropdown {
     border-radius: 0.75rem !important;
 }
-label, input, select {
+
+label,
+input,
+select {
     background-color: $darkmode-dark-color !important;
 }
-.dropdown-content{
+
+.dropdown-content {
+    // position: absolute !important;
     background-color: $darkmode-light-color !important;
+    border: 1px solid $primary-color !important;
 }
-.course-sidebar{
+
+.course-sidebar {
     border-radius: 0;
     min-height: 100vh;
     position: fixed;
@@ -227,7 +246,28 @@ label, input, select {
     width: 23.75rem;
     z-index: 1000;
 }
-.course-container{
+
+.course-container {
     width: 100%;
-    
+}
+.menu{
+    overflow:scroll;
+}
+.menu::-webkit-scrollbar
+{
+    display: none;
+	width: 12px;
+	background-color: #F5F5F5;
+}
+td,th{
+    text-align: center!important;
+}
+.media-content {
+flex-grow: 0;
+}
+.no-overflow{
+    overflow: h;
+}
+.card{
+    padding-bottom: 60px;
 }
