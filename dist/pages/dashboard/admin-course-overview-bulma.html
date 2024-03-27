@@ -21,6 +21,8 @@
     <link href="../../assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
     <link href="../../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/dist/assets/css/index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- Theme CSS -->
     <!-- <link rel="stylesheet" href="../../assets/css/theme.min.css"> -->
 
@@ -50,7 +52,7 @@
                             </span>
                             <span class="icon is-small"><i class="fa-solid fa-chevron-down"></i></span>
                         </a>
-                        <ul class="is-hidden">
+                        <ul class="hid">
                             <li><a href="../../pages/dashboard/admin-dashboard.html">Overview</a></li>
                         </ul>
                     </li>
@@ -62,7 +64,7 @@
                             </span>
                             <span class="icon is-small"><i class="fa-solid fa-chevron-down"></i></span>
                         </a>
-                        <ul class="is-hidden">
+                        <ul class="hid">
                             <li><a href="../../pages/dashboard/admin-course-overview.html">All Courses</a></li>
                             <li><a href="../../pages/dashboard/admin-course-category.html">Courses Category</a></li>
                             <li><a href="../../pages/dashboard/admin-course-category-single.html">Category Single</a>
@@ -77,7 +79,7 @@
                             </span>
                             <span class="icon is-small"><i class="fa-solid fa-chevron-down"></i></span>
                         </a>
-                        <ul class="is-hidden">
+                        <ul class="hid">
                             <li><a href="../../pages/dashboard/admin-instructor.html">Instructor</a></li>
                             <li><a href="../../pages/dashboard/admin-students.html">Students</a></li>
                         </ul>
@@ -112,7 +114,7 @@
                 </ul>
             </aside>
         </div>
-<!-- page content -->
+        <!-- page content -->
         <main id="page-content" class="is-flex-grow-5 background-darkmode-light" style="overflow-y: scroll;">
             <!-- header -->
             <div class="navbar header is-flex-grow-1 background-darkmode-dark">
@@ -123,7 +125,8 @@
                     <div class="navbar-item">
                         <div class="field has-addons">
                             <p class="control has-icons-left">
-                                <input class="input background-darkmode-dark has-text-light" type="text" placeholder="Search Entire Dashboard">
+                                <input class="input background-darkmode-dark has-text-light" type="text"
+                                    placeholder="Search Entire Dashboard">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -155,7 +158,8 @@
                                                                 alt="" />
                                                         </div>
                                                         <div class="column ml-3">
-                                                            <h5 class="title is-5 has-text-weight-bold mb-1 has-text-light">
+                                                            <h5
+                                                                class="title is-5 has-text-weight-bold mb-1 has-text-light">
                                                                 Brooklyn Simmons</h5>
                                                             <p class="mb-3">Just launched a new Courses React for
                                                                 Beginner.</p>
@@ -187,7 +191,8 @@
                                                                 alt="" />
                                                         </div>
                                                         <div class="column ml-3">
-                                                            <h5 class="title is-5 has-text-weight-bold mb-1 has-text-light">
+                                                            <h5
+                                                                class="title is-5 has-text-weight-bold mb-1 has-text-light">
                                                                 Brooklyn Simmons</h5>
                                                             <p class="mb-3">Just launched a new Courses React for
                                                                 Beginner.</p>
@@ -328,7 +333,8 @@
                                     </nav>
                                 </div>
                                 <div class="level-right">
-                                    <a href="../add-course-bulma.html" class="button is-primary is-small">Add New Courses</a>
+                                    <a href="../add-course-bulma.html" class="button is-primary is-small">Add New
+                                        Courses</a>
                                 </div>
                             </div>
                         </div>
@@ -341,7 +347,7 @@
                                 <div>
                                     <div class="tabs is-toggle">
                                         <ul>
-                                            <li id="all-tab" class="is-active" >
+                                            <li id="all-tab" class="is-active">
                                                 <a onclick="switchTab('all')" href="#courses">
                                                     <span>All</span>
                                                 </a>
@@ -373,7 +379,7 @@
                             <div>
                                 <div class="tab-content" id="tabContent">
                                     <!--Tab pane -->
-                                    <div class="" id="all-tab-content" role="tabpanel" aria-labelledby="courses-tab" >
+                                    <div class="" id="all-tab-content" role="tabpanel" aria-labelledby="courses-tab">
                                         <div class="table-container">
                                             <table class="table is-hoverable is-fullwidth background-darkmode-dark">
                                                 <thead>
@@ -393,21 +399,25 @@
                                                                 <div class="media">
                                                                     <figure class="media-left">
                                                                         <p class="image thumbnail-size">
-                                                                            <img src="../../assets/images/course/course-gatsby.jpg" alt="">
+                                                                            <img src="../../assets/images/course/course-gatsby.jpg"
+                                                                                alt="">
                                                                         </p>
                                                                     </figure>
                                                                     <div class="media-content">
-                                                                        <p class="title is-6">Revolutionize how you build the web...</p>
-                                                                        <p class="subtitle is-7">Added on 7 July, 2023</p>
+                                                                        <p class="title is-6">Revolutionize how you
+                                                                            build the web...</p>
+                                                                        <p class="subtitle is-7">Added on 7 July, 2023
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <div class="media">
+                                                            <div class="media is-justify-content-center">
                                                                 <figure class="media-left">
                                                                     <p class="image is-32x32">
-                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic female1.jpg" alt="" class="is-rounded">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic female1.jpg"
+                                                                            alt="" class="is-rounded">
                                                                     </p>
                                                                 </figure>
                                                                 <div class="media-content">
@@ -419,21 +429,26 @@
                                                             <span class="tag is-warning">Pending</span>
                                                         </td>
                                                         <td>
-                                                            <a href="#" class="button is-small is-outlined">Reject</a>
-                                                            <a href="#" class="button is-small is-success">Approved</a>
+                                                            <span class="material-symbols-outlined">
+                                                                toggle_off
+                                                            </span>
                                                         </td>
                                                         <td>
                                                             <div class="dropdown is-right">
                                                                 <div class="dropdown-trigger">
-                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                        aria-controls="dropdown-menu">
                                                                         <span class="icon is-small">
-                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                            <i class="fas fa-ellipsis-v"
+                                                                                aria-hidden="true"></i>
                                                                         </span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                <div class="dropdown-menu" id="dropdown-menu"
+                                                                    role="menu">
                                                                     <div class="dropdown-content">
-                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                        <a href="../add-lecture-bulma.html"
+                                                                            class="dropdown-item">
                                                                             Edit Course
                                                                         </a>
                                                                     </div>
@@ -447,21 +462,25 @@
                                                                 <div class="media">
                                                                     <figure class="media-left">
                                                                         <p class="image thumbnail-size">
-                                                                            <img src="../../assets/images/course/course-angular.jpg" alt="">
+                                                                            <img src="../../assets/images/course/course-angular.jpg"
+                                                                                alt="">
                                                                         </p>
                                                                     </figure>
                                                                     <div class="media-content">
-                                                                        <p class="title is-6">Get Start with Angular...</p>
-                                                                        <p class="subtitle is-7">Added on 3 July, 2023</p>
+                                                                        <p class="title is-6">Get Start with Angular...
+                                                                        </p>
+                                                                        <p class="subtitle is-7">Added on 3 July, 2023
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <div class="media">
+                                                            <div class="media is-justify-content-center">
                                                                 <figure class="media-left">
                                                                     <p class="image is-32x32">
-                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic male1.jpg" alt="" class="is-rounded">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic male1.jpg"
+                                                                            alt="" class="is-rounded">
                                                                     </p>
                                                                 </figure>
                                                                 <div class="media-content">
@@ -473,21 +492,26 @@
                                                             <span class="tag is-warning">Pending</span>
                                                         </td>
                                                         <td>
-                                                            <a href="#" class="button is-small is-outlined">Reject</a>
-                                                            <a href="#" class="button is-small is-success">Approved</a>
+                                                            <span class="material-symbols-outlined">
+                                                                toggle_off
+                                                            </span>
                                                         </td>
                                                         <td>
                                                             <div class="dropdown is-right">
                                                                 <div class="dropdown-trigger">
-                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                        aria-controls="dropdown-menu">
                                                                         <span class="icon is-small">
-                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                            <i class="fas fa-ellipsis-v"
+                                                                                aria-hidden="true"></i>
                                                                         </span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                <div class="dropdown-menu" id="dropdown-menu"
+                                                                    role="menu">
                                                                     <div class="dropdown-content">
-                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item is-hovered">                                                                            
+                                                                        <a href="../add-lecture-bulma.html"
+                                                                            class="dropdown-item is-hovered">
                                                                             Edit Course
                                                                         </a>
                                                                     </div>
@@ -501,21 +525,25 @@
                                                                 <div class="media">
                                                                     <figure class="media-left">
                                                                         <p class="image thumbnail-size">
-                                                                            <img src="../../assets/images/course/course-react.jpg" alt="">
+                                                                            <img src="../../assets/images/course/course-react.jpg"
+                                                                                alt="">
                                                                         </p>
                                                                     </figure>
                                                                     <div class="media-content">
-                                                                        <p class="title is-6">Get Start with React...</p>
-                                                                        <p class="subtitle is-7">Added on 4 July, 2023</p>
+                                                                        <p class="title is-6">Get Start with React...
+                                                                        </p>
+                                                                        <p class="subtitle is-7">Added on 4 July, 2023
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <div class="media">
+                                                            <div class="media is-justify-content-center">
                                                                 <figure class="media-left">
                                                                     <p class="image is-32x32">
-                                                                        <img src="../../assets/images/avatar/avatar-2.jpg" alt="" class="is-rounded">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                            alt="" class="is-rounded">
                                                                     </p>
                                                                 </figure>
                                                                 <div class="media-content">
@@ -527,20 +555,26 @@
                                                             <span class="tag is-success">Live</span>
                                                         </td>
                                                         <td>
-                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                            <span class="material-symbols-outlined">
+                                                                toggle_off
+                                                            </span>
                                                         </td>
                                                         <td>
                                                             <div class="dropdown is-right">
                                                                 <div class="dropdown-trigger">
-                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                        aria-controls="dropdown-menu">
                                                                         <span class="icon is-small">
-                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                            <i class="fas fa-ellipsis-v"
+                                                                                aria-hidden="true"></i>
                                                                         </span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                <div class="dropdown-menu" id="dropdown-menu"
+                                                                    role="menu">
                                                                     <div class="dropdown-content">
-                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                        <a href="../add-lecture-bulma.html"
+                                                                            class="dropdown-item">
                                                                             Edit Course
                                                                         </a>
                                                                     </div>
@@ -554,21 +588,25 @@
                                                                 <div class="media">
                                                                     <figure class="media-left">
                                                                         <p class="image thumbnail-size">
-                                                                            <img src="../../assets/images/course/course-laravel.jpg" alt="">
+                                                                            <img src="../../assets/images/course/course-laravel.jpg"
+                                                                                alt="">
                                                                         </p>
                                                                     </figure>
                                                                     <div class="media-content">
-                                                                        <p class="title is-6">Get Start with Laravel...</p>
-                                                                        <p class="subtitle is-7">Added on 5 July, 2023</p>
+                                                                        <p class="title is-6">Get Start with Laravel...
+                                                                        </p>
+                                                                        <p class="subtitle is-7">Added on 5 July, 2023
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <div class="media">
+                                                            <div class="media is-justify-content-center">
                                                                 <figure class="media-left">
                                                                     <p class="image is-32x32">
-                                                                        <img src="../../assets/images/avatar/avatar-9.jpg" alt="" class="is-rounded">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                            alt="" class="is-rounded">
                                                                     </p>
                                                                 </figure>
                                                                 <div class="media-content">
@@ -580,20 +618,26 @@
                                                             <span class="tag is-success">Live</span>
                                                         </td>
                                                         <td>
-                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                            <span class="material-symbols-outlined">
+                                                                toggle_off
+                                                            </span>
                                                         </td>
                                                         <td>
                                                             <div class="dropdown is-right">
                                                                 <div class="dropdown-trigger">
-                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                        aria-controls="dropdown-menu">
                                                                         <span class="icon is-small">
-                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                            <i class="fas fa-ellipsis-v"
+                                                                                aria-hidden="true"></i>
                                                                         </span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                <div class="dropdown-menu" id="dropdown-menu"
+                                                                    role="menu">
                                                                     <div class="dropdown-content">
-                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                        <a href="../add-lecture-bulma.html"
+                                                                            class="dropdown-item">
                                                                             Edit Course
                                                                         </a>
                                                                     </div>
@@ -607,21 +651,25 @@
                                                                 <div class="media">
                                                                     <figure class="media-left">
                                                                         <p class="image thumbnail-size">
-                                                                            <img src="../../assets/images/course/course-node.jpg" alt="">
+                                                                            <img src="../../assets/images/course/course-node.jpg"
+                                                                                alt="">
                                                                         </p>
                                                                     </figure>
                                                                     <div class="media-content">
-                                                                        <p class="title is-6">Get Start with Node Heading Title ...</p>
-                                                                        <p class="subtitle is-7">Added on 5 July, 2023</p>
+                                                                        <p class="title is-6">Get Start with Node
+                                                                            Heading Title ...</p>
+                                                                        <p class="subtitle is-7">Added on 5 July, 2023
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <div class="media">
+                                                            <div class="media is-justify-content-center">
                                                                 <figure class="media-left">
                                                                     <p class="image is-32x32">
-                                                                        <img src="../../assets/images/avatar/avatar-3.jpg" alt="" class="is-rounded">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic female3.jpg"
+                                                                            alt="" class="is-rounded">
                                                                     </p>
                                                                 </figure>
                                                                 <div class="media-content">
@@ -633,20 +681,26 @@
                                                             <span class="tag is-success">Live</span>
                                                         </td>
                                                         <td>
-                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                            <span class="material-symbols-outlined">
+                                                                toggle_off
+                                                            </span>
                                                         </td>
                                                         <td>
                                                             <div class="dropdown is-right">
                                                                 <div class="dropdown-trigger">
-                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                        aria-controls="dropdown-menu">
                                                                         <span class="icon is-small">
-                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                            <i class="fas fa-ellipsis-v"
+                                                                                aria-hidden="true"></i>
                                                                         </span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                <div class="dropdown-menu" id="dropdown-menu"
+                                                                    role="menu">
                                                                     <div class="dropdown-content">
-                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                        <a href="../add-lecture-bulma.html"
+                                                                            class="dropdown-item">
                                                                             Edit Course
                                                                         </a>
                                                                     </div>
@@ -660,21 +714,25 @@
                                                                 <div class="media">
                                                                     <figure class="media-left">
                                                                         <p class="image thumbnail-size">
-                                                                            <img src="../../assets/images/course/course-javascript.jpg" alt="">
+                                                                            <img src="../../assets/images/course/course-javascript.jpg"
+                                                                                alt="">
                                                                         </p>
                                                                     </figure>
                                                                     <div class="media-content">
-                                                                        <p class="title is-6">Courses JavaScript Heading Title ...</p>
-                                                                        <p class="subtitle is-7">Added on 5 July, 2023</p>
+                                                                        <p class="title is-6">Courses JavaScript Heading
+                                                                            Title ...</p>
+                                                                        <p class="subtitle is-7">Added on 5 July, 2023
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <div class="media">
+                                                            <div class="media is-justify-content-center">
                                                                 <figure class="media-left">
                                                                     <p class="image is-32x32">
-                                                                        <img src="../../assets/images/avatar/avatar-10.jpg" alt="" class="is-rounded">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic male1.jpg"
+                                                                            alt="" class="is-rounded">
                                                                     </p>
                                                                 </figure>
                                                                 <div class="media-content">
@@ -686,20 +744,26 @@
                                                             <span class="tag is-success">Live</span>
                                                         </td>
                                                         <td>
-                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                            <span class="material-symbols-outlined">
+                                                                toggle_off
+                                                            </span>
                                                         </td>
                                                         <td>
                                                             <div class="dropdown is-right">
                                                                 <div class="dropdown-trigger">
-                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                        aria-controls="dropdown-menu">
                                                                         <span class="icon is-small">
-                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                            <i class="fas fa-ellipsis-v"
+                                                                                aria-hidden="true"></i>
                                                                         </span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                <div class="dropdown-menu" id="dropdown-menu"
+                                                                    role="menu">
                                                                     <div class="dropdown-content">
-                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                        <a href="../add-lecture-bulma.html"
+                                                                            class="dropdown-item">
                                                                             Edit Course
                                                                         </a>
                                                                     </div>
@@ -712,7 +776,8 @@
                                         </div>
                                     </div>
                                     <!--Tab pane -->
-                                    <div id="approved-tab-content" class="is-hidden" role="tabpanel" aria-labelledby="approved-tab">
+                                    <div id="approved-tab-content" class="hid" role="tabpanel"
+                                        aria-labelledby="approved-tab">
                                         <div class="table-container">
                                             <table class="table is-hoverable is-fullwidth background-darkmode-dark ">
                                                 <thead>
@@ -732,21 +797,25 @@
                                                                 <div class="media">
                                                                     <figure class="media-left">
                                                                         <p class="image thumbnail-size">
-                                                                            <img src="../../assets/images/course/course-react.jpg" alt="">
+                                                                            <img src="../../assets/images/course/course-react.jpg"
+                                                                                alt="">
                                                                         </p>
                                                                     </figure>
                                                                     <div class="media-content">
-                                                                        <p class="title is-6">Get Start with React...</p>
-                                                                        <p class="subtitle is-7">Added on 4 July, 2023</p>
+                                                                        <p class="title is-6">Get Start with React...
+                                                                        </p>
+                                                                        <p class="subtitle is-7">Added on 4 July, 2023
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <div class="media">
+                                                            <div class="media is-justify-content-center">
                                                                 <figure class="media-left">
                                                                     <p class="image is-32x32">
-                                                                        <img src="../../assets/images/avatar/avatar-2.jpg" alt="" class="is-rounded">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                            alt="" class="is-rounded">
                                                                     </p>
                                                                 </figure>
                                                                 <div class="media-content">
@@ -758,20 +827,26 @@
                                                             <span class="tag is-success">Live</span>
                                                         </td>
                                                         <td>
-                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                            <span class="material-symbols-outlined">
+                                                                toggle_off
+                                                            </span>
                                                         </td>
                                                         <td>
                                                             <div class="dropdown is-right">
                                                                 <div class="dropdown-trigger">
-                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                        aria-controls="dropdown-menu">
                                                                         <span class="icon is-small">
-                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                            <i class="fas fa-ellipsis-v"
+                                                                                aria-hidden="true"></i>
                                                                         </span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                <div class="dropdown-menu" id="dropdown-menu"
+                                                                    role="menu">
                                                                     <div class="dropdown-content">
-                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                        <a href="../add-lecture-bulma.html"
+                                                                            class="dropdown-item">
                                                                             Edit Course
                                                                         </a>
                                                                     </div>
@@ -785,21 +860,25 @@
                                                                 <div class="media">
                                                                     <figure class="media-left">
                                                                         <p class="image thumbnail-size">
-                                                                            <img src="../../assets/images/course/course-laravel.jpg" alt="">
+                                                                            <img src="../../assets/images/course/course-laravel.jpg"
+                                                                                alt="">
                                                                         </p>
                                                                     </figure>
                                                                     <div class="media-content">
-                                                                        <p class="title is-6">Get Start with Laravel...</p>
-                                                                        <p class="subtitle is-7">Added on 5 July, 2023</p>
+                                                                        <p class="title is-6">Get Start with Laravel...
+                                                                        </p>
+                                                                        <p class="subtitle is-7">Added on 5 July, 2023
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <div class="media">
+                                                            <div class="media is-justify-content-center">
                                                                 <figure class="media-left">
                                                                     <p class="image is-32x32">
-                                                                        <img src="../../assets/images/avatar/avatar-9.jpg" alt="" class="is-rounded">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                            alt="" class="is-rounded">
                                                                     </p>
                                                                 </figure>
                                                                 <div class="media-content">
@@ -811,20 +890,26 @@
                                                             <span class="tag is-success">Live</span>
                                                         </td>
                                                         <td>
-                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                            <span class="material-symbols-outlined">
+                                                                toggle_off
+                                                            </span>
                                                         </td>
                                                         <td>
                                                             <div class="dropdown is-right">
                                                                 <div class="dropdown-trigger">
-                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                        aria-controls="dropdown-menu">
                                                                         <span class="icon is-small">
-                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                            <i class="fas fa-ellipsis-v"
+                                                                                aria-hidden="true"></i>
                                                                         </span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                <div class="dropdown-menu" id="dropdown-menu"
+                                                                    role="menu">
                                                                     <div class="dropdown-content">
-                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                        <a href="../add-lecture-bulma.html"
+                                                                            class="dropdown-item">
                                                                             Edit Course
                                                                         </a>
                                                                     </div>
@@ -838,21 +923,25 @@
                                                                 <div class="media">
                                                                     <figure class="media-left">
                                                                         <p class="image thumbnail-size">
-                                                                            <img src="../../assets/images/course/course-node.jpg" alt="">
+                                                                            <img src="../../assets/images/course/course-node.jpg"
+                                                                                alt="">
                                                                         </p>
                                                                     </figure>
                                                                     <div class="media-content">
-                                                                        <p class="title is-6">Get Start with Node Heading Title ...</p>
-                                                                        <p class="subtitle is-7">Added on 5 July, 2023</p>
+                                                                        <p class="title is-6">Get Start with Node
+                                                                            Heading Title ...</p>
+                                                                        <p class="subtitle is-7">Added on 5 July, 2023
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <div class="media">
+                                                            <div class="media is-justify-content-center">
                                                                 <figure class="media-left">
                                                                     <p class="image is-32x32">
-                                                                        <img src="../../assets/images/avatar/avatar-3.jpg" alt="" class="is-rounded">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic female3.jpg"
+                                                                            alt="" class="is-rounded">
                                                                     </p>
                                                                 </figure>
                                                                 <div class="media-content">
@@ -864,20 +953,26 @@
                                                             <span class="tag is-success">Live</span>
                                                         </td>
                                                         <td>
-                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                            <span class="material-symbols-outlined">
+                                                                toggle_off
+                                                            </span>
                                                         </td>
                                                         <td>
                                                             <div class="dropdown is-right">
                                                                 <div class="dropdown-trigger">
-                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                        aria-controls="dropdown-menu">
                                                                         <span class="icon is-small">
-                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                            <i class="fas fa-ellipsis-v"
+                                                                                aria-hidden="true"></i>
                                                                         </span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                <div class="dropdown-menu" id="dropdown-menu"
+                                                                    role="menu">
                                                                     <div class="dropdown-content">
-                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                        <a href="../add-lecture-bulma.html"
+                                                                            class="dropdown-item">
                                                                             Edit Course
                                                                         </a>
                                                                     </div>
@@ -891,21 +986,25 @@
                                                                 <div class="media">
                                                                     <figure class="media-left">
                                                                         <p class="image thumbnail-size">
-                                                                            <img src="../../assets/images/course/course-javascript.jpg" alt="">
+                                                                            <img src="../../assets/images/course/course-javascript.jpg"
+                                                                                alt="">
                                                                         </p>
                                                                     </figure>
                                                                     <div class="media-content">
-                                                                        <p class="title is-6">Courses JavaScript Heading Title ...</p>
-                                                                        <p class="subtitle is-7">Added on 5 July, 2023</p>
+                                                                        <p class="title is-6">Courses JavaScript Heading
+                                                                            Title ...</p>
+                                                                        <p class="subtitle is-7">Added on 5 July, 2023
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <div class="media">
+                                                            <div class="media is-justify-content-center">
                                                                 <figure class="media-left">
                                                                     <p class="image is-32x32">
-                                                                        <img src="../../assets/images/avatar/avatar-10.jpg" alt="" class="is-rounded">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic male1.jpg"
+                                                                            alt="" class="is-rounded">
                                                                     </p>
                                                                 </figure>
                                                                 <div class="media-content">
@@ -917,20 +1016,26 @@
                                                             <span class="tag is-success">Live</span>
                                                         </td>
                                                         <td>
-                                                            <a href="#" class="button is-small is-outlined is-dark">Change Status</a>
+                                                            <span class="material-symbols-outlined">
+                                                                toggle_off
+                                                            </span>
                                                         </td>
                                                         <td>
                                                             <div class="dropdown is-right">
                                                                 <div class="dropdown-trigger">
-                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                        aria-controls="dropdown-menu">
                                                                         <span class="icon is-small">
-                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                            <i class="fas fa-ellipsis-v"
+                                                                                aria-hidden="true"></i>
                                                                         </span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                <div class="dropdown-menu" id="dropdown-menu"
+                                                                    role="menu">
                                                                     <div class="dropdown-content">
-                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                        <a href="../add-lecture-bulma.html"
+                                                                            class="dropdown-item">
                                                                             Edit Course
                                                                         </a>
                                                                     </div>
@@ -943,7 +1048,7 @@
                                         </div>
                                     </div>
                                     <!--Tab pane -->
-                                    <div id="pending-tab-content" class="is-hidden">
+                                    <div id="pending-tab-content" class="hid">
                                         <div class="table-container">
                                             <table class="table is-hoverable is-fullwidth background-darkmode-dark">
                                                 <thead>
@@ -963,21 +1068,25 @@
                                                                 <div class="media">
                                                                     <figure class="media-left">
                                                                         <p class="image thumbnail-size">
-                                                                            <img src="../../assets/images/course/course-gatsby.jpg" alt="">
+                                                                            <img src="../../assets/images/course/course-gatsby.jpg"
+                                                                                alt="">
                                                                         </p>
                                                                     </figure>
                                                                     <div class="media-content">
-                                                                        <p class="title is-6">Revolutionize how you build the web...</p>
-                                                                        <p class="subtitle is-7">Added on 7 July, 2023</p>
+                                                                        <p class="title is-6">Revolutionize how you
+                                                                            build the web...</p>
+                                                                        <p class="subtitle is-7">Added on 7 July, 2023
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <div class="media">
+                                                            <div class="media is-justify-content-center">
                                                                 <figure class="media-left">
                                                                     <p class="image is-32x32">
-                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic female1.jpg" alt="" class="is-rounded">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic female1.jpg"
+                                                                            alt="" class="is-rounded">
                                                                     </p>
                                                                 </figure>
                                                                 <div class="media-content">
@@ -989,21 +1098,26 @@
                                                             <span class="tag is-warning">Pending</span>
                                                         </td>
                                                         <td>
-                                                            <a href="#" class="button is-small is-outlined">Reject</a>
-                                                            <a href="#" class="button is-small is-success">Approved</a>
+                                                            <span class="material-symbols-outlined">
+                                                                toggle_off
+                                                            </span>
                                                         </td>
                                                         <td>
                                                             <div class="dropdown is-right">
                                                                 <div class="dropdown-trigger">
-                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                        aria-controls="dropdown-menu">
                                                                         <span class="icon is-small">
-                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                            <i class="fas fa-ellipsis-v"
+                                                                                aria-hidden="true"></i>
                                                                         </span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                <div class="dropdown-menu" id="dropdown-menu"
+                                                                    role="menu">
                                                                     <div class="dropdown-content">
-                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                        <a href="../add-lecture-bulma.html"
+                                                                            class="dropdown-item">
                                                                             Edit Course
                                                                         </a>
                                                                     </div>
@@ -1017,21 +1131,25 @@
                                                                 <div class="media">
                                                                     <figure class="media-left">
                                                                         <p class="image thumbnail-size">
-                                                                            <img src="../../assets/images/course/course-angular.jpg" alt="">
+                                                                            <img src="../../assets/images/course/course-angular.jpg"
+                                                                                alt="">
                                                                         </p>
                                                                     </figure>
                                                                     <div class="media-content">
-                                                                        <p class="title is-6">Get Start with Angular...</p>
-                                                                        <p class="subtitle is-7">Added on 3 July, 2023</p>
+                                                                        <p class="title is-6">Get Start with Angular...
+                                                                        </p>
+                                                                        <p class="subtitle is-7">Added on 3 July, 2023
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <div class="media">
+                                                            <div class="media is-justify-content-center">
                                                                 <figure class="media-left">
                                                                     <p class="image is-32x32">
-                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic male1.jpg" alt="" class="is-rounded">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic male1.jpg"
+                                                                            alt="" class="is-rounded">
                                                                     </p>
                                                                 </figure>
                                                                 <div class="media-content">
@@ -1043,21 +1161,26 @@
                                                             <span class="tag is-warning">Pending</span>
                                                         </td>
                                                         <td>
-                                                            <a href="#" class="button is-small is-outlined">Reject</a>
-                                                            <a href="#" class="button is-small is-success">Approved</a>
+                                                            <span class="material-symbols-outlined">
+                                                                toggle_off
+                                                            </span>
                                                         </td>
                                                         <td>
                                                             <div class="dropdown is-right">
                                                                 <div class="dropdown-trigger">
-                                                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                        aria-controls="dropdown-menu">
                                                                         <span class="icon is-small">
-                                                                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                                                                            <i class="fas fa-ellipsis-v"
+                                                                                aria-hidden="true"></i>
                                                                         </span>
                                                                     </button>
                                                                 </div>
-                                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                <div class="dropdown-menu" id="dropdown-menu"
+                                                                    role="menu">
                                                                     <div class="dropdown-content">
-                                                                        <a href="../add-lecture-bulma.html" class="dropdown-item">                                                                            
+                                                                        <a href="../add-lecture-bulma.html"
+                                                                            class="dropdown-item">
                                                                             Edit Course
                                                                         </a>
                                                                     </div>
