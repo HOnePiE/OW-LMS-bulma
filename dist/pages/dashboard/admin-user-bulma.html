@@ -80,8 +80,8 @@
                             <span class="icon is-small"><i class="fa-solid fa-chevron-down"></i></span>
                         </a>
                         <ul class="hid">
-                            <li><a href="../../pages/dashboard/admin-instructor.html">Instructor</a></li>
-                            <li><a href="../../pages/dashboard/admin-students.html">Students</a></li>
+                            <li><a href="../../pages/dashboard/admin-user-bulma.html">All User</a></li>
+                            <li><a href="../../pages/add-user-bulma.html">Add User</a></li>
                         </ul>
                     </li>
                     <li>
@@ -133,7 +133,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="navbar-item">
                         <!-- notification -->
                         <div class="navbar-item">
@@ -317,201 +316,153 @@
             </div>
             <!-- content -->
             <section class="section">
-                <div class="container">
-                    <div class="columns">
-                        <div class="column">
-                            <!-- Page Header -->
-                            <div class="box background-darkmode-dark" style="padding: 0.75rem;">
-                                <div class="level">
-                                    <div class="">
-                                        <h1 class="is-size-4 has-text-weight-bold has-text-light">Courses</h1>
-                                        <!-- Breadcrumb -->
-                                        <nav class="breadcrumb is-small " aria-label="breadcrumbs">
-                                            <ul>
-                                                <li><a href="#">Courses</a></li>
-                                                <li class="is-active"><a href="#" aria-current="page">Category</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div class="level-right">
-                                        <button class="button js-modal-trigger is-primary is-small"
-                                            data-target="newCatgory">Add New Category</button>
-                                    </div>
+                <div class="columns">
+                    <div class="column">
+                        <!-- Page Header -->
+                        <div class="box background-darkmode-dark" style="padding: 0.75rem;">
+                            <div class="level">
+                                <div class="">
+                                    <h1 class="is-size-4 has-text-weight-bold has-text-light">User</h1>
+                                    <!-- Breadcrumb -->
+                                    <nav class="breadcrumb is-small " aria-label="breadcrumbs">
+                                        <ul>
+                                            <li><a href="#">User</a></li>
+                                            <li class="is-active"><a href="#" aria-current="page">All USER</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="level-right">
+                                    <a href="../add-user-bulma.html" class="button is-primary is-small">Add New
+                                        User</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="columns">
-                        <div class="column">
-                            <div class="card">
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <div class="is-flex is-justify-content-space-between is-align-content-center">
+                                <!-- search -->
                                 <div class="columns is-paddingless mt-1">
                                     <form class="column is-flex is-align-items-center">
                                         <div class="control has-icons-left" style="width: 100%;">
-                                            <input class="input" type="search" placeholder="Search Course">
+                                            <input class="input" type="search" placeholder="Search User">
                                             <span class="icon is-left">
                                                 <i class="fe fe-search"></i>
                                             </span>
                                         </div>
                                     </form>
                                 </div>
-                                <div class="">
-                                    <table class="table background-darkmode-dark is-fullwidth is-hoverable">
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    Category
-                                                    <button class="button is-small background-darkmode-dark ml-1">
-                                                        <span class="icon is-small">
-                                                            <i class="fas fa-filter"></i>
-                                                        </span>
-                                                    </button>
-                                                </th>
-                                                <th>Description</th>
-                                                <th>Course</th>
-                                                <th>Date Created</th>
-                                                <th>Date Updated</th>
-                                                <th>Status</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="category_listing">
-                                            <!-- category item -->
-                                            <tr>
-                                                <td>Web Development</td>
-                                                <td class="category-des">
-                                                    web-developmentádasdasdasdasdasdadweb-developmentádasdasdasdasdasdadweb-developmentádasdas
-                                                </td>
-                                                <td>10</td>
-                                                <td>2022-01-01</td>
-                                                <td>2022-01-10</td>
-                                                <td><span class="material-symbols-outlined">
-                                                        toggle_off
-                                                    </span></td>
-                                                <td>
-                                                    <div class="dropdown is-right">
-                                                        <div class="dropdown-trigger">
-                                                            <button class="button is-small" aria-haspopup="true"
-                                                                aria-controls="dropdown-menu">
-                                                                <span class="icon is-small">
-                                                                    <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-                                                                </span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                                                            <div class="dropdown-content">
-                                                                <a href="../add-lecture-bulma.html"
-                                                                    class="dropdown-item">
-                                                                    Edit
-                                                                </a>
-                                                                <a href="../add-lecture-bulma.html"
-                                                                    class="dropdown-item">
-                                                                    Delete
-                                                                </a>
+                                <!-- filter -->
+                                <header class="card-header mb-2 is-align-content-center">
+                                    <div class="tabs is-toggle">
+                                        <ul>
+                                            <li id="all-tab" class="is-active">
+                                                <a onclick="switchTab('all')" href="#courses">
+                                                    <span>All</span>
+                                                </a>
+                                            </li>
+                                            <li id="approved-tab" onclick="switchTab('approved')">
+                                                <a onclick="switchTab('approved')" href="#approved">
+                                                    <span>Admin</span>
+                                                </a>
+                                            </li>
+                                            <li id="pending-tab" onclick="switchTab('pending')">
+                                                <a onclick="switchTab('pending')" href="#pending">
+                                                    <span>Instructor</span>
+                                                </a>
+                                            </li>
+                                            <li id="pending-tab" onclick="switchTab('pending')">
+                                                <a onclick="switchTab('pending')" href="#pending">
+                                                    <span>Student</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </header>
+                            </div>
+                            <div>
+                                <div class="tab-content" id="tabContent">
+                                    <!--Tab pane -->
+                                    <div class="card" id="all-tab-content" role="tabpanel"
+                                        aria-labelledby="courses-tab">
+                                        <div class="">
+                                            <table class="table background-darkmode-dark is-fullwidth is-hoverable">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Instructor</th>
+                                                        <th>Email</th>
+                                                        <th>Date Created</th>
+                                                        <th>Role</th>
+                                                        <th>Status</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="user_listing">
+                                                    <!-- user item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media is-justify-content-center">
+                                                                <figure class="media-left">
+                                                                    <p class="image is-32x32">
+                                                                        <img src="../../assets/images/avatar/Firefly person avatar, realistic female1.jpg"
+                                                                            alt="" class="is-rounded">
+                                                                    </p>
+                                                                </figure>
+                                                                <div class="media-content">
+                                                                    <p class="title is-6">Reva Yokk</p>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mobile Development</td>
-                                                <td class="category-des">mobile-development</td>
-                                                <td>15</td>
-                                                <td>2022-02-01</td>
-                                                <td>2022-02-10</td>
-                                                <td><span class="material-symbols-outlined">
-                                                        toggle_off
-                                                    </span></td>
-                                                <td>
-                                                    <div class="dropdown is-right">
-                                                        <div class="dropdown-trigger">
-                                                            <button class="button is-small" aria-haspopup="true"
-                                                                aria-controls="dropdown-menu">
-                                                                <span class="icon is-small">
-                                                                    <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-                                                                </span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                                                            <div class="dropdown-content">
-                                                                <a href="../add-lecture-bulma.html"
-                                                                    class="dropdown-item">Edit</a>
-                                                                <a href="../add-lecture-bulma.html"
-                                                                    class="dropdown-item">Delete</a>
+                                                        </td>
+                                                        <td>gg@gmail.com</td>
+                                                        <td>2022-01-01</td>
+                                                        <td>Admin</td>
+                                                        <td>
+                                                            <span class="material-symbols-outlined">
+                                                                toggle_off
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown is-right">
+                                                                <div class="dropdown-trigger">
+                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                        aria-controls="dropdown-menu">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-ellipsis-v"
+                                                                                aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                                <!-- ... -->
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- more user items... -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- Card Footer -->
                         </div>
                     </div>
                 </div>
             </section>
         </main>
     </div>
-    <!-- modal -->
-    <div class="modal" id="newCatgory">
-        <div class="modal-background"></div>
-        <div class="modal-card">
-            <header class="modal-card-head background-darkmode-dark">
-                <p class="modal-card-title">Create New Category</p>
-                <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body background-darkmode-dark">
-                <form>
-                    <div class="field">
-                        <label class="label">Title</label>
-                        <div class="control">
-                            <input class="input" type="text" placeholder="Write a Category" required>
-                        </div>
-                        <p class="help">Field must contain a unique value</p>
-                    </div>
-                    <div class="field">
-                        <label class="label">Parent</label>
-                        <div class="control">
-                            <div class="select">
-                                <select required>
-                                    <option>Select</option>
-                                    <option>None</option>
-                                    <option>Course</option>
-                                    <option>Tutorial</option>
-                                    <option>Workshop</option>
-                                    <option>Company</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label">Description</label>
-                        <div class="control">
-                            <textarea class="textarea background-darkmode-dark"></textarea>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label">Enabled</label>
-                        <input type="checkbox" name="switchRoundedDefault" class="switch is-rounded" checked="checked">
-                    </div>
-                </form>
-            </section>
-            <footer class="modal-card-foot background-darkmode-dark">
-                <button class="button background-color">Add New Category</button>
-                <button class="button ml-2">Close</button>
-            </footer>
-        </div>
-    </div>
+
     <!-- Scripts -->
     <!-- Libs JS -->
-    <!-- <script src="../../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/libs/simplebar/dist/simplebar.min.js"></script> -->
+    <script src="../../assets/libs/simplebar/dist/simplebar.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../../assets/js/vendors/bulma.js"></script>
     <!-- Theme JS -->
-    <!-- <script src="../../assets/js/theme.min.js"></script>
-    <script src="../../assets/js/vendors/tab-content.js"></script> -->
+    <script src="../../assets/js/theme.min.js"></script>
+    <script src="../../assets/js/vendors/tab-content.js"></script>
 
 </body>
 

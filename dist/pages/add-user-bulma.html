@@ -308,11 +308,13 @@
                             <div class="columns is-vcentered is-justify-content-space-between">
                                 <!-- Content -->
                                 <div class="mb-lg-0 pb-4 pt-4">
-                                    <h1 class="title is-light">Add Lecture</h1>
+                                    <h1 class="title is-light">Add User</h1>
                                 </div>
                                 <div class="buttons">
-                                    <a href="./dashboard/admin-course-overview-bulma.html" class="button">Back to Course</a>
-                                    <a href="./dashboard/admin-course-overview-bulma.html" class="button is-dark">Save</a>
+                                    <a href="./dashboard/admin-user-bulma.html" class="button">Back to
+                                        Course</a>
+                                    <a href="./dashboard/admin-user-bulma.html"
+                                        class="button is-dark">Save</a>
                                 </div>
                             </div>
                         </div>
@@ -327,148 +329,91 @@
                             <div class="mt-5">
                                 <div class="tab-content">
                                     <!-- content -->
-                                    <div role="tabpanel" class="" aria-labelledby="courseFormtrigger3">
-                                        <!-- Card -->
-                                        <div class="card">
-                                            <header class="card-header background-darkmode-dark">
-                                                <p class="card-header-title">
-                                                    Curriculum
-                                                </p>
-                                            </header>
-                                            <!-- Card body -->
-                                            <div class="card-content background-darkmode-dark has-text-light">
-                                                <div id="sectionContainer">
-                                                    <!-- sections here-->
-                                                    <div id="${secTionId}"
-                                                        class="section box mb-4 background-darkmode-light">
-                                                        <div class="level">
-                                                            <div class="level-left">
-                                                                <h4 class="title is-4">${sectionName}</h4>
-                                                            </div>
-                                                            <div class="level-right">
-                                                                <a id="sectionDeleteBtn" href="#" class="delete"></a>
-                                                            </div>
-                                                        </div>
-                                                        <!-- List group -->
-                                                        <div id="${courseListId}" class="">
-                                                            <div id="${courseId}">
-                                                                <!-- lectures here -->
-                                                                <div class="box mt-3 mb-1 background-darkmode-dark"
-                                                                    id="${lectureId}">
-                                                                    <div class="level m-0">
-                                                                        <h5 class="level-left mb-0">
-                                                                            <a href="#" class="has-text-light">
-                                                                                <i class="fe fe-menu mr-1"></i>
-                                                                                <span
-                                                                                    id="lectureName">${lectureName}</span>
-                                                                            </a>
-                                                                        </h5>
-                                                                        <div class="level-right">
-                                                                            <a id="editbtn" href="#"
-                                                                                class="mr-1 has-text-light"
-                                                                                data-tooltip="Edit">
-                                                                                <i class="fe fe-edit"></i>
-                                                                            </a>
-                                                                            <a id="deleteBtn" href="#"
-                                                                                class="mr-1 has-text-light"
-                                                                                data-tooltip="Delete">
-                                                                                <i class="fe fe-trash-2"></i>
-                                                                            </a>
-                                                                            <a href="#${collapselistId}"
-                                                                                class="has-text-light chev-arrow"
-                                                                                data-target="#${collapselistId}"
-                                                                                aria-expanded="false"
-                                                                                aria-controls="${collapselistId}">
-                                                                                <span class="chevron-arrow"><i
-                                                                                        class="fe fe-chevron-down"></i></span>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div id="${collapselistId}" class="collapse-item"
-                                                                        aria-labelledby="${lectureId}"
-                                                                        data-parent="#${courseListId}">
-                                                                        <div class="px-4 py-2">
-                                                                            <div class="field">
-                                                                                <div class="control">
-                                                                                    <input type="url" class="input"
-                                                                                        placeholder="Video URL " />
-                                                                                </div>
-                                                                            </div>
-                                                                            <small class="mt-3 d-block">Enter a valid
-                                                                                video URL. Students who watch
-                                                                                a well-made promo video are 5X more
-                                                                                likely to enroll in your
-                                                                                course.</small>
-                                                                            <div class="mb-3">
-                                                                                <label class="label">Lecture
-                                                                                    Description</label>
-                                                                                <div class="field">
-                                                                                    <div class="control">
-                                                                                        <input id="courseTitle"
-                                                                                            class="input" type="text"
-                                                                                            placeholder="Lecture Description " />
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <button href="#"
-                                                            class="button is-small is-primary mt-3 js-modal-trigger"
-                                                            data-target="${modalId}">Add Lecture +</button>
-                                                    </div>
+                                    <form id="addStudentForm" enctype="multipart/form-data">
+                                        <div class="field">
+                                            <label class="label" for="email">Email:</label>
+                                            <div class="control">
+                                                <input class="input" type="email" id="email" name="email" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                            <label class="label" for="username">Username:</label>
+                                            <div class="control">
+                                                <input class="input" type="text" id="username" name="username" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                            <label class="label" for="password">Password:</label>
+                                            <div class="control">
+                                                <input class="input" type="password" id="password" name="password"
+                                                    required>
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                            <label class="label" for="confirmPassword">Confirm Password:</label>
+                                            <div class="control">
+                                                <input class="input" type="password" id="confirmPassword"
+                                                    name="confirmPassword" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                            <label class="label" for="gender">Gender:</label>
+                                            <div class="control">
+                                                <div class="select">
+                                                    <select id="gender" name="gender">
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>
+                                                        <option value="other">Other</option>
+                                                    </select>
                                                 </div>
-                                                <button href="#" id="addSectionBtn"
-                                                    class="button is-primary is-small js-modal-trigger"
-                                                    data-target="addSectionModal">Add Section</button>
                                             </div>
                                         </div>
-                                        <!-- Button -->
 
-                                        <!-- add lecture modal -->
-                                        <div class="modal" id="${modalId}">
-                                            <div class="modal-background"></div>
-                                            <div class="modal-card ">
-                                                <header class="modal-card-head background-darkmode-light">
-                                                    <p class="modal-card-title title has-text-centered">Add New Lecture
-                                                    </p>
-                                                    <button class="delete modal-close" aria-label="close"></button>
-                                                </header>
-                                                <section class="modal-card-body background-darkmode-dark">
-                                                    <input id="${inputLectureNameId}" class="input mb-3" type="text"
-                                                        placeholder="Add new lecture " />
-                                                </section>
-                                                <footer class="modal-card-foot background-darkmode-dark">
-                                                    <button id="addNewLecture_btn" class="button is-primary mr-2"
-                                                        type="submit">Add New Lecture</button>
-                                                    <button class="button" aria-label="Close">Close</button>
-                                                </footer>
+                                        <div class="field">
+                                            <label class="label" for="role">Role:</label>
+                                            <div class="control">
+                                                <div class="select">
+                                                    <select id="role" name="role">
+                                                        <option value="student">Student</option>
+                                                        <option value="admin">Administrator</option>
+                                                        <option value="letter">Letter</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
-                                        <!-- Modal addSectionModel-->
-                                        <div class="modal" id="addSectionModal">
-                                            <div class="modal-background"></div>
-                                            <div class="modal-card">
-                                                <header class="modal-card-head background-darkmode-light">
-                                                    <p class="modal-card-title title">Add New Section</p>
-                                                    <button class="delete" aria-label="close"></button>
-                                                </header>
-                                                <section class="modal-card-body background-darkmode-dark">
-                                                    <input id="inputSectionName" class="input mb-3" type="text"
-                                                        placeholder="Add new section " />
-                                                </section>
-                                                <footer class="modal-card-foot background-darkmode-dark">
-                                                    <button id="addSectionButton" class="button is-primary mr-2">Add New
-                                                        Section</button>
-                                                    <button id="closeForm" class="button"
-                                                        aria-label="Close">Close</button>
-                                                </footer>
-                                            </div>
-                                        </div>
-                                    </div>
 
+                                        <div class="field">
+                                            <label class="label" for="fullname">Full Name:</label>
+                                            <div class="control">
+                                                <input class="input" type="text" id="fullname" name="fullname" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                            <label class="label" for="dob">Date of Birth:</label>
+                                            <div class="control">
+                                                <input class="input" type="date" id="dob" name="dob" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                            <label class="label" for="avatar">Avatar:</label>
+                                            <div class="control">
+                                                <input class="input" type="file" id="avatar" name="avatar"
+                                                    accept="image/*" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                            <div class="control">
+                                                <button class="button is-link" type="submit">Add Account</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

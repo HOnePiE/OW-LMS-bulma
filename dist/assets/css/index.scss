@@ -186,7 +186,8 @@ textarea {
   opacity: 1 !important;
 }
 
-.flex-content, .text-smaller {
+.flex-content,
+.text-smaller {
   font-size: smaller;
 }
 
@@ -205,43 +206,62 @@ textarea {
   &.is-active {
     background-color: $darkmode-dark-color !important;
     color: #fff !important;
-    .icon{
+
+    .icon {
       color: $primary-color !important;
     }
   }
 }
+
 .collapse-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
 }
 
-.toggle-collapse.is-active + .collapse-content {
-  max-height: 1000px; /* Adjust this value based on your needs */
+.toggle-collapse.is-active+.collapse-content {
+  max-height: 1000px;
+  /* Adjust this value based on your needs */
 }
 
 .chevron-arrow {
   transition: transform 0.3s ease;
 }
+
 .card {
   position: relative;
-  overflow: hidden; /* Hide the parts of the image that overflow the card */
+  overflow: hidden;
+  /* Hide the parts of the image that overflow the card */
 }
 
 .box3d {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 50%; /* Adjust this value to control how much of the image overflows the box */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  transform: perspective(1000px) rotateX(25deg); /* Create 3D effect */
+  height: 50%;
+  /* Adjust this value to control how much of the image overflows the box */
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black */
+  transform: perspective(1000px) rotateX(25deg);
+  /* Create 3D effect */
   transform-origin: bottom;
 }
 
 .image.is-128x128 {
   position: absolute;
-  bottom: 55%; /* Adjust this value to control the position of the image */
+  bottom: 55%;
+  /* Adjust this value to control the position of the image */
   left: 50%;
-  transform: translate(-50%, 50%); /* Center the image */
+  transform: translate(-50%, 50%);
+  /* Center the image */
 }
 
+.category-des {
+  max-width: 400px;
+  text-align: start !important;
+}
+#addStudentForm{
+  padding: 20px;
+  background-color: $darkmode-dark-color;
+  border-radius: 6px;
+}

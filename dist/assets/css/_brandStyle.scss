@@ -221,7 +221,9 @@ button.dropdown-item {
 .menu-list a {
     background-color: transparent !important;
 }
-
+.menu-list li:hover>a{
+    color: #fff !important;
+}
 .navbar-dropdown {
     border-radius: 0.75rem !important;
 }
@@ -248,7 +250,7 @@ select {
 }
 
 .course-container {
-    width: 100%;
+    // width: 100%;
 }
 .menu{
     overflow:scroll;
@@ -269,5 +271,5 @@ flex-grow: 0;
     overflow: h;
 }
 .card{
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
