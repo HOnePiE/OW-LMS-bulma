@@ -64,6 +64,10 @@ td {
   box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -2px rgba(255, 255, 255, 0.05) !important;
 }
 
+.card:hover .box-shadow {
+  box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0), 0 4px 6px -2px rgba(255, 255, 255, 0.05) !important;
+}
+
 .controls {
   position: relative;
   top: -31px;
@@ -128,10 +132,6 @@ td {
   color: #0096FF !important;
 }
 
-.media {
-  align-items: center !important;
-}
-
 .dropdown-item {
   color: #fff !important;
 }
@@ -191,6 +191,7 @@ button.dropdown-item {
 
 .navbar-dropdown {
   border-radius: 0.75rem !important;
+  z-index: 3;
 }
 
 label,
@@ -202,14 +203,6 @@ select {
 .dropdown-content {
   background-color: #1e293b !important;
   border: 1px solid #0096FF !important;
-}
-
-.course-sidebar {
-  border-radius: 0;
-  min-height: 100vh;
-  position: fixed;
-  width: 23.75rem;
-  z-index: 1000;
 }
 
 .menu {
@@ -230,14 +223,6 @@ td, th {
   flex-grow: 0;
 }
 
-.no-overflow {
-  overflow: h;
-}
-
-.card {
-  padding-bottom: 100px;
-}
-
 .tns-item {
   width: 4.7619%;
   padding: 10px 10px 20px;
@@ -246,6 +231,15 @@ td, th {
   white-space: normal;
   position: relative;
   left: -10px;
+}
+
+.tns-item-row {
+  width: 100%;
+  padding: 10px 10px 20px;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  position: relative;
 }
 
 @media (max-width: 1920px) {
@@ -261,6 +255,11 @@ td, th {
 @media (max-width: 1024px) {
   .tns-slider {
     width: 1020% !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .video-ratio {
+    padding-bottom: 42.1875% !important; /* Adjust this value as needed */
   }
 }
 @media (max-width: 768px) {
@@ -391,15 +390,26 @@ td, th {
   color: #f33a58;
 }
 
-.border-primary {
+.border-primary-bottomNone {
   border-top: 1px solid #0096FF !important;
   border-left: 1px solid #0096FF !important;
   border-right: 1px solid #0096FF !important;
   border-bottom: none !important;
 }
 
+.border-primary {
+  border-top: 1px solid #0096FF !important;
+  border-left: 1px solid #0096FF !important;
+  border-right: 1px solid #0096FF !important;
+  border-bottom: 1px solid #0096FF !important;
+}
+
 .box-shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-hover:hover {
+  box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.264), 0 4px 6px -2px rgba(255, 255, 255, 0.05) !important;
 }
 
 .text-shadow {
@@ -472,7 +482,6 @@ td, th {
 
 .card {
   position: relative;
-  overflow: hidden;
   /* Hide the parts of the image that overflow the card */
 }
 
@@ -489,15 +498,6 @@ td, th {
   transform-origin: bottom;
 }
 
-.image.is-128x128 {
-  position: absolute;
-  bottom: 55%;
-  /* Adjust this value to control the position of the image */
-  left: 50%;
-  transform: translate(-50%, 50%);
-  /* Center the image */
-}
-
 .category-des {
   max-width: 400px;
   text-align: start !important;
@@ -507,4 +507,59 @@ td, th {
   padding: 20px;
   background-color: #0b1324;
   border-radius: 6px;
+}
+
+#main-content {
+  overflow-y: overlay !important;
+  max-width: 100%;
+  width: 100%;
+  margin: 0px auto;
+  padding-top: 73px;
+}
+
+.course-sidebar {
+  border-radius: 0;
+  position: fixed;
+  min-width: 23.75rem;
+  width: 23.75rem;
+  height: 90% !important;
+  z-index: 2;
+}
+
+.course-container {
+  width: 100% !important;
+  height: 100% !important;
+  padding-left: 23.75rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.video-ratio {
+  position: relative;
+  width: 100%;
+  /* Aspect ratio for 16:9 videos */
+  padding-bottom: 56.25%;
+  height: 0;
+  border-top: 1px solid #0096FF;
+  border-bottom: 1px solid #0096FF;
+}
+
+.course-sidebar.sidebar-hide {
+  display: none !important;
+}
+
+.course-container.sidebar-hide {
+  padding-left: 0 !important;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.course-infor {
+  margin-top: 1.5rem !important;
 }/*# sourceMappingURL=index.css.map */

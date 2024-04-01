@@ -7,7 +7,15 @@
     position: relative;
     left: -10px;
 }
-
+.tns-item-row {
+    width: calc(100%);
+    // height: 200px;
+    padding: 10px 10px 20px;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    position: relative;
+} 
 .tns-slider {
     // transform: translate3d(-66.6667%, 0px, 0px);
 }
@@ -28,8 +36,14 @@
     .tns-slider {
         width: calc(1020%) !important;
     }
-}
 
+    
+}
+@media screen and (min-width: 1024px) {
+    .video-ratio {
+      padding-bottom: calc(56.25% * 0.75) !important; /* Adjust this value as needed */
+    }
+  }
 @media (max-width: 768px) {
     .tns-slider {
         width: calc(2050%) !important;

@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   //active link
   // menu-link
-
   $menuLinks.forEach(el => {
     el.addEventListener('click', () => {
       $menuLinks.forEach(link => link.classList.remove('is-active'));
@@ -65,11 +64,19 @@ document.addEventListener('DOMContentLoaded', () => {
       $('#file-name').show();
     }
   });
+  // side bar hide
+  $('.sidebar-hide').click(function () {
+    $('.course-sidebar, .course-container').toggleClass('sidebar-hide');
+  });
+
+  // add modal trigger class
+  $('#user_listing tr').attr({
+    'class': 'js-modal-trigger',
+    'data-target': 'userInfor-modal'
+  });
   // close form
-  $(document).ready(function () {
-    $('#closeForm').click(function () {
-      $('#addSectionModal').removeClass('is-active');
-    });
+  $('#closeForm').click(function () {
+    $('#addSectionModal').removeClass('is-active');
   });
   // Functions to open and close a modal
   function openModal($el) {

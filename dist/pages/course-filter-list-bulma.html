@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Codescandy" />
+
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/brand/logo/brand-logo2.svg" />
+    <link rel="stylesheet" type="text/css" href="../assets/icons/fontawesome-free-6.5.1-web/css/all.min.css">
+
+    <!-- Libs CSS -->
+    <link href="../assets/fonts/feather/feather.css" rel="stylesheet" />
+    <link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/index.css">
+
+    <!-- Theme CSS -->
+    <!-- <link rel="stylesheet" href="../assets/css/theme.min.css"> -->
+    <link href="../assets/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet" />
+
+    <title>Courses | OW-GEEKS BASED</title>
+</head>
+
+<body>
+    <div class="background-darkmode-dark">
+        <div class="primary-background" style="width: 100%;height: 50px; position: absolute;">
+            <div class="ms-3">
+                <!-- <h5 class="mb-0">Geeks-Based</h5> -->
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar blur-background" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../index-bulma.html">
+                    <img src="../assets/images/brand/logo/brandLogo2.svg" style="
+                            max-height: max-content;
+                            height: auto;
+                            width: 50px;
+                        ">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start is-flex is-justify-content-space-between" style="width: 100%;">
+                    <div class="navbar-item">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link has-text-light">
+                                Browse
+                            </a>
+                            <div class="navbar-dropdown background-darkmode-dark">
+                                <a class="navbar-item has-text-light"
+                                    href="./pages/course-filter-list.html">Bootstrap</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">React</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">GraphQl</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Gatsby</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Grunt</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Svelte</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Meteor</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">HTML5</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Angular</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-light">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-text-light has-dropdown is-hoverable">
+                            <a class="navbar-link has-text-light">
+                                Page
+                            </a>
+                            <div class="navbar-dropdown background-darkmode-dark has-text-light">
+                                <a class="navbar-item has-text-light"
+                                    href="./pages/course-filter-list.html">Bootstrap</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">React</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">GraphQl</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Gatsby</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Grunt</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Svelte</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Meteor</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">HTML5</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Angular</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-light">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                        <!-- header navbar no search -->
+                        <div class="navbar-item has-text-light field">
+                            <p class="control has-icons-right is-expanded">
+                                <input class="input is-rounded" type="search" id="search" placeholder="Search Courses">
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item">
+                        <!-- notification -->
+                        <div class="navbar-item">
+                            <div class="dropdown is-right">
+                                <div class="dropdown-trigger">
+                                    <div class="" aria-haspopup="true" aria-controls="dropdown-menu2">
+                                        <span class="icon is-small">
+                                            <!-- <i class="fas fa-angle-down" aria-hidden="true"></i> -->
+                                            <i class="fa-regular fa-bell has-text-light" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu2" role="menu" style="width: 400px;">
+                                    <div class="dropdown-content background-darkmode-dark">
+                                        <div class="dropdown-item columns">
+                                            <div class="column">
+                                                <a class="has-text-light" href="#">
+                                                    <div class="columns is-vcentered ml-2">
+                                                        <div class="image">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="column ml-3">
+                                                            <h5
+                                                                class="title is-5 has-text-weight-bold mb-1 has-text-light">
+                                                                Brooklyn Simmons</h5>
+                                                            <p class="mb-3">Just launched a new Courses React for
+                                                                Beginner.</p>
+                                                            <span class="is-size-6">
+                                                                <span>
+                                                                    <span class="icon has-text-success mr-1"><i
+                                                                            class="fas fa-thumbs-up"></i></span>
+                                                                    Oct 9,
+                                                                </span>
+                                                                <span class="ml-1">1:20 PM</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="column is-narrow has-text-centered">
+                                                <a href="#" class="tag is-rounded is-medium"
+                                                    style="background-color: #6c757d;" title="Mark as unread"></a>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <div class="dropdown-item columns">
+                                            <div class="column">
+                                                <a class="has-text-light" href="#">
+                                                    <div class="columns is-vcentered ml-2">
+                                                        <div class="image">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="column ml-3">
+                                                            <h5
+                                                                class="title is-5 has-text-weight-bold mb-1 has-text-light">
+                                                                Brooklyn Simmons</h5>
+                                                            <p class="mb-3">Just launched a new Courses React for
+                                                                Beginner.</p>
+                                                            <span class="is-size-6">
+                                                                <span>
+                                                                    <span class="icon has-text-success mr-1"><i
+                                                                            class="fas fa-thumbs-up"></i></span>
+                                                                    Oct 9,
+                                                                </span>
+                                                                <span class="ml-1">1:20 PM</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="column is-narrow has-text-centered">
+                                                <a href="#" class="tag is-rounded is-medium"
+                                                    style="background-color: #6c757d;" title="Mark as unread"></a>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <div class="dropdown-item columns">
+                                            <a href="#" class="has-text-light">
+                                                Link for any things
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- account -->
+                        <div class="navbar-item">
+                            <div class="dropdown is-right">
+                                <div class="dropdown-trigger">
+                                    <div class="image">
+                                        <img class="logo-size is-rounded" src="../assets/images/avatar/gigachad.jpg">
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu" style="width: 300px;">
+                                    <div class="dropdown-content background-darkmode-dark has-text-light">
+                                        <div class="dropdown-item">
+                                            <div class="media">
+                                                <figure class="media-left">
+                                                    <div class="image ">
+                                                        <img class="logo-size is-rounded"
+                                                            src="../assets/images/avatar/gigachad.jpg">
+                                                    </div>
+                                                </figure>
+                                                <div class="media-content">
+                                                    <p>
+                                                        <strong class="has-text-light">Phạm Anh Tuấn</strong>
+                                                        <br>
+                                                        phamanhtuan95vn@gmail.com
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-circle"></i>
+                                                </span>
+                                                <span>Status</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                                <span>Account</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                                <span>Account - Instructor</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-tachometer-alt"></i>
+                                                </span>
+                                                <span>Dashboard</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-cogs"></i>
+                                                </span>
+                                                <span>Admin management</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user-tie"></i>
+                                                </span>
+                                                <span>instructor admin management</span>
+                                            </span>
+                                        </a>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-power-off"></i>
+                                                </span>
+                                                <span>Sign Out</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+        <!-- Page content -->
+        <div class="page-content">
+            <!-- Page header -->
+            <section class="p-4 background-darkmode-light">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column">
+                            <div class="">
+                                <h1 class="title primary-color">Course</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Content -->
+            <section class="section">
+                <div class="container">
+                    <div class="mb-3">
+                        <div class="level">
+                            <div class="level-left">
+                                <!-- List  -->
+                                <div class="field">
+                                    <div class="control">
+                                        <div class="select">
+                                            <select>
+                                                <option value="">Sort by</option>
+                                                <option value="Newest">Newest</option>
+                                                <option value="Most Popular">Most Popular</option>
+                                                <option value="Highest Rated">Highest Rated</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <!-- function content -->
+                        <div class="column is-one-fifth">
+
+                            <div class="p-3 border-primary shadow-hover" style="border-radius: 6px;">
+                                <!-- Card -->
+                                <div class="blur-background">
+                                    <!-- Card header -->
+                                    <div class="card-header mb-2">
+                                        <h4 class="title is-4 mb-0">Filter</h4>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div class="card-content">
+                                        <span class="title is-6 px-0 mb-2 primary-color">Category</span>
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-1">
+                                            <input type="checkbox" id="reactCheck" checked>
+                                            <label for="reactCheck">React</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-1">
+                                            <input type="checkbox" id="javascriptCheck">
+                                            <label for="javascriptCheck">Javascript</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-1">
+                                            <input type="checkbox" id="angularCheck">
+                                            <label for="angularCheck">Angular</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-1">
+                                            <input type="checkbox" id="nodeCheck">
+                                            <label for="nodeCheck">Node</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-1">
+                                            <input type="checkbox" id="angularJSCheck">
+                                            <label for="angularJSCheck">Angular JS</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-1">
+                                            <input type="checkbox" id="gatsbyCheck">
+                                            <label for="gatsbyCheck">GatsBy</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-1">
+                                            <input type="checkbox" id="graphQlCheck">
+                                            <label for="graphQlCheck">GraphQL</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-1">
+                                            <input type="checkbox" id="vueJsCheck">
+                                            <label for="vueJsCheck">VueJs</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-1">
+                                            <input type="checkbox" id="bootstrapCheck">
+                                            <label for="bootstrapCheck">Bootstrap</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-1">
+                                            <input type="checkbox" id="figmaCheck">
+                                            <label for="figmaCheck">Figma</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-1">
+                                            <input type="checkbox" id="sketchCheck">
+                                            <label for="sketchCheck">Sketch</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-1">
+                                            <input type="checkbox" id="HTML5Check">
+                                            <label for="HTML5Check">HTML5</label>
+                                        </div>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div class="card-content" style="min-height: 100px;">
+                                        <span class="title is-6 primary-color px-0 mb-2">Ratings</span>
+                                        <!-- Custom control -->
+                                        <div class="control">
+                                            <label class="radio">
+                                                <input type="radio" name="customRadio" id="starRadio1">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                </span>
+
+                                                <span class="fs-6">4.5 & UP</span>
+                                            </label>
+                                        </div>
+                                        <!-- Custom control -->
+                                        <div class="custom-control custom-radio mb-1">
+                                            <input type="radio" id="starRadio2"
+                                                name="customRadio" checked>
+                                            <label for="starRadio2">
+                                                <span class="fs-6 align-top me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                </span>
+
+                                                <span class="fs-6">4.0 & UP</span>
+                                            </label>
+                                        </div>
+                                        <!-- Custom control -->
+                                        <div class="custom-control custom-radio mb-1">
+                                            <input type="radio" id="starRadio3"
+                                                name="customRadio">
+                                            <label for="starRadio3">
+                                                <span class="fs-6 align-top me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                </span>
+                                                <span class="fs-6">3.5 & UP</span>
+                                            </label>
+                                        </div>
+                                        <!-- Custom control -->
+                                        <div class="custom-control custom-radio mb-1">
+                                            <input type="radio" id="starRadio4"
+                                                name="customRadio">
+                                            <label for="starRadio4">
+                                                <span class="fs-6 align-top me-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        fill="currentColor" class="bi bi-star-fill has-text-warning"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </svg>
+                                                </span>
+                                                <span class="fs-6">3.0 & UP</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div class="card-content">
+                                        <span class="title is-6 primary-color px-0 mb-2">Skill Level</span>
+                                        <!-- Checkbox -->
+                                        <div class="mb-1">
+                                            <input type="checkbox" id="allTwoCheck">
+                                            <label class="" for="allTwoCheck">All Level</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="mb-1">
+                                            <input type="checkbox" id="beginnerTwoCheck" checked>
+                                            <label class="" for="beginnerTwoCheck">Beginner</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="mb-1">
+                                            <input type="checkbox" id="intermediateCheck">
+                                            <label class="" for="intermediateCheck">Intermediate</label>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="mb-1">
+                                            <input type="checkbox" id="AdvancedTwoCheck">
+                                            <label class="" for="AdvancedTwoCheck">Advance</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab content -->
+                        <div class="column">
+                            <!-- Tab pane row -->
+                            <div class="is-active pb-4" id="tabPaneList" role="tabpanel" aria-labelledby="tabPaneList">
+                                <!-- card temp-->
+                                <div class="card hover-zoom tns-item-row m-0">
+                                    <div class="columns box-shadow is-multiline" style="border-radius: 20px;">
+                                        <a class="column is-one-quarter" href="../pages/course-single.html">
+                                            <div class="card-image">
+                                                <figure class="image">
+                                                    <img src="../assets/images/course/course-react.jpg" alt="course">
+                                                </figure>
+                                            </div>
+                                        </a>
+                                        <div class="column">
+                                            <div class="media is-justify-content-space-between">
+                                                <div class="media-content">
+                                                    <p class="title is-6"><a href="../pages/course-single.html">How
+                                                            to easily create a website with React</a></p>
+                                                    <div class="is-flex is-align-items-center">
+                                                        <figure class="image is-32x32 mr-2">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="avatar">
+                                                        </figure>
+                                                        <p class="subtitle is-6 has-text-light">Morris Mccoy</p>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <span class="icon has-text-light">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="content has-text-light">
+                                                <div class="is-flex is-align-items-center">
+                                                    <time datetime="2016-1-1">3h 56m</time>
+                                                    <span class="icon has-text-warning ml-6">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                    <span class="has-text-warning ml-6">4.5</span>
+                                                    <span class="ml-2">(7,700)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card -->
+                                <div class="card hover-zoom tns-item-row m-0">
+                                    <div class="columns box-shadow is-multiline" style="border-radius: 20px;">
+                                        <a class="column is-one-quarter" href="#">
+                                            <div class="card-image">
+                                                <figure class="image">
+                                                    <img src="../assets/images/course/course-vue.jpg" alt="course">
+                                                </figure>
+                                            </div>
+                                        </a>
+                                        <div class="column">
+                                            <div class="media is-justify-content-space-between">
+                                                <div class="media-content">
+                                                    <p class="title is-6"><a href="#">Vue.js Components Fundamentals</a>
+                                                    </p>
+                                                    <div class="is-flex is-align-items-center">
+                                                        <figure class="image is-32x32 mr-2">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic male1.jpg"
+                                                                alt="avatar">
+                                                        </figure>
+                                                        <p class="subtitle is-6 has-text-light">Morris Mccoy</p>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <span class="icon has-text-light">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="content has-text-light">
+                                                <div class="is-flex is-align-items-center">
+                                                    <time datetime="2016-1-1">3h 56m</time>
+                                                    <span class="icon has-text-warning ml-6">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                    <span class="has-text-warning ml-6">4.5</span>
+                                                    <span class="ml-2">(9,300)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                                <div class="card hover-zoom tns-item-row m-0">
+                                    <!-- Row -->
+                                    <div class="columns box-shadow is-multiline" style="border-radius: 20px;">
+                                        <a class="column is-one-quarter" href="#">
+                                            <div class="card-image">
+                                                <figure class="image">
+                                                    <img src="../assets/images/course/course-bootstrap.jpg"
+                                                        alt="course">
+                                                </figure>
+                                            </div>
+                                        </a>
+                                        <div class="column">
+                                            <!-- Card body -->
+                                            <div class="media is-justify-content-space-between">
+                                                <div class="media-content">
+                                                    <p class="title is-6"><a href="#">Bootstrap 5 Beginner Tutorial</a>
+                                                    </p>
+                                                    <div class="is-flex is-align-items-center">
+                                                        <figure class="image is-32x32 mr-2">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic male1.jpg"
+                                                                alt="avatar">
+                                                        </figure>
+                                                        <p class="subtitle is-6 has-text-light">Ted Hawkins</p>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <span class="icon has-text-light">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="content has-text-light">
+                                                <div class="is-flex is-align-items-center">
+                                                    <time datetime="2016-1-1">2h 46m</time>
+                                                    <span class="icon has-text-warning ml-6">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                    <span class="has-text-warning ml-6">4.5</span>
+                                                    <span class="ml-2">(7,900)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                                <div class="card hover-zoom tns-item-row m-0">
+                                    <!-- Row -->
+                                    <div class="columns box-shadow is-multiline" style="border-radius: 20px;">
+                                        <a class="column is-one-quarter" href="#">
+                                            <div class="card-image">
+                                                <figure class="image">
+                                                    <img src="../assets/images/course/course-graphql.jpg" alt="course">
+                                                </figure>
+                                            </div>
+                                        </a>
+                                        <div class="column">
+                                            <!-- Card body -->
+                                            <div class="media is-justify-content-space-between">
+                                                <div class="media-content">
+                                                    <p class="title is-6"><a href="#">Getting Started WithGraphQL.js</a>
+                                                    </p>
+                                                    <div class="is-flex is-align-items-center">
+                                                        <figure class="image is-32x32 mr-2">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="avatar">
+                                                        </figure>
+                                                        <p class="subtitle is-6 has-text-light">Juanita Bell</p>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <span class="icon has-text-light">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="content has-text-light">
+                                                <div class="is-flex is-align-items-center">
+                                                    <time datetime="2016-1-1">1h 30m</time>
+                                                    <span class="icon has-text-warning ml-6">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                    <span class="has-text-warning ml-6">4.5</span>
+                                                    <span class="ml-2">(8,245)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                                <div class="card hover-zoom tns-item-row m-0">
+                                    <!-- Row -->
+                                    <div class="columns box-shadow is-multiline" style="border-radius: 20px;">
+                                        <a class="column is-one-quarter" href="#">
+                                            <div class="card-image">
+                                                <figure class="image">
+                                                    <img src="../assets/images/course/course-javascript.jpg"
+                                                        alt="course">
+                                                </figure>
+                                            </div>
+                                        </a>
+                                        <div class="column">
+                                            <!-- Card body -->
+                                            <div class="media is-justify-content-space-between">
+                                                <div class="media-content">
+                                                    <p class="title is-6"><a href="#">Applying JavaScript and using the
+                                                            console.</a></p>
+                                                    <div class="is-flex is-align-items-center">
+                                                        <figure class="image is-32x32 mr-2">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic female3.jpg"
+                                                                alt="avatar">
+                                                        </figure>
+                                                        <p class="subtitle is-6 has-text-light">Ted Hawkins</p>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <span class="icon has-text-light">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="content has-text-light">
+                                                <div class="is-flex is-align-items-center">
+                                                    <time datetime="2016-1-1">1h 30m</time>
+                                                    <span class="icon has-text-warning ml-6">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                    <span class="has-text-warning ml-6">4.5</span>
+                                                    <span class="ml-2">(6,600)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                                <div class="card hover-zoom tns-item-row m-0">
+                                    <!-- Row -->
+                                    <div class="columns box-shadow is-multiline" style="border-radius: 20px;">
+                                        <a class="column is-one-quarter" href="#">
+                                            <div class="card-image">
+                                                <figure class="image">
+                                                    <img src="../assets/images/course/course-node.jpg" alt="course">
+                                                </figure>
+                                            </div>
+                                        </a>
+                                        <div class="column">
+                                            <!-- Card body -->
+                                            <div class="media is-justify-content-space-between">
+                                                <div class="media-content">
+                                                    <p class="title is-6"><a href="#">Node.js Tutorials - For beginners
+                                                            and professionals</a></p>
+                                                    <div class="is-flex is-align-items-center">
+                                                        <figure class="image is-32x32 mr-2">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/gigachad.jpg" alt="avatar">
+                                                        </figure>
+                                                        <p class="subtitle is-6 has-text-light">Sumona Khaat</p>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <span class="icon has-text-light">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="content has-text-light">
+                                                <div class="is-flex is-align-items-center">
+                                                    <time datetime="2016-1-1">1h 30m</time>
+                                                    <span class="icon has-text-warning ml-6">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                    <span class="has-text-warning ml-6">4.5</span>
+                                                    <span class="ml-2">(2,700)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        </main>
+        <!-- Footer -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <!-- Desc -->
+                    <div class="column is-four-fifths has-text-centered-touch has-text-left has-text-primary-light">
+                        <span>
+                            ©
+                            <span id="copyright">
+                                <script>
+                                    document.getElementById("copyright").appendChild(document.createTextNode(new Date().getFullYear()));
+                                </script>
+                            </span>
+                            Geeks-Based. 2024 OW. All Rights Reserved.
+                        </span>
+                    </div>
+                    <!-- Links -->
+                    <div class="column is-one-fifths">
+                        <div class="level is-mobile">
+                            <div class="level-right">
+                                <a class="level-item" href="#!">Privacy</a>
+                                <a class="level-item" href="#!">Terms</a>
+                                <a class="level-item" href="#!">Feedback</a>
+                                <a class="level-item" href="#!">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <!-- Scripts -->
+    <!-- Libs JS -->
+    <!-- <script src="../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script> -->
+
+    <!-- Theme JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/js/vendors/bulma.js"></script>
+
+</body>
+
+</html>

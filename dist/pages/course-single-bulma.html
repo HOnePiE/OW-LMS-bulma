@@ -1,0 +1,1135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Codescandy" />
+
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/brand/logo/brand-logo2.svg" />
+    <link rel="stylesheet" type="text/css" href="../assets/icons/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Libs CSS -->
+    <link href="../assets/fonts/feather/feather.css" rel="stylesheet" />
+    <link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/index.css">
+
+    <!-- Theme CSS -->
+    <!-- <link rel="stylesheet" href="../assets/css/theme.min.css"> -->
+    <link href="../assets/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet" />
+    <title>Course Preview</title>
+</head>
+
+<body>
+    <div class="background-darkmode-dark">
+        <div class="primary-background" style="width: 100%;height: 50px; position: absolute;">
+            <div class="ms-3">
+                <!-- <h5 class="mb-0">Geeks-Based</h5> -->
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar blur-background" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../index-bulma.html">
+                    <img src="../assets/images/brand/logo/brandLogo2.svg" style="
+                            max-height: max-content;
+                            height: auto;
+                            width: 50px;
+                        ">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start is-flex is-justify-content-space-between" style="width: 100%;">
+                    <div class="navbar-item">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link has-text-light">
+                                Browse
+                            </a>
+                            <div class="navbar-dropdown background-darkmode-dark">
+                                <a class="navbar-item has-text-light"
+                                    href="./pages/course-filter-list.html">Bootstrap</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">React</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">GraphQl</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Gatsby</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Grunt</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Svelte</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Meteor</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">HTML5</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Angular</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-light">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-text-light has-dropdown is-hoverable">
+                            <a class="navbar-link has-text-light">
+                                Page
+                            </a>
+                            <div class="navbar-dropdown background-darkmode-dark has-text-light">
+                                <a class="navbar-item has-text-light"
+                                    href="./pages/course-filter-list.html">Bootstrap</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">React</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">GraphQl</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Gatsby</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Grunt</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Svelte</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Meteor</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">HTML5</a>
+                                <a class="navbar-item has-text-light" href="./pages/course-filter-list.html">Angular</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-light">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                        <!-- header navbar no search -->
+                        <div class="navbar-item has-text-light field">
+                            <p class="control has-icons-right is-expanded">
+                                <input class="input is-rounded" type="search" id="search" placeholder="Search Courses">
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item">
+                        <!-- notification -->
+                        <div class="navbar-item">
+                            <div class="dropdown is-right">
+                                <div class="dropdown-trigger">
+                                    <div class="" aria-haspopup="true" aria-controls="dropdown-menu2">
+                                        <span class="icon is-small">
+                                            <!-- <i class="fas fa-angle-down" aria-hidden="true"></i> -->
+                                            <i class="fa-regular fa-bell has-text-light" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu2" role="menu" style="width: 400px;">
+                                    <div class="dropdown-content background-darkmode-dark">
+                                        <div class="dropdown-item columns">
+                                            <div class="column">
+                                                <a class="has-text-light" href="#">
+                                                    <div class="columns is-vcentered ml-2">
+                                                        <div class="image">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="column ml-3">
+                                                            <h5
+                                                                class="title is-5 has-text-weight-bold mb-1 has-text-light">
+                                                                Brooklyn Simmons</h5>
+                                                            <p class="mb-3">Just launched a new Courses React for
+                                                                Beginner.</p>
+                                                            <span class="is-size-6">
+                                                                <span>
+                                                                    <span class="icon has-text-success mr-1"><i
+                                                                            class="fas fa-thumbs-up"></i></span>
+                                                                    Oct 9,
+                                                                </span>
+                                                                <span class="ml-1">1:20 PM</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="column is-narrow has-text-centered">
+                                                <a href="#" class="tag is-rounded is-medium"
+                                                    style="background-color: #6c757d;" title="Mark as unread"></a>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <div class="dropdown-item columns">
+                                            <div class="column">
+                                                <a class="has-text-light" href="#">
+                                                    <div class="columns is-vcentered ml-2">
+                                                        <div class="image">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="column ml-3">
+                                                            <h5
+                                                                class="title is-5 has-text-weight-bold mb-1 has-text-light">
+                                                                Brooklyn Simmons</h5>
+                                                            <p class="mb-3">Just launched a new Courses React for
+                                                                Beginner.</p>
+                                                            <span class="is-size-6">
+                                                                <span>
+                                                                    <span class="icon has-text-success mr-1"><i
+                                                                            class="fas fa-thumbs-up"></i></span>
+                                                                    Oct 9,
+                                                                </span>
+                                                                <span class="ml-1">1:20 PM</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="column is-narrow has-text-centered">
+                                                <a href="#" class="tag is-rounded is-medium"
+                                                    style="background-color: #6c757d;" title="Mark as unread"></a>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <div class="dropdown-item columns">
+                                            <a href="#" class="has-text-light">
+                                                Link for any things
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- account -->
+                        <div class="navbar-item">
+                            <div class="dropdown is-right">
+                                <div class="dropdown-trigger">
+                                    <div class="image">
+                                        <img class="logo-size is-rounded" src="../assets/images/avatar/gigachad.jpg">
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu" style="width: 300px;">
+                                    <div class="dropdown-content background-darkmode-dark has-text-light">
+                                        <div class="dropdown-item">
+                                            <div class="media">
+                                                <figure class="media-left">
+                                                    <div class="image ">
+                                                        <img class="logo-size is-rounded"
+                                                            src="../assets/images/avatar/gigachad.jpg">
+                                                    </div>
+                                                </figure>
+                                                <div class="media-content">
+                                                    <p>
+                                                        <strong class="has-text-light">Phạm Anh Tuấn</strong>
+                                                        <br>
+                                                        phamanhtuan95vn@gmail.com
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-circle"></i>
+                                                </span>
+                                                <span>Status</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                                <span>Account</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                                <span>Account - Instructor</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-tachometer-alt"></i>
+                                                </span>
+                                                <span>Dashboard</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-cogs"></i>
+                                                </span>
+                                                <span>Admin management</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-user-tie"></i>
+                                                </span>
+                                                <span>instructor admin management</span>
+                                            </span>
+                                        </a>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fas fa-power-off"></i>
+                                                </span>
+                                                <span>Sign Out</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <main>
+            <!-- Page header -->
+            <!-- Page header -->
+            <section class="section" style="
+            background-image: url(../assets/images/course/js-bg.png);background-size: cover;">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-three-quarters">
+                            <div class="content has-text-black">
+                                <h1 class="title is-1 pb-3 text-shadow">Getting Started with JavaScript</h1>
+                                <p class="subtitle is-5 has-text-black">
+                                    JavaScript is a powerful and flexible programming language used to create
+                                    interactive and featured websites. It is built in all modern web browsers, allowing
+                                    developers to add functions and behaviors into their websites.
+                                </p>
+                                <div class="level">
+                                    <a href="#" class="level-item is-justify-content-start">
+                                        <span class="icon is-medium"><i class="fas fa-bookmark"></i></span>
+                                        <span>Bookmark</span>
+                                    </a>
+                                    <div class="level-item is-justify-content-start">
+                                        <span class="icon is-medium"><i class="fas fa-user"></i></span>
+                                        <span>1200 Enrolled</span>
+                                    </div>
+                                    <div class="level-item is-justify-content-start">
+                                        <span class="icon is-medium has-text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="ml-6">(140)</span>
+                                    </div>
+                                    <div class="level-item is-justify-content-start">
+                                        <span class="icon is-medium"><i class="fas fa-chart-bar"></i></span>
+                                        <span>Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <!-- Card body -->
+                                        <div class="">
+                                            <a href="#" id="enroll-course-button" class="button is-primary pr-6 pl-6 js-modal-trigger" data-target="enrollment-modal">Enroll</a>
+                                        </div>
+                                    <!-- enroll model -->
+                                    <div class="modal" id="enrollment-modal">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head background-darkmode-dark">
+                                                <p class="modal-card-title">Enrollment</p>
+                                                <button class="delete" aria-label="close"></button>
+                                            </header>
+                                            <section class="modal-card-body background-darkmode-dark">
+                                                <input class="input" type="text" id="enrollment-key" placeholder="Enrollment key">
+                                            </section>
+                                            <footer class="modal-card-foot background-darkmode-dark">
+                                                <button class="button is-danger mr-2" id="cancel-button">Cancel</button>
+                                                <button class="button is-primary" id="enroll-button">Enroll</button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Page content -->
+            <section class="pb-8">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-three-fifths">
+                            <!-- Card -->
+                            <div class="card rounded-3">
+                                <!-- Card header - optional -->
+                                <!-- <div class="card-header p-2">
+                                    <div>
+                                        <div class="tabs is-box">
+                                            <ul>
+                                                <li class="is-active">
+                                                    <a>
+                                                        <span>Contents</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <span>Description</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <span>Reviews</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <span>Transcript</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <span>FAQ</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="tab-content" id="tabContent">
+                                        <!-- Contents -->
+                                        <div class="course-infor" id="table" role="tabpanel"
+                                            aria-labelledby="table-tab">
+                                            <!-- Card -->
+                                            <div class="accordion" id="courseAccordion">
+                                                <div>
+                                                    <h3 class="title is-4 mb-2">Contents</h3>
+                                                    <!-- List group -->
+                                                    <ul class="menu-list">
+                                                        <!-- List Group item -->
+                                                        <li class="menu-list-item border-primary p-2 mb-1 shadow-hover"
+                                                            style="border-radius: 6px;">
+                                                            <a
+                                                                class="has-dropdown toggle-collapse is-active primary-color is-flex is-justify-content-space-between">
+                                                                <span class="has-text-weight-bold">Introduction to
+                                                                    JavaScript</span>
+                                                                <span class="chevron-arrow ms-4">
+                                                                    <i class="fe fe-chevron-down fs-4"></i>
+                                                                </span>
+                                                            </a>
+                                                            <ul class="collapse-content ">
+                                                                <li>
+                                                                    <a
+                                                                        class="menu-link is-flex is-justify-content-space-between">
+                                                                        <div class="flex-content">
+                                                                            <span class="icon"><i
+                                                                                    class="fe fe-play fs-6"></i></span>
+                                                                            <span>Introduction</span>
+                                                                        </div>
+                                                                        <div class="flex-content">
+                                                                            <span><small>1m 7s</small></span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        class="menu-link is-flex is-justify-content-space-between">
+                                                                        <div class="flex-content">
+                                                                            <span class="icon"><i
+                                                                                    class="fe fe-play fs-6"></i></span>
+                                                                            <span>Installing Development Software</span>
+                                                                        </div>
+                                                                        <div class="flex-content">
+                                                                            <span><small>3m 11s</small></span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        class="menu-link is-flex is-justify-content-space-between">
+                                                                        <div class="flex-content">
+                                                                            <span class="icon"><i
+                                                                                    class="fe fe-play fs-6"></i></span>
+                                                                            <span>Hello World Project from GitHub</span>
+                                                                        </div>
+                                                                        <div class="flex-content">
+                                                                            <span><small>2m 33s</small></span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <!-- add more items here -->
+                                                            </ul>
+                                                        </li>
+                                                        <!-- List Group item -->
+                                                        <li class="menu-list-item border-primary p-2 mb-1 shadow-hover"
+                                                            style="border-radius: 6px;">
+                                                            <a
+                                                                class="has-dropdown toggle-collapse is-active primary-color is-flex is-justify-content-space-between">
+                                                                <span class="has-text-weight-bold">Introduction to
+                                                                    JavaScript</span>
+                                                                <span class="chevron-arrow ms-4">
+                                                                    <i class="fe fe-chevron-down fs-4"></i>
+                                                                </span>
+                                                            </a>
+                                                            <ul class="collapse-content ">
+                                                                <li>
+                                                                    <a
+                                                                        class="menu-link is-flex is-justify-content-space-between">
+                                                                        <div class="flex-content">
+                                                                            <span class="icon"><i
+                                                                                    class="fe fe-play fs-6"></i></span>
+                                                                            <span>Introduction</span>
+                                                                        </div>
+                                                                        <div class="flex-content">
+                                                                            <span><small>1m 7s</small></span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        class="menu-link is-flex is-justify-content-space-between">
+                                                                        <div class="flex-content">
+                                                                            <span class="icon"><i
+                                                                                    class="fe fe-play fs-6"></i></span>
+                                                                            <span>Installing Development Software</span>
+                                                                        </div>
+                                                                        <div class="flex-content">
+                                                                            <span><small>3m 11s</small></span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        class="menu-link is-flex is-justify-content-space-between">
+                                                                        <div class="flex-content">
+                                                                            <span class="icon"><i
+                                                                                    class="fe fe-play fs-6"></i></span>
+                                                                            <span>Hello World Project from GitHub</span>
+                                                                        </div>
+                                                                        <div class="flex-content">
+                                                                            <span><small>2m 33s</small></span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        class="menu-link is-flex is-justify-content-space-between">
+                                                                        <div class="flex-content">
+                                                                            <span class="icon"><i
+                                                                                    class="fe fe-play fs-6"></i></span>
+                                                                            <span>Our Sample Website</span>
+                                                                        </div>
+                                                                        <div class="flex-content">
+                                                                            <span><small>2m 15s</small></span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <!-- List Group item -->
+                                                        <li class="menu-list-item border-primary p-2 mb-1 shadow-hover"
+                                                            style="border-radius: 6px;">
+                                                            <a
+                                                                class="has-dropdown toggle-collapse is-active primary-color is-flex is-justify-content-space-between">
+                                                                <span class="has-text-weight-bold">JavaScript
+                                                                    Beginning</span>
+                                                                <span class="chevron-arrow ms-4">
+                                                                    <i class="fe fe-chevron-down fs-4"></i>
+                                                                </span>
+                                                            </a>
+                                                            <ul class="collapse-content ">
+                                                                <li>
+                                                                    <a
+                                                                        class="menu-link is-flex is-justify-content-space-between">
+                                                                        <div class="flex-content">
+                                                                            <span class="icon"><i
+                                                                                    class="fe fe-lock fs-6"></i></span>
+                                                                            <span>Introduction</span>
+                                                                        </div>
+                                                                        <div class="flex-content">
+                                                                            <span><small>1m 41s</small></span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        class="menu-link is-flex is-justify-content-space-between">
+                                                                        <div class="flex-content">
+                                                                            <span class="icon"><i
+                                                                                    class="fe fe-lock fs-6"></i></span>
+                                                                            <span>Adding JavaScript Code to a Web
+                                                                                Page</span>
+                                                                        </div>
+                                                                        <div class="flex-content">
+                                                                            <span><small>3m 39s</small></span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        class="menu-link is-flex is-justify-content-space-between">
+                                                                        <div class="flex-content">
+                                                                            <span class="icon"><i
+                                                                                    class="fe fe-lock fs-6"></i></span>
+                                                                            <span>Working with JavaScript Files</span>
+                                                                        </div>
+                                                                        <div class="flex-content">
+                                                                            <span><small>6m 18s</small></span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        class="menu-link is-flex is-justify-content-space-between">
+                                                                        <div class="flex-content">
+                                                                            <span class="icon"><i
+                                                                                    class="fe fe-lock fs-6"></i></span>
+                                                                            <span>Formatting Code</span>
+                                                                        </div>
+                                                                        <div class="flex-content">
+                                                                            <span><small>2m 18s</small></span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <!-- Add more list items as needed -->
+                                                            </ul>
+                                                        </li>
+                                                        <!-- List Group item -->
+                                                        <li class="menu-list-item border-primary p-2 mb-1 shadow-hover"
+                                                            style="border-radius: 6px;">
+                                                            <a
+                                                                class="has-dropdown toggle-collapse is-active primary-color is-flex is-justify-content-space-between">
+                                                                <span class="has-text-weight-bold">Summary</span>
+                                                                <span class="chevron-arrow ms-4">
+                                                                    <i class="fe fe-chevron-down fs-4"></i>
+                                                                </span>
+                                                            </a>
+                                                            <div class="collapse-content ">
+                                                                <p class="text-smaller m-3">Lorem ipsum dolor sit amet
+                                                                    consectetur adipisicing elit.
+                                                                    Repudiandae esse velit eos
+                                                                    sunt ab inventore est tenetur blanditiis? Voluptas
+                                                                    eius molestiae ad itaque tempora
+                                                                    nobis minima eveniet aperiam molestias.</p>
+                                                                <p class="text-smaller m-3">Maiores natus expedita
+                                                                    dolores ea non possimus magnam
+                                                                    corrupt i quas rem unde quo
+                                                                    enim porro culpa! Quaerat veritatis veniam corrupti
+                                                                    iusto.</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Description -->
+                                        <div class="course-infor" id="description" role="tabpanel"
+                                            aria-labelledby="description-tab">
+                                            <div class="mb-4">
+                                                <h3 class="title is-4 mb-2">Course Descriptions</h3>
+                                                <p>
+                                                    If you’re learning to program for the first time, or if you’re
+                                                    coming
+                                                    from a different language, this course, JavaScript: Getting Started,
+                                                    will give
+                                                    you the basics for coding in JavaScript. First, you'll discover the
+                                                    types of applications that can be built with JavaScript, and the
+                                                    platforms
+                                                    they’ll run on.
+                                                </p>
+                                                <p>
+                                                    Next, you’ll explore the basics of the language, giving plenty of
+                                                    examples. Lastly, you’ll put your JavaScript knowledge to work and
+                                                    modify a
+                                                    modern, responsive web page. When you’re finished with this course,
+                                                    you’ll have the skills and knowledge in JavaScript to create simple
+                                                    programs,
+                                                    create simple web applications, and modify web pages.
+                                                </p>
+                                            </div>
+                                            <h4 class="mb-3">What you’ll learn</h4>
+                                            <div class="columns mb-3">
+                                                <div class="column">
+                                                    <div class="content">
+                                                        <div class="media">
+                                                            <figure class="media-left">
+                                                                <span class="icon has-text-success">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" fill="currentColor"
+                                                                        viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                                        <path
+                                                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                                                    </svg>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="media-content">
+                                                                <p>Recognize the importance of understanding your
+                                                                    objectives when addressing an audience.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="media">
+                                                            <figure class="media-left">
+                                                                <span class="icon has-text-success">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" fill="currentColor"
+                                                                        viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                                        <path
+                                                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                                                    </svg>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="media-content">
+                                                                <p>Identify the fundaments of composing a successful
+                                                                    close.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="media">
+                                                            <figure class="media-left">
+                                                                <span class="icon has-text-success">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" fill="currentColor"
+                                                                        viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                                        <path
+                                                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                                                    </svg>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="media-content">
+                                                                <p>Explore how to connect with your audience through
+                                                                    crafting compelling stories.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="column">
+                                                    <div class="content">
+                                                        <div class="media">
+                                                            <figure class="media-left">
+                                                                <span class="icon has-text-success">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" fill="currentColor"
+                                                                        viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                                        <path
+                                                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                                                    </svg>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="media-content">
+                                                                <p>Examine ways to connect with your audience by
+                                                                    personalizing your content.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="media">
+                                                            <figure class="media-left">
+                                                                <span class="icon has-text-success">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" fill="currentColor"
+                                                                        viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                                        <path
+                                                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                                                    </svg>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="media-content">
+                                                                <p>Break down the best ways to exude executive presence.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="media">
+                                                            <figure class="media-left">
+                                                                <span class="icon has-text-success">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" fill="currentColor"
+                                                                        viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                                        <path
+                                                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                                                    </svg>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="media-content">
+                                                                <p>Explore how to communicate the unknown in an
+                                                                    impromptu communication.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- review -->
+                                        <div class="course-infor" id="review" role="tabpanel"
+                                            aria-labelledby="review-tab">
+                                            <!-- Reviews -->
+                                            <div class="mb-3">
+                                                <h3 class="title is-4 mb-2">Course Rating</h3>
+                                                <div class="columns align-items-center">
+                                                    <div class="column is-one-quarter has-text-centered">
+                                                        <h3 class="title is-2 has-text-weight-bold">4.5</h3>
+                                                        <span class="subtitle has-text-warning is-6">
+                                                            <!-- stars -->
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </span>
+                                                        <p class="subtitle is-6">(Based on 27 reviews)</p>
+                                                    </div>
+                                                    <div class="column is-one-quarter">
+                                                        <!-- Rating -->
+                                                        <div>
+                                                            <span class="has-text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </span>
+                                                            <span class="ml-1">53%</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="has-text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                            </span>
+                                                            <span class="ml-1">36%</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="has-text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                            </span>
+                                                            <span class="ml-1">9%</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="has-text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                            </span>
+                                                            <span class="ml-1">3%</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="has-text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                            </span>
+                                                            <span class="ml-1">2%</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Progress Bar -->
+                                                    <div class="column">
+                                                        <progress class="progress is-warning is-small mb-3" value="90"
+                                                            max="100">90%</progress>
+                                                        <progress class="progress is-warning is-small mb-3" value="80"
+                                                            max="100">80%</progress>
+                                                        <progress class="progress is-warning is-small mb-3" value="70"
+                                                            max="100">70%</progress>
+                                                        <progress class="progress is-warning is-small mb-3" value="60"
+                                                            max="100">60%</progress>
+                                                        <progress class="progress is-warning is-small mb-0" value="50"
+                                                            max="100">50%</progress>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <hr class="my-5">
+                                            <div class="mb-3">
+                                                <div
+                                                    class="columns is-flex is-align-items-center is-justify-content-space-between mb-5">
+                                                    <!-- Reviews -->
+                                                    <div class="column is-flex is-flex-direction-column mb-3">
+                                                        <h3 class="title is-6 mb-0">Reviews</h3>
+                                                    </div>
+                                                </div>
+                                                <!-- Rating -->
+                                                <div class="media">
+                                                    <figure class="media-left">
+                                                        <figure class="image is-64x64">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="">
+                                                        </figure>
+                                                    </figure>
+                                                    <div class="media-content">
+                                                        <div class="content">
+                                                            <p>
+                                                                <strong>Max Hawkins</strong> <small>2 Days ago</small>
+                                                                <br>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <br>
+                                                                Lectures were at a really good pace and I never felt
+                                                                lost. The instructor was well informed and allowed me to
+                                                                learn and navigate Figma easily.
+                                                            </p>
+                                                        </div>
+                                                        <nav class="level is-mobile">
+                                                            <div class="level-left">
+                                                                <a class="level-item">
+                                                                    Was this review helpful?
+                                                                </a>
+                                                                <a class="level-item button is-small is-primary">Yes</a>
+                                                                <a class="level-item button is-small is-light">No</a>
+                                                            </div>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                                <!-- Rating -->
+                                                <div class="media">
+                                                    <figure class="media-left">
+                                                        <figure class="image is-64x64">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="">
+                                                        </figure>
+                                                    </figure>
+                                                    <div class="media-content">
+                                                        <div class="content">
+                                                            <p>
+                                                                <strong>Max Hawkins</strong> <small>2 Days ago</small>
+                                                                <br>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <br>
+                                                                Lectures were at a really good pace and I never felt
+                                                                lost. The instructor was well informed and allowed me to
+                                                                learn and navigate Figma easily.
+                                                            </p>
+                                                        </div>
+                                                        <nav class="level is-mobile">
+                                                            <div class="level-left">
+                                                                <a class="level-item">
+                                                                    Was this review helpful?
+                                                                </a>
+                                                                <a class="level-item button is-small is-primary">Yes</a>
+                                                                <a class="level-item button is-small is-light">No</a>
+                                                            </div>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                                <!-- Rating -->
+                                                <div class="media">
+                                                    <figure class="media-left">
+                                                        <figure class="image is-64x64">
+                                                            <img class="is-rounded"
+                                                                src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg"
+                                                                alt="">
+                                                        </figure>
+                                                    </figure>
+                                                    <div class="media-content">
+                                                        <div class="content">
+                                                            <p>
+                                                                <strong>Max Hawkins</strong> <small>2 Days ago</small>
+                                                                <br>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <span class="icon has-text-warning">
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <br>
+                                                                Lectures were at a really good pace and I never felt
+                                                                lost. The instructor was well informed and allowed me to
+                                                                learn and navigate Figma easily.
+                                                            </p>
+                                                        </div>
+                                                        <nav class="level is-mobile">
+                                                            <div class="level-left">
+                                                                <a class="level-item">
+                                                                    Was this review helpful?
+                                                                </a>
+                                                                <a class="level-item button is-small is-primary">Yes</a>
+                                                                <a class="level-item button is-small is-light">No</a>
+                                                            </div>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <!-- Card -->
+                            
+                            <!-- Card -->
+                            <div class="card mb-4 mt-4">
+                                <!-- Card header -->
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        What’s included
+                                    </p>
+                                </header>
+                                <div class="card-content" style="min-height: 100px;">
+                                    <ul>
+                                        <li>
+                                            <i class="fe fe-play-circle align-middle mr-2 has-text-primary"></i>
+                                            225 hours video
+                                        </li>
+                                        <li>
+                                            <i class="fe fe-award mr-2 align-middle has-text-success"></i>
+                                            Certificate
+                                        </li>
+                                        <li>
+                                            <i class="fe fe-calendar align-middle mr-2 has-text-info"></i>
+                                            75 Article
+                                        </li>
+                                        <li>
+                                            <i class="fe fe-clock align-middle mr-2 has-text-warning"></i>
+                                            Lifetime access
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Card -->
+                            <div class="card">
+                                <!-- Card body -->
+                                <div class="card-content" style="min-height: 100px;">
+                                    <div class="media">
+                                        <figure class="media-left">
+                                            <figure class="image is-64x64">
+                                                <img class="is-rounded" src="../assets/images/avatar/Firefly person avatar, realistic male1.jpg" alt="avatar">
+                                            </figure>
+                                        </figure>
+                                        <div class="media-content">
+                                            <p>
+                                                <strong>Jenny Wilson</strong>
+                                                <br>
+                                                Front-end Developer, Designer
+                                                <br>
+                                                <span class="tag is-warning">4.5</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        I am an Innovation designer focussing on UX/UI based in Berlin. As a creative resident at Figma explored the city of the future and how new technologies.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                    <!-- recommend course here nha bồ rảnh thì bỏ -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <!-- Desc -->
+                <div class="column is-four-fifths has-text-centered-touch has-text-left has-text-primary-light">
+                    <span>
+                        ©
+                        <span id="copyright">
+                            <script>
+                                document.getElementById("copyright").appendChild(document.createTextNode(new Date().getFullYear()));
+                            </script>
+                        </span>
+                        Geeks-Based. 2024 OW. All Rights Reserved.
+                    </span>
+                </div>
+                <!-- Links -->
+                <div class="column is-one-fifths">
+                    <div class="level is-mobile">
+                        <div class="level-right">
+                            <a class="level-item" href="#!">Privacy</a>
+                            <a class="level-item" href="#!">Terms</a>
+                            <a class="level-item" href="#!">Feedback</a>
+                            <a class="level-item" href="#!">Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Libs JS -->
+    <!-- <script src="../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script> -->
+
+    <!-- Theme JS -->
+    <!-- <script src="../assets/js/theme.min.js"></script>
+
+
+    <script src="../assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+
+    <script src="../assets/js/vendors/tooltip.js"></script>
+    <script src="../assets/libs/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="../assets/js/vendors/glight.js"></script> -->
+    <!-- <script src="../assets/js/vendors/enrollbar.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/js/vendors/bulma.js"></script>
+</body>
+
+</html>

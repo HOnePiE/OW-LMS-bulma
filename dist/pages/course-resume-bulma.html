@@ -11,7 +11,7 @@
 
     <!-- Favicon icon-->
     <link rel="shortcut icon" type="image/x-icon" href="../assets/images/brand/logo/brand-logo2.svg" />
-    <link rel="stylesheet" type="text/css" href="./assets/icons/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/icons/fontawesome-free-6.5.1-web/css/all.min.css">
     <!-- darkmode js -->
     <script src="../assets/js/vendors/darkMode.js"></script>
 
@@ -35,7 +35,7 @@
             </div>
         </div>
         <!-- Navbar -->
-        <nav class="navbar blur-background" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-fixed-top blur-background" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="../index-bulma.html">
                     <img src="../assets/images/brand/logo/brandLogo2.svg" style="
@@ -213,7 +213,7 @@
                                                 <figure class="media-left">
                                                     <div class="image ">
                                                         <img class="logo-size is-rounded"
-                                                            src="./assets/images/avatar/gigachad.jpg">
+                                                            src="../assets/images/avatar/gigachad.jpg">
                                                     </div>
                                                 </figure>
                                                 <div class="media-content">
@@ -293,21 +293,17 @@
             </div>
 
         </nav>
-
-        <main class="is-flex" style="max-width: 100%;
-        height: 100%;
-        width: 100%;
-        margin: 0px auto;">
+        <main id="main-content" class="">
             <section class="card course-sidebar background-darkmode-light" id="courseAccordion">
                 <!-- List group -->
                 <!-- List group -->
-                <aside class="menu" style="height: 850px" data-simplebar>
-                    <p class="menu-label title p-4 m-0 has-text-primary-light border-primary has-text-centered">
+                <aside class="menu" style="height: 100%" data-simplebar>
+                    <p class="menu-label title p-4 m-0 has-text-primary-light border-primary-bottomNone  has-text-centered">
                         Table of Content
                     </p>
                     <ul class="menu-list">
                         <!-- List Group item -->
-                        <li class="menu-list-item border-primary">
+                        <li class="menu-list-item border-primary-bottomNone">
                             <a
                                 class="has-dropdown toggle-collapse is-active primary-color is-flex is-justify-content-space-between">
                                 <span class="tag background-color has-text-black">1</span>
@@ -354,7 +350,7 @@
                             </ul>
                         </li>
                         <!-- List Group item -->
-                        <li class="menu-list-item border-primary">
+                        <li class="menu-list-item border-primary-bottomNone ">
                             <a
                                 class="has-dropdown toggle-collapse is-active primary-color is-flex is-justify-content-space-between">
                                 <span class="tag background-color has-text-black">2</span>
@@ -411,7 +407,7 @@
                             </ul>
                         </li>
                         <!-- List Group item -->
-                        <li class="menu-list-item border-primary">
+                        <li class="menu-list-item border-primary-bottomNone ">
                             <a
                                 class="has-dropdown toggle-collapse is-active primary-color is-flex is-justify-content-space-between">
                                 <span class="tag background-color has-text-black">3</span>
@@ -469,7 +465,7 @@
                             </ul>
                         </li>
                         <!-- List Group item -->
-                        <li class="menu-list-item border-primary">
+                        <li class="menu-list-item border-primary-bottomNone ">
                             <a
                                 class="has-dropdown toggle-collapse is-active primary-color is-flex is-justify-content-space-between">
                                 <span class="tag background-color has-text-black">4</span>
@@ -479,60 +475,169 @@
                                 </span>
                             </a>
                             <div class="collapse-content ">
-                                <p class="text-smaller m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse velit eos
+                                <p class="text-smaller m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repudiandae esse velit eos
                                     sunt ab inventore est tenetur blanditiis? Voluptas eius molestiae ad itaque tempora
                                     nobis minima eveniet aperiam molestias.</p>
-                                <p class="text-smaller m-3">Maiores natus expedita dolores ea non possimus magnam corrupt i quas rem unde quo
+                                <p class="text-smaller m-3">Maiores natus expedita dolores ea non possimus magnam
+                                    corrupt i quas rem unde quo
                                     enim porro culpa! Quaerat veritatis veniam corrupti iusto.</p>
                             </div>
-                        </li>    
+                        </li>
                     </ul>
                 </aside>
-               
-            </section>                          
-            <section class="card mt-3 course-container">
-                <div class="container">
-                    <div class="columns">
-                        <div class="column">
-                            <!-- Tab content -->
-                            <div class="tab-content content" id="course-tabContent">
-                                <div class="panel is-active" id="course-intro">
-                                    <div class="level mb-4">
-                                        <div>
-                                            <h3 class="title is-3 mb-0">Introduction</h3>
+
+            </section>
+            <section class="card course-container">
+                <!--lecture content -->
+                <div class="tab-content content" id="course-tabContent">
+                    <div class="is-flex is-justify-content-space-between p-2" style="height: 46.3px;">
+                        <a class="sidebar-hide navbar-item" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div>
+                            <h3 class="title primary-color is-3 mb-0">Introduction</h3>
+                        </div>
+                        <div class="is-flex is-vcentered">
+                            <a href="#" id="dropdownInfo">
+                                <span class="icon">
+                                    <i class="fe fe-help-circle"></i>
+                                </span>
+                            </a>
+                            <a href="#" role="button" id="shareDropdown2">
+                                <span class="icon">
+                                    <i class="fe fe-more-vertical"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- lecture Video -->
+                    <div class="video-ratio">
+                        <iframe src="https://www.youtube.com/embed/lfmg-EJ8gm4"
+                            title="JavaScript Full Course for free 🌐 (2024)" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <!-- lecture infor -->
+                    <div class="section">
+                        <div class="container">
+                            <div class="">
+                                <div class="mb-2">
+                                    <h1 class="title is-4">Content</h1>
+                                    <p style="line-height: 1.75rem;">JavaScript is a powerful and versatile programming
+                                        language widely used in web
+                                        and software development. With a simple and easy -to -read syntax, JavaScript is
+                                        one of the most accessible programming languages for beginners. With the ability
+                                        to run on many different platforms including web browser, server, mobile phone
+                                        and IoT device, JavaScript has become one of the most important tools in today's
+                                        software industry.</p>
+                                </div>
+                                <div class="">
+                                    <h1 class="title is-4">Leave a Comment</h1>
+                                    <form>
+                                        <div class="field">
+                                            <label class="label">Comment</label>
+                                            <div class="control">
+                                                <textarea class="textarea background-darkmode-dark"
+                                                    placeholder="Your Comment"></textarea>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <!-- Dropdown -->
-                                            <!-- Bulma doesn't support dropdowns out of the box. You'll need to implement this yourself. -->
-                                            <a class="button" href="#" id="dropdownInfo">
-                                                <span class="icon">
-                                                    <i class="fe fe-help-circle"></i>
-                                                </span>
-                                            </a>
-                                            <!-- Dropdown -->
-                                            <!-- Bulma doesn't support dropdowns out of the box. You'll need to implement this yourself. -->
-                                            <a class="button" href="#" role="button" id="shareDropdown2">
-                                                <span class="icon">
-                                                    <i class="fe fe-more-vertical"></i>
-                                                </span>
-                                            </a>
+                                        <div class="field">
+                                            <div class="control">
+                                                <button class="button is-link">Post</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- Video -->
-                                    <div class="has-ratio" style="padding-top: 56.25%">
-                                        <iframe class="absolute top-0 left-0 w-full h-full"
-                                            src="https://www.youtube.com/embed/lfmg-EJ8gm4"
-                                            title="JavaScript Full Course for free 🌐 (2024)"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen>
-                                        </iframe>
+                                    </form>
+                                    <div class="user-comment mt-4">
+                                        <!-- comments of user -->
+                                        <article class="media">
+                                            <figure class="media-left mr-2">
+                                                <p class="image is-64x64">
+                                                    <img src="../assets/images/avatar/Firefly person avatar, realistic female1.jpg"
+                                                        alt="" class="is-rounded
+                                        ">
+                                                </p>
+                                            </figure>
+                                            <div class="media-content">
+                                                <div class="content">
+                                                    <p>
+                                                        <strong>Barbara Middleton</strong>
+                                                        <br />
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                                                        porta eros
+                                                        lacus, nec ultricies elit blandit non. Suspendisse pellentesque
+                                                        mauris
+                                                        sit amet dolor blandit rutrum. Nunc in tempus turpis.
+                                                        <br />
+                                                        <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+                                                    </p>
+                                                </div>
+
+                                                <article class="media">
+                                                    <figure class="mr-2">
+                                                        <p class="image is-64x64">
+                                                            <img src="../assets/images/avatar/Firefly person avatar, realistic female1.jpg"
+                                                                alt="" class="is-rounded
+                                                ">
+                                                        </p>
+                                                    </figure>
+                                                    <div class="media-content">
+                                                        <div class="content">
+                                                            <p>
+                                                                <strong>Sean Brown</strong>
+                                                                <br />
+                                                                Donec sollicitudin urna eget eros malesuada sagittis.
+                                                                Pellentesque
+                                                                habitant morbi tristique senectus et netus et malesuada
+                                                                fames ac
+                                                                turpis egestas. Aliquam blandit nisl a nulla sagittis, a
+                                                                lobortis
+                                                                leo feugiat.
+                                                                <br />
+                                                                <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </article>
+
+                                                <article class="media">
+                                                    <figure class="mr-2">
+                                                        <p class="image is-64x64">
+                                                            <img src="../assets/images/avatar/Firefly person avatar, realistic female1.jpg"
+                                                                alt="" class="is-rounded
+                                                ">
+                                                        </p>
+                                                    </figure>
+                                                    <div class="media-content">
+                                                        <div class="content">
+                                                            <p>
+                                                                <strong>Kayli Eunice </strong>
+                                                                <br />
+                                                                Sed convallis scelerisque mauris, non pulvinar nunc
+                                                                mattis vel.
+                                                                Maecenas varius felis sit amet magna vestibulum euismod
+                                                                malesuada
+                                                                cursus libero. Vestibulum ante ipsum primis in faucibus
+                                                                orci luctus
+                                                                et ultrices posuere cubilia Curae; Phasellus lacinia non
+                                                                nisl id
+                                                                feugiat.
+                                                                <br />
+                                                                <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </article>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
             <!-- Card -->
 
