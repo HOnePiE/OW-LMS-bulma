@@ -280,6 +280,10 @@ td, th {
   padding-top: 55px;
 }
 
+.is-above {
+  z-index: 2;
+}
+
 #db-wrapper {
   height: 100vh;
 }
@@ -405,7 +409,7 @@ td, th {
 }
 
 .box-shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.44) !important;
 }
 
 .shadow-hover:hover {

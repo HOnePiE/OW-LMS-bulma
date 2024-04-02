@@ -336,23 +336,6 @@
                                         <div class="">
                                             <a href="#" id="enroll-course-button" class="button is-primary pr-6 pl-6 js-modal-trigger" data-target="enrollment-modal">Enroll</a>
                                         </div>
-                                    <!-- enroll model -->
-                                    <div class="modal" id="enrollment-modal">
-                                        <div class="modal-background"></div>
-                                        <div class="modal-card">
-                                            <header class="modal-card-head background-darkmode-dark">
-                                                <p class="modal-card-title">Enrollment</p>
-                                                <button class="delete" aria-label="close"></button>
-                                            </header>
-                                            <section class="modal-card-body background-darkmode-dark">
-                                                <input class="input" type="text" id="enrollment-key" placeholder="Enrollment key">
-                                            </section>
-                                            <footer class="modal-card-foot background-darkmode-dark">
-                                                <button class="button is-danger mr-2" id="cancel-button">Cancel</button>
-                                                <button class="button is-primary" id="enroll-button">Enroll</button>
-                                            </footer>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1079,38 +1062,24 @@
             </section>
         </main>
     </div>
-
-    <!-- Footer -->
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="columns is-vcentered">
-                <!-- Desc -->
-                <div class="column is-four-fifths has-text-centered-touch has-text-left has-text-primary-light">
-                    <span>
-                        ©
-                        <span id="copyright">
-                            <script>
-                                document.getElementById("copyright").appendChild(document.createTextNode(new Date().getFullYear()));
-                            </script>
-                        </span>
-                        Geeks-Based. 2024 OW. All Rights Reserved.
-                    </span>
-                </div>
-                <!-- Links -->
-                <div class="column is-one-fifths">
-                    <div class="level is-mobile">
-                        <div class="level-right">
-                            <a class="level-item" href="#!">Privacy</a>
-                            <a class="level-item" href="#!">Terms</a>
-                            <a class="level-item" href="#!">Feedback</a>
-                            <a class="level-item" href="#!">Support</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- enroll model -->
+    <div class="modal" id="enrollment-modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head background-darkmode-dark">
+                <p class="modal-card-title">Enrollment</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body background-darkmode-dark">
+                <input class="input" type="text" id="enrollment-key" placeholder="Enrollment key">
+            </section>
+            <footer class="modal-card-foot background-darkmode-dark">
+                <button class="button is-danger mr-2" id="cancel-button">Cancel</button>
+                <button class="button is-primary" id="enroll-button">Enroll</button>
+            </footer>
         </div>
-    </footer>
+    </div>
+    <!-- Footer -->
 
     <!-- Scripts -->
     <!-- Libs JS -->
@@ -1127,7 +1096,7 @@
     <script src="../assets/js/vendors/tooltip.js"></script>
     <script src="../assets/libs/glightbox/dist/js/glightbox.min.js"></script>
     <script src="../assets/js/vendors/glight.js"></script> -->
-    <!-- <script src="../assets/js/vendors/enrollbar.js"></script> -->
+    <script src="../assets/js/vendors/enrollbar.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../assets/js/vendors/bulma.js"></script>
 </body>

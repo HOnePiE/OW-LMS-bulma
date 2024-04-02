@@ -426,7 +426,7 @@
                                                         <td>
                                                             <div class="dropdown is-right">
                                                                 <div class="dropdown-trigger">
-                                                                    <button class="button is-small" aria-haspopup="true"
+                                                                    <button class="button is-small is-above" aria-haspopup="true"
                                                                         aria-controls="dropdown-menu">
                                                                         <span class="icon is-small">
                                                                             <i class="fas fa-ellipsis-v"
@@ -456,19 +456,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- modal  -->
-                            <div id="userInfor-modal" class="modal">
+                            <!--user infor modal  -->
+                            <div id="userInfor-modal" class="modal" style="font-weight: 500; font-size: 1.25rem;">
                                 <div class="modal-background"></div>
                                 <div class="modal-content"
-                                    style="width: 98%;height: 100%; overflow: hidden;border-radius: 6px;">
+                                    style="width: 90%;height: 63%; overflow: hidden;border-radius: 6px;">
                                     <div class="" style="width: 100%; height: 100%; overflow:hidden;">
-                                        <section class="section background-darkmode-dark"
+                                        <section class="section background-darkmode-light"
                                             style="width: 100%; height: 100%;">
-                                            <h1 class="title primary-color">Personal Information</h1>
-                                            <div class="">
-                                                <div class="fixed-grid has-4-cols" style="width: 100%;">
-                                                    <div class="grid">
-                                                        <div class="cell is-flex is-justify-content-center">
+                                            <h1 class="title is-5 primary-color">Personal Information</h1>
+                                            <div class="columns" style="width: 100%;">
+                                                <div class="column box-shadow background-darkmode-dark"
+                                                    style="border-radius: 6px;">
+                                                    <div class="">
+                                                        <div class="is-flex is-justify-content-center">
                                                             <figure class="media-left">
                                                                 <p class="image" style="width: 70px;">
                                                                     <img src="../../assets/images/avatar/Firefly person avatar, realistic female1.jpg"
@@ -476,22 +477,22 @@
                                                                 </p>
                                                             </figure>
                                                         </div>
-                                                        <div class="cell field">
-                                                            <label class="title is-6">Email</label>
+                                                        <div class=" field">
+                                                            <label class="is-size-6">Email</label>
                                                             <div class="control">
                                                                 <input class="input" type="text"
                                                                     value="examplebb@gmail.com" readonly>
                                                             </div>
                                                         </div>
-                                                        <div class="cell field">
-                                                            <label class="title is-6">Department</label>
+                                                        <div class=" field">
+                                                            <label class="is-size-6">Department</label>
                                                             <div class="control">
                                                                 <input class="input" type="text" value="Team Dev"
                                                                     readonly>
                                                             </div>
                                                         </div>
-                                                        <div class="cell field">
-                                                            <label class="title is-6">Phone Number</label>
+                                                        <div class=" field">
+                                                            <label class="is-size-6">Phone Number</label>
                                                             <div class="control">
                                                                 <input class="input" type="tel" value="0905688024"
                                                                     readonly>
@@ -500,92 +501,68 @@
                                                         <!-- more items here -->
                                                     </div>
                                                 </div>
-                                                <hr class="background-color">
-                                                <div class="fixed-grid has-4-cols" style="width: 100%;">
+
+                                                <div class="column is-three-quarters fixed-grid has-2-cols">
                                                     <div class="grid">
                                                         <!-- max 8 items -->
                                                         <div class="cell field">
-                                                            <label class="title is-6">Full Name</label>
+                                                            <label class="background-darkmode-light is-size-6">Full
+                                                                Name</label>
                                                             <div class="control">
-                                                                <input class="input" type="text"
-                                                                    value="Pham Hoang Viet Son" readonly>
+                                                                <input class="input background-darkmode-light"
+                                                                    type="text" value="Pham Hoang Viet Son" readonly>
                                                             </div>
                                                         </div>
                                                         <div class="cell field">
-                                                            <label class="title is-6">Employee ID</label>
+                                                            <label class="background-darkmode-light is-size-6">Company
+                                                                Email</label>
                                                             <div class="control">
-                                                                <input class="input" type="text" value="No data"
+                                                                <input class="input background-darkmode-light"
+                                                                    type="email" value="thanglt.conando@gma..."
                                                                     readonly>
                                                             </div>
                                                         </div>
                                                         <div class="cell field">
-                                                            <label class="title is-6">Company Email</label>
+                                                            <label class="background-darkmode-light is-size-6">Phone
+                                                                Number</label>
                                                             <div class="control">
-                                                                <input class="input" type="email"
-                                                                    value="thanglt.conando@gma..." readonly>
+                                                                <input class="input background-darkmode-light"
+                                                                    type="tel" value="0905688024" readonly>
                                                             </div>
                                                         </div>
                                                         <div class="cell field">
-                                                            <label class="title is-6">Phone Number</label>
+                                                            <label class="background-darkmode-light is-size-6">Permanent
+                                                                Address</label>
                                                             <div class="control">
-                                                                <input class="input" type="tel" value="0905688024"
+                                                                <input class="input background-darkmode-light"
+                                                                    type="text" value="K87/19 Ngu Hanh Son, My An, . "
                                                                     readonly>
                                                             </div>
                                                         </div>
                                                         <div class="cell field">
-                                                            <label class="title is-6">Permanent Address</label>
-                                                            <div class="control">
-                                                                <input class="input" type="text"
-                                                                    value="K87/19 Ngu Hanh Son, My An, . " readonly>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cell field">
-                                                            <label class="title is-6">Place of Birth /
+                                                            <label class="background-darkmode-light is-size-6">Place of
+                                                                Birth /
                                                                 Hometown</label>
                                                             <div class="control">
-                                                                <input class="input" type="text"
-                                                                    value="Tam Thai, Phu Ninh, Quang Nam" readonly>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cell field">
-                                                            <label class="title is-6">Gender</label>
-                                                            <div class="control">
-                                                                <input class="input" type="text" value="Male" readonly>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cell field">
-                                                            <label class="title is-6">Ethnicity</label>
-                                                            <div class="control">
-                                                                <input class="input" type="text" value="Kinh" readonly>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="cell field">
-                                                            <label class="title is-6">Cấp bậc</label>
-                                                            <div class="control">
-                                                                <input class="input" type="text"
-                                                                    value="Không có dữ liệu" readonly>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cell field">
-                                                            <label class="title is-6">Giai đoạn</label>
-                                                            <div class="control">
-                                                                <input class="input" type="text" value="Chính thức"
+                                                                <input class="input background-darkmode-light"
+                                                                    type="text" value="Tam Thai, Phu Ninh, Quang Nam"
                                                                     readonly>
                                                             </div>
                                                         </div>
                                                         <div class="cell field">
-                                                            <label class="title is-6">Lương Thanh</label>
+                                                            <label
+                                                                class="background-darkmode-light is-size-6">Gender</label>
                                                             <div class="control">
-                                                                <input class="input" type="text" value="0905688024"
-                                                                    readonly>
+                                                                <input class="input background-darkmode-light"
+                                                                    type="text" value="Male" readonly>
                                                             </div>
                                                         </div>
                                                         <div class="cell field">
-                                                            <label class="title is-6">Email công việc</label>
+                                                            <label
+                                                                class="background-darkmode-light is-size-6">Ethnicity</label>
                                                             <div class="control">
-                                                                <input class="input" type="email"
-                                                                    value="thangit.conando@gmail">
+                                                                <input class="input background-darkmode-light"
+                                                                    type="text" value="Kinh" readonly>
                                                             </div>
                                                         </div>
                                                     </div>

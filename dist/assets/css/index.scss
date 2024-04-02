@@ -5,11 +5,16 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
 @import "./slider";
 // @import "./brandStyle";
-
+*{
+  // font-family: "Inter",sans-serif !important;
+}
 $primary-color: #0096FF;
 $darkmode-light-color: #1e293b;
 $darkmode-dark-color: #0b1324;
 
+.is-above{
+  z-index: 2;
+}
 #db-wrapper {
   height: 100vh;
 }
@@ -147,7 +152,7 @@ $darkmode-dark-color: #0b1324;
 }
 
 .box-shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.44) !important;
 }
 .shadow-hover:hover {
   box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.264), 0 4px 6px -2px rgba(255, 255, 255, 0.05) !important;

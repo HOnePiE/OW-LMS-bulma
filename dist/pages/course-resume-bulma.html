@@ -298,7 +298,8 @@
                 <!-- List group -->
                 <!-- List group -->
                 <aside class="menu" style="height: 100%" data-simplebar>
-                    <p class="menu-label title p-4 m-0 has-text-primary-light border-primary-bottomNone  has-text-centered">
+                    <p
+                        class="menu-label title p-4 m-0 has-text-primary-light border-primary-bottomNone  has-text-centered">
                         Table of Content
                     </p>
                     <ul class="menu-list">
@@ -465,7 +466,7 @@
                             </ul>
                         </li>
                         <!-- List Group item -->
-                        <li class="menu-list-item border-primary-bottomNone ">
+                        <li class="menu-list-item border-primary ">
                             <a
                                 class="has-dropdown toggle-collapse is-active primary-color is-flex is-justify-content-space-between">
                                 <span class="tag background-color has-text-black">4</span>
@@ -524,7 +525,12 @@
                         <div class="container">
                             <div class="">
                                 <div class="mb-2">
-                                    <h1 class="title is-4">Content</h1>
+                                    <div class="is-flex is-align-items-center is-justify-content-space-between mb-2">
+                                        <h1 class="title has-text-centered m-0 is-4">Content</h1>
+                                        <button class="button is-warning js-modal-trigger"
+                                            data-target="course-rating">Rate this course</button>
+
+                                    </div>
                                     <p style="line-height: 1.75rem;">JavaScript is a powerful and versatile programming
                                         language widely used in web
                                         and software development. With a simple and easy -to -read syntax, JavaScript is
@@ -639,8 +645,35 @@
                 </div>
 
             </section>
-            <!-- Card -->
-
+            <!-- Modal -->
+            <div id="course-rating" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <section class="section background-darkmode-dark" style="border-radius: 20px;">
+                        <div class="is-flex is-justify-content-center">
+                            <span class="has-text-warning">
+                                <i class="fa-solid fa-star fa-2x"></i>
+                                <i class="fa-regular fa-star fa-2x"></i>
+                                <i class="fa-regular fa-star fa-2x"></i>
+                                <i class="fa-regular fa-star fa-2x"></i>
+                                <i class="fa-regular fa-star fa-2x"></i>
+                            </span>
+                        </div>
+                        <div class="field">
+                            <label class="label has-text-light">Your Review</label>
+                            <div class="control">
+                                <textarea class="textarea background-darkmode-dark"
+                                    placeholder="Your Review"></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-link">Post</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </main>
     </div>
     <!-- Scripts -->
