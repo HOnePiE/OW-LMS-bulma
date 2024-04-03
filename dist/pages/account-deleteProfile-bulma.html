@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div class="background-darkmode-dark">
+    <div class="background-darkmode-dark" style="height: 100vh;">
         <div class="primary-background" style="width: 100%;height: 50px; position: absolute;">
             <div class="ms-3">
                 <!-- <h5 class="mb-0">Geeks-Based</h5> -->
@@ -297,7 +297,7 @@
                                 </p>
                                 <ul class="menu-list">
                                     <li class="">
-                                        <a class="is-active" href="./account-profile-bulma.html">
+                                        <a  href="./account-profile-bulma.html">
                                             <span class="icon-text">
                                                 <span class="icon">
                                                     <i class="fe fe-settings"></i>
@@ -317,7 +317,7 @@
                                         </a>
                                     </li>
                                     <li class="">
-                                        <a href="./account-deleteProfile-bulma.html">
+                                        <a class="is-active" href="./account-deleteProfile-bulma.html">
                                             <span class="icon-text">
                                                 <span class="icon">
                                                     <i class="fe fe-trash"></i>
@@ -340,103 +340,20 @@
                             </aside>
                         </div>
                         <!-- page content here (edit profile, security, delete profile) -->
-                        <div class="column" id="myTabContent">
+                        <div class="column is-9-desktop is-8-tablet is-12-mobile" id="myTabContent">
                             <div class="card">
                                 <header class="card-header">
-                                    <p class="card-header-title">Profile Details</p>
-                                    <p>You have full control to manage your own account setting.</p>
+                                    <p class="card-header-title">Delete your account</p>
+                                    <p>Delete or Close your account permanently.</p>
                                 </header>
-                                <div class="card-content">
-                                    <div class="columns is-vcentered">
-                                        <div class="column is-flex is-align-items-center">
-                                            <figure class="image is-128x128">
-                                                <img class="is-rounded" src="../assets/images/avatar/gigachad.jpg"
-                                                    id="img-uploaded" alt="avatar" />
-                                            </figure>
-                                            <div class="ml-3">
-                                                <h4 class="title is-4">Your avatar</h4>
-                                                <p class="subtitle is-6">PNG or JPG no bigger than 800px wide and tall.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="column is-narrow">
-                                            <a href="#" class="button is-small is-outlined background-color">Update</a>
-                                            <a href="#" class="button is-small is-outlined is-danger">Delete</a>
-                                        </div>
-                                    </div>
-                                    <hr class="background-color">
-                                    <div>
-                                        <h4 class="title is-4">Personal Details</h4>
-                                        <p class="subtitle is-6">Edit your personal information and address.</p>
-                                        <div class="fixed-grid has-4-cols" style="width: 100%;">
-                                            <div class="grid">
-                                                <!-- no limits -->
-                                                <div class="cell field">
-                                                    <label class="background-darkmode-dark is-size-6">Full
-                                                        Name</label>
-                                                    <div class="control">
-                                                        <input class="input background-darkmode-dark" type="text"
-                                                            value="Pham Hoang Viet Son" readonly>
-                                                    </div>
-                                                </div>
-                                                <div class="cell field">
-                                                    <label class="background-darkmode-dark is-size-6">Company
-                                                        Email</label>
-                                                    <div class="control">
-                                                        <input class="input background-darkmode-dark" type="email"
-                                                            value="thanglt.conando@gma..." readonly>
-                                                    </div>
-                                                </div>
-                                                <div class="cell field">
-                                                    <label class="background-darkmode-dark is-size-6">Phone
-                                                        Number</label>
-                                                    <div class="control">
-                                                        <input class="input background-darkmode-dark" type="tel"
-                                                            value="0905688024" readonly>
-                                                    </div>
-                                                </div>
-                                                <div class="cell field">
-                                                    <label class="background-darkmode-dark is-size-6">Permanent
-                                                        Address</label>
-                                                    <div class="control">
-                                                        <input class="input background-darkmode-dark" type="text"
-                                                            value="K87/19 Ngu Hanh Son, My An, . " readonly>
-                                                    </div>
-                                                </div>
-                                                <div class="cell field">
-                                                    <label class="background-darkmode-dark is-size-6">Place of
-                                                        Birth /
-                                                        Hometown</label>
-                                                    <div class="control">
-                                                        <input class="input background-darkmode-dark" type="text"
-                                                            value="Tam Thai, Phu Ninh, Quang Nam" readonly>
-                                                    </div>
-                                                </div>
-                                                <div class="cell field">
-                                                    <label class="background-darkmode-dark is-size-6">Gender</label>
-                                                    <div class="control">
-                                                        <input class="input background-darkmode-dark" type="text"
-                                                            value="Male" readonly>
-                                                    </div>
-                                                </div>
-                                                <div class="cell field">
-                                                    <label class="background-darkmode-dark is-size-6">Ethnicity</label>
-                                                    <div class="control">
-                                                        <input class="input background-darkmode-dark" type="text"
-                                                            value="Kinh" readonly>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="field">
-                                            <div class="control">
-                                                <button class="button is-primary" type="submit">Update Profile</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="card-content" style="min-height: 100px;">
+                                    <span class="has-text-danger title is-4">Warning</span>
+                                    <p>If you close your account, you will be unsubscribed from all your 0 courses, and will lose access forever.</p>
+                                    <a href="../index-bulma.html" class="button is-danger mt-5">Close My Account</a>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>

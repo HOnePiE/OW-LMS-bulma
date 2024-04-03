@@ -12,6 +12,9 @@ $primary-color: #0096FF;
 $darkmode-light-color: #1e293b;
 $darkmode-dark-color: #0b1324;
 
+main{
+  // height: 100%!important;
+}
 .is-above{
   z-index: 2;
 }
@@ -328,4 +331,7 @@ iframe {
 }
 .course-infor{
   margin-top: 1.5rem!important;
+}
+hr{
+  background-color: $primary-color;
 }

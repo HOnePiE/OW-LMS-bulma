@@ -207,6 +207,9 @@ input:focus {
     top: 10px;
     right: 10px;
 }
+.modal-content{
+    overflow: hidden;
+}
 
 .navbar {
     --bulma-navbar-background-color: transparent !important;
@@ -232,7 +235,6 @@ button.dropdown-item {
     z-index:3;
 }
 
-label,
 input,
 select {
     background-color: $darkmode-dark-color !important;
@@ -260,3 +262,4 @@ td,th{
 .media-content {
 flex-grow: 0;
 }
+

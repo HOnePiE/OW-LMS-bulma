@@ -168,6 +168,10 @@ input:focus {
   right: 10px;
 }
 
+.modal-content {
+  overflow: hidden;
+}
+
 .navbar {
   --bulma-navbar-background-color: transparent !important;
 }
@@ -194,7 +198,6 @@ button.dropdown-item {
   z-index: 3;
 }
 
-label,
 input,
 select {
   background-color: #0b1324 !important;
@@ -566,4 +569,8 @@ iframe {
 
 .course-infor {
   margin-top: 1.5rem !important;
+}
+
+hr {
+  background-color: #0096FF;
 }/*# sourceMappingURL=index.css.map */
