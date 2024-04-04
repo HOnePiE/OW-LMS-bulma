@@ -262,4 +262,6 @@ td,th{
 .media-content {
 flex-grow: 0;
 }
-
+.progress.is-primary {
+    --bulma-progress-value-background-color: #0096FF !important;
+}

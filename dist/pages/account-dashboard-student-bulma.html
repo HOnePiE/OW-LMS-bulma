@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div class="background-darkmode-dark" style="height: 100vh;">
+    <div class="background-darkmode-dark">
         <div class="primary-background" style="width: 100%;height: 50px; position: absolute;">
             <div class="ms-3">
                 <!-- <h5 class="mb-0">Geeks-Based</h5> -->
@@ -297,7 +297,17 @@
                                 </p>
                                 <ul class="menu-list">
                                     <li class="">
-                                        <a href="./account-profile-bulma.html">
+                                        <a class="is-active" href="./account-dashboard-student-bulma.html">
+                                            <span class="icon-text">
+                                                <span class="icon">
+                                                    <i class="fe fe-settings"></i>
+                                                </span>
+                                                <span>Dashboard</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a class="" href="./account-profile-bulma.html">
                                             <span class="icon-text">
                                                 <span class="icon">
                                                     <i class="fe fe-settings"></i>
@@ -317,7 +327,7 @@
                                         </a>
                                     </li>
                                     <li class="">
-                                        <a class="is-active" href="./account-deleteProfile-bulma.html">
+                                        <a href="./account-deleteProfile-bulma.html">
                                             <span class="icon-text">
                                                 <span class="icon">
                                                     <i class="fe fe-trash"></i>
@@ -340,48 +350,144 @@
                             </aside>
                         </div>
                         <!-- page content here (edit profile, security, delete profile) -->
-                        <div class="column is-9-desktop is-8-tablet is-12-mobile" id="myTabContent">
-                            <div class="card">
+                        <div class="column" id="myTabContent">
+                            <div class="">
                                 <header class="card-header">
-                                    <p class="card-header-title">Delete your account</p>
-                                    <p>Delete or Close your account permanently.</p>
+                                    <p class="card-header-title">My course</p>
                                 </header>
-                                <div class="card-content" style="min-height: 100px;">
-                                    <span class="has-text-danger title is-4">Warning</span>
-                                    <p>If you close your account, you will be unsubscribed from all your 0 courses, and
-                                        will lose access forever.</p>
-                                    <a href="#" class="button is-danger mt-5 js-modal-trigger" data-target="deleteModal">Close My Account</a>
+                                <div class="card-content columns is-multiline is-col-min-4">
+                                    <!-- course item auto wrap -->
+                                    <div class="cell column is-one-third hover-zoom tns-item">
+                                        <a href="../pages/course-single-bulma.html">
+                                            <div class="card-image">
+                                                <figure class="image">
+                                                    <img src="../assets/images/course/course-react.jpg" alt="course">
+                                                </figure>
+                                            </div>
+                                        </a>
+                                        <div class="card-content box-shadow" style="min-height: 0;">
+                                            <div class="media">
+                                                <div class="media-content">
+                                                    <p class="title is-6"><a href="../pages/course-single-bulma.html">How to easily create a website with React</a></p>
+                                                    <div class="is-flex is-align-items-center">
+                                                        <figure class="image is-32x32 mr-2">
+                                                            <img class="is-rounded" src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg" alt="avatar">
+                                                        </figure>
+                                                        <p class="subtitle is-6 has-text-light">Morris Mccoy</p>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <span class="icon has-text-light">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="content has-text-light">
+                                                <p>Course Progress: <span class="has-text-warning">60%</span></p>
+                                                <progress class="progress is-primary" value="60" max="100">60%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell column is-one-third hover-zoom tns-item">
+                                        <a href="../pages/course-single-bulma.html">
+                                            <div class="card-image">
+                                                <figure class="image">
+                                                    <img src="../assets/images/course/course-react.jpg" alt="course">
+                                                </figure>
+                                            </div>
+                                        </a>
+                                        <div class="card-content box-shadow" style="min-height: 0;">
+                                            <div class="media">
+                                                <div class="media-content">
+                                                    <p class="title is-6"><a href="../pages/course-single-bulma.html">How to easily create a website with React</a></p>
+                                                    <div class="is-flex is-align-items-center">
+                                                        <figure class="image is-32x32 mr-2">
+                                                            <img class="is-rounded" src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg" alt="avatar">
+                                                        </figure>
+                                                        <p class="subtitle is-6 has-text-light">Morris Mccoy</p>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <span class="icon has-text-light">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="content has-text-light">
+                                                <p>Course Progress: <span class="has-text-warning">60%</span></p>
+                                                <progress class="progress is-primary" value="60" max="100">60%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell column is-one-third hover-zoom tns-item">
+                                        <a href="../pages/course-single-bulma.html">
+                                            <div class="card-image">
+                                                <figure class="image">
+                                                    <img src="../assets/images/course/course-react.jpg" alt="course">
+                                                </figure>
+                                            </div>
+                                        </a>
+                                        <div class="card-content box-shadow" style="min-height: 0;">
+                                            <div class="media">
+                                                <div class="media-content">
+                                                    <p class="title is-6"><a href="../pages/course-single-bulma.html">How to easily create a website with React</a></p>
+                                                    <div class="is-flex is-align-items-center">
+                                                        <figure class="image is-32x32 mr-2">
+                                                            <img class="is-rounded" src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg" alt="avatar">
+                                                        </figure>
+                                                        <p class="subtitle is-6 has-text-light">Morris Mccoy</p>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <span class="icon has-text-light">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="content has-text-light">
+                                                <p>Course Progress: <span class="has-text-warning">60%</span></p>
+                                                <progress class="progress is-primary" value="60" max="100">60%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell column is-one-third hover-zoom tns-item">
+                                        <a href="../pages/course-single-bulma.html">
+                                            <div class="card-image">
+                                                <figure class="image">
+                                                    <img src="../assets/images/course/course-react.jpg" alt="course">
+                                                </figure>
+                                            </div>
+                                        </a>
+                                        <div class="card-content box-shadow" style="min-height: 0;">
+                                            <div class="media">
+                                                <div class="media-content">
+                                                    <p class="title is-6"><a href="../pages/course-single-bulma.html">How to easily create a website with React</a></p>
+                                                    <div class="is-flex is-align-items-center">
+                                                        <figure class="image is-32x32 mr-2">
+                                                            <img class="is-rounded" src="../assets/images/avatar/Firefly person avatar, realistic female2.jpg" alt="avatar">
+                                                        </figure>
+                                                        <p class="subtitle is-6 has-text-light">Morris Mccoy</p>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <span class="icon has-text-light">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="content has-text-light">
+                                                <p>Course Progress: <span class="has-text-warning">60%</span></p>
+                                                <progress class="progress is-primary" value="60" max="100">60%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
         </main>
-    </div>
-    <!-- delete account Modal -->
-    <div class="modal" id="deleteModal">
-        <div class="modal-background"></div>
-        <div class="modal-card back">
-            <header class="modal-card-head background-darkmode-dark">
-                <p class="modal-card-title">Confirm Account Deletion</p>
-                <button class="delete" aria-label="close" id="closeModal"></button>
-            </header>
-            <section class="modal-card-body background-darkmode-dark">
-                <p>Please enter your password to confirm account deletion:</p>
-                <div class="field">
-                    <label class="label" for="password">Password</label>
-                    <div class="control">
-                        <input class="input" type="password" id="password" placeholder="Enter your password" required>
-                    </div>
-                </div>
-            </section>
-            <footer class="modal-card-foot background-darkmode-dark">
-                <button class="button is-danger mr-2" id="confirmDelete">Confirm Deletion</button>
-                <button class="button" id="cancelDelete">Cancel</button>
-            </footer>
-        </div>
     </div>
 
 

@@ -39,17 +39,32 @@
 
     
 }
-@media screen and (min-width: 1024px) {
-    .video-ratio {
-      padding-bottom: calc(56.25% * 0.75) !important; /* Adjust this value as needed */
-    }
-  }
 @media (max-width: 768px) {
     .tns-slider {
         width: calc(2050%) !important;
     }
 }
-
+@media (max-width: 768px) {
+    table {
+        font-size: 0.8em;
+    }
+}
+@media (min-width:1920px){
+    table{
+        height: 1000px !important;
+    }
+}
+@media (max-height:1024px){
+    table{
+        height: 600px !important;
+    }
+}
+@media (max-height:820px){
+    table{
+        height: 350px !important;
+    }
+}
+@
 .tns-slider {
     width: calc(515%);
     transition-duration: 0.4s;
