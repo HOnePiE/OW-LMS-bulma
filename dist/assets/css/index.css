@@ -168,10 +168,6 @@ input:focus {
   right: 10px;
 }
 
-.modal-content {
-  overflow: hidden;
-}
-
 .navbar {
   --bulma-navbar-background-color: transparent !important;
 }
@@ -582,4 +578,7 @@ table {
   height: 60vh;
   overflow-y: scroll !important;
   display: block;
+}
+table th {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

@@ -342,6 +342,9 @@ hr {
   background-color: $primary-color;
 }
 table{
+  th{
+    width: 100%;
+  }
   height: 60vh;
   overflow-y: scroll!important;
   display: block;
