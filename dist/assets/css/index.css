@@ -274,16 +274,6 @@ td, th {
     font-size: 0.8em;
   }
 }
-@media (max-height: 1024px) {
-  table {
-    height: 600px !important;
-  }
-}
-@media (max-height: 820px) {
-  table {
-    height: 350px !important;
-  }
-}
 .tns-slider {
   width: 515%;
   transition-duration: 0.4s;
@@ -589,7 +579,7 @@ hr {
 }
 
 table {
-  height: 700px;
+  height: 60vh;
   overflow-y: scroll !important;
   display: block;
 }/*# sourceMappingURL=index.css.map */

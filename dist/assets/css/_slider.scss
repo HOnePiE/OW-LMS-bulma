@@ -49,22 +49,7 @@
         font-size: 0.8em;
     }
 }
-@media (min-width:1920px){
-    table{
-        height: 1000px !important;
-    }
-}
-@media (max-height:1024px){
-    table{
-        height: 600px !important;
-    }
-}
-@media (max-height:820px){
-    table{
-        height: 350px !important;
-    }
-}
-@
+
 .tns-slider {
     width: calc(515%);
     transition-duration: 0.4s;
