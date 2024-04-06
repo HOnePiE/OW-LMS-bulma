@@ -118,4 +118,51 @@ document.addEventListener('DOMContentLoaded', () => {
       closeAllModals();
     }
   });
+  //
+  $(document).ready(function () {
+    $('#imgClickAndChange').on('click', function () {
+      $('#fileInput').click();
+    });
+
+    $('#fileInput').on('change', function () {
+      var file = this.files[0];
+      var reader = new FileReader();
+      reader.onloadend = function () {
+        $('#imgClickAndChange').attr('src', reader.result);
+      }
+      if (file) {
+        reader.readAsDataURL(file);
+      } else {
+        $('#imgClickAndChange').attr('src', '');
+      }
+    });
+  });
+  //
+
+  $('#videoUploadButton').on('click', function () {
+    $('#videoInput').click();
+  });
+
+  $('#videoInput').on('change', function () {
+    var file = this.files[0];
+    var url = URL.createObjectURL(file);
+    $('#videoPreview').attr('src', url).show();
+  });
+
+  //
+
+  $('.editButton').on('click', function () {
+    $(this).hide();
+    $(this).siblings('.addButton').hide();
+    $(this).siblings('.updateButton').show();
+    $(this).siblings('.cancelButton').show();
+});
+
+$('.cancelButton').on('click', function () {
+    $(this).hide();
+    $(this).siblings('.updateButton').hide();
+    $(this).siblings('.addButton').show();
+    $(this).siblings('.editButton').show();
+});
+
 });

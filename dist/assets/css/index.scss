@@ -348,4 +348,11 @@ table{
   height: 60vh;
   overflow-y: scroll!important;
   display: block;
+  thead{
+    position: sticky;
+    top: 0;
+  }
+}
+#imgClickAndChange{
+  cursor: pointer;
 }

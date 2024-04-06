@@ -379,7 +379,8 @@
                             <div>
                                 <div class="tab-content" id="tabContent">
                                     <!--Tab pane -->
-                                    <div class="card" id="all-tab-content" role="tabpanel" aria-labelledby="courses-tab">
+                                    <div class="card" id="all-tab-content" role="tabpanel"
+                                        aria-labelledby="courses-tab">
                                         <div class="">
                                             <table class="table is-hoverable is-fullwidth background-darkmode-dark">
                                                 <thead>
@@ -393,7 +394,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <!-- items -->
-                                                    <tr>
+                                                    <tr class="js-modal-trigger" data-target="courseDetail-modal">
                                                         <td>
                                                             <a href="#">
                                                                 <div class="media">
@@ -456,7 +457,7 @@
                                                             </div>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="js-modal-trigger" data-target="lessoneDetail-modal">
                                                         <td>
                                                             <a href="#">
                                                                 <div class="media">
@@ -1200,6 +1201,178 @@
                 </div>
             </section>
         </main>
+        <!-- Course Detail Modal -->
+        <div id="courseDetail-modal" class="modal" style="font-weight: 500; font-size: 1.25rem;">
+            <div class="modal-background"></div>
+            <div class="modal-content" style="width: 90%;height: 78%; overflow: hidden;border-radius: 6px;">
+                <div class="" style="width: 100%; height: 100%; overflow:hidden;">
+                    <section class="section background-darkmode-light"
+                        style="width: 100%; height: 100%; overflow-y: scroll;">
+                        <h1 class="title is-5 primary-color">Course Information</h1>
+                        <div class="columns" style="width: 100%;">
+                            <div class="column box-shadow background-darkmode-dark" style="border-radius: 6px;">
+                                <div class="">
+                                    <label class="is-size-6">Click on image to change it</label>
+                                    <div class="is-flex is-justify-content-center mb-4">
+                                        <div class="card-image">
+                                            <figure class="image">
+                                                <img id="imgClickAndChange" style="border-radius: 6px;"
+                                                    src="../../assets/images/course/course-react.jpg" alt="course">
+                                                <input type="file" id="fileInput" style="display: none;">
+                                            </figure>
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <label class="is-size-6">Course Duration</label>
+                                        <div class="control">
+                                            <input class="input" type="text" value="30 hours" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="is-size-6">Number of Lessons</label>
+                                        <div class="control">
+                                            <input class="input" type="number" value="10" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="is-size-6">Number of Learners</label>
+                                        <div class="control">
+                                            <input class="input" type="number" value="100" readonly>
+                                        </div>
+                                    </div>
+                                    <!-- more items here -->
+                                </div>
+                            </div>
+
+                            <div class="column is-three-quarters fixed-grid has-2-cols has-1-cols-mobile">
+                                <div class="grid has-1-cols-mobile">
+                                    <div class="cell field ">
+                                        <label class="background-darkmode-light is-size-6">Instructor</label>
+                                        <div class="media is-align-items-center">
+                                            <figure class="media-left">
+                                                <p class="image is-32x32">
+                                                    <img src="../../assets/images/avatar/Firefly person avatar, realistic female1.jpg"
+                                                        alt="" class="is-rounded">
+                                                </p>
+                                            </figure>
+                                            <div class="media-content">
+                                                <p class="title is-6">Reva Yokk</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell field">
+                                        <label class="background-darkmode-light is-size-6">Creator</label>
+                                        <div class="media is-align-items-center">
+                                            <figure class="media-left">
+                                                <p class="image is-32x32">
+                                                    <img src="../../assets/images/avatar/Firefly person avatar, realistic female1.jpg"
+                                                        alt="" class="is-rounded">
+                                                </p>
+                                            </figure>
+                                            <div class="media-content">
+                                                <p class="title is-6">Reva Yokk</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell field">
+                                        <label class="background-darkmode-light is-size-6">Date Created</label>
+                                        <div class="control">
+                                            <input class="input background-darkmode-light" type="date"
+                                                value="2022-01-01" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="cell field">
+                                        <label class="background-darkmode-light is-size-6">Level</label>
+                                        <div class="control">
+                                            <input class="input background-darkmode-light" type="text" value="Beginner"
+                                                readonly>
+                                        </div>
+                                    </div>
+                                    <div class="cell is-col-span-2-widescreen field">
+                                        <div class="control">
+                                            <textarea class="textarea background-darkmode-light"
+                                                placeholder="Description of the course..."></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- functional button-->
+
+                                </div>
+                                <div class="field is-flex is-justify-content-flex-end">
+                                    <div class="control">
+                                        <button  class="button addButton is-primary">Add</button>
+                                        <button  class="button editButton is-warning">Edit</button>
+                                        <button  class="button updateButton is-success"
+                                            style="display: none;">Update</button>
+                                        <button  class="button cancelButton is-danger"
+                                            style="display: none;">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- LEsson Detail Modal -->
+        <div id="lessoneDetail-modal" class="modal" style="font-weight: 500; font-size: 1.25rem;">
+            <div class="modal-background"></div>
+            <div class="modal-content" style="width: 90%;height: 75%; overflow: hidden;border-radius: 6px;">
+                <div class="" style="width: 100%; height: 100%; overflow:hidden;">
+                    <section class="section background-darkmode-light"
+                        style="width: 100%; height: 100%; overflow-y: scroll;">
+                        <h1 class="title is-5 primary-color">Lesson Information</h1>
+                        <div class="columns" style="width: 100%;">
+                            <div class="column box-shadow background-darkmode-dark" style="border-radius: 6px;">
+                                <div class="">
+                                    <div class="field">
+                                        <label class="is-size-6">Lesson Name</label>
+                                        <div class="control">
+                                            <input class="input" type="text" placeholder="Lesson Name">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="is-size-6">Lesson Video</label>
+                                        <div class="control">
+                                            <input type="file" id="videoInput" style="display: none;">
+                                            <button id="videoUploadButton" class="button">Upload Video</button>
+                                            <video id="videoPreview" controls
+                                                style="width: 50%; display: none;"></video>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="is-size-6">Lesson Description</label>
+                                        <div class="control">
+                                            <textarea class="textarea" placeholder="Lesson Description"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="is-size-6">Lesson Order</label>
+                                        <div class="control">
+                                            <input class="input" type="number" placeholder="Lesson Order">
+                                        </div>
+                                    </div>
+                                    <!-- functional button-->
+                                    <div class="field is-flex is-justify-content-flex-end">
+                                        <div class="control">
+                                            <button  class="button addButton is-primary">Add</button>
+                                            <button  class="button editButton is-warning">Edit</button>
+                                            <button  class="button updateButton is-success"
+                                                style="display: none;">Update</button>
+                                            <button  class="button cancelButton is-danger"
+                                                style="display: none;">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </section>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->

@@ -208,7 +208,7 @@ select {
   overflow: scroll;
 }
 
-.menu::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
   width: 12px;
   background-color: #F5F5F5;
@@ -581,4 +581,12 @@ table {
 }
 table th {
   width: 100%;
+}
+table thead {
+  position: sticky;
+  top: 0;
+}
+
+#imgClickAndChange {
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

@@ -250,7 +250,7 @@ select {
 .menu{
     overflow:scroll;
 }
-.menu::-webkit-scrollbar
+*::-webkit-scrollbar
 {
     display: none;
 	width: 12px;
