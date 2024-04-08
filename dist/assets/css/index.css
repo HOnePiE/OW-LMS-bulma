@@ -589,4 +589,9 @@ table thead {
 
 #imgClickAndChange {
   cursor: pointer;
+}
+
+.lesson-content {
+  height: 70vh;
+  overflow-y: scroll;
 }/*# sourceMappingURL=index.css.map */
